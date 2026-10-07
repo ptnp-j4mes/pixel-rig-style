@@ -79,7 +79,9 @@ async function getPrototype(pack, name) {
     }
     const scene = glbCache.get(pack);
     let node = null;
-    scene.traverse((c) => { if (!node && c.name === name && c.isMesh) node = c; });
+    scene.traverse((c) => { if (!node && c.name === name) node = c; });
+    // multi-primitive meshes load as Groups — fall through to the first mesh inside
+    if (node && !node.isMesh) node = node.getObjectByProperty('isMesh', true) ?? node;
     if (!node) throw new Error(`node not found in ${pack}: ${name}`);
     // detach a copy of the node (with its transform) as a standalone object
     raw = node.clone(true);
