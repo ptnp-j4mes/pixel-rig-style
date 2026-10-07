@@ -153,8 +153,12 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     const wasClick = downPos && Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) <= CLICK_SLOP;
     downPos = null;
     if (dragging) {
+      const inst = dragging;
       dragging = null;
-      if (!wasClick) onChange();
+      if (!wasClick) {
+        onChange();
+        onSelection(inst); // re-sync the panel — its fields went stale during the drag
+      }
       return;
     }
     if (!wasClick) return;
@@ -181,6 +185,7 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
       } else if (selected) {
         selected.obj.rotation.y -= Math.PI / 2;
         onChange();
+        onSelection(selected); // keep the panel's rotation field in step
       }
     } else if (e.key === 'Escape') {
       if (placing) cancelPlace();
