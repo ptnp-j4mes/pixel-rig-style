@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const prototypes = new Map(); // "pack/name" -> normalized prototype
 const inflight = new Map();   // "pack/name" -> Promise<boolean: ok>
 const thumbs = new Map();     // "pack/name" -> dataURL
-const glbCache = new Map();   // pack id -> loaded glb scene (for 'glb' packs)
+const glbCache = new Map();   // pack id -> Promise<scene> (for 'glb' packs)
 let manifest = null;
 
 let thumbRenderer, thumbScene, thumbCamera;
@@ -20,10 +20,6 @@ export function getPacks() {
   return manifest ?? [];
 }
 
-export function packName(id) {
-  return manifest?.find((p) => p.id === id)?.name ?? id;
-}
-
 export function has(pack, name) {
   const p = manifest?.find((x) => x.id === pack);
   return !!p?.entries?.some((e) => e.name === name);
@@ -32,12 +28,6 @@ export function has(pack, name) {
 export function entrySize(pack, name) {
   const p = manifest?.find((x) => x.id === pack);
   return p?.entries?.find((e) => e.name === name)?.size ?? null;
-}
-
-export function groupByPack(packs) {
-  const groups = new Map();
-  for (const p of packs) groups.set(p.id, p.entries);
-  return groups;
 }
 
 function key(pack, name) {
@@ -74,14 +64,11 @@ async function getPrototype(pack, name) {
   let raw;
   if (entry.type === 'glb') {
     if (!glbCache.has(pack)) {
-      const gltf = await loadGLTF('/packs/' + pack + '/' + entry.file);
-      glbCache.set(pack, gltf.scene);
+      glbCache.set(pack, loadGLTF('/packs/' + pack + '/' + entry.file).then((gltf) => gltf.scene));
     }
-    const scene = glbCache.get(pack);
+    const scene = await glbCache.get(pack);
     let node = null;
     scene.traverse((c) => { if (!node && c.name === name) node = c; });
-    // multi-primitive meshes load as Groups — fall through to the first mesh inside
-    if (node && !node.isMesh) node = node.getObjectByProperty('isMesh', true) ?? node;
     if (!node) throw new Error(`node not found in ${pack}: ${name}`);
     // detach a copy of the node (with its transform) as a standalone object
     raw = node.clone(true);
