@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { createCamera } from './camera.js';
 import * as catalog from './catalog.js';
 import { createEditor } from './editor.js';
-import { GRID_SIZE, MAP_EXTENT } from './lib.js';
+import { CATEGORY_ORDER, GRID_SIZE, MAP_EXTENT } from './lib.js';
 
 const viewport = document.getElementById('viewport');
 
@@ -54,6 +54,62 @@ const editor = createEditor({
   onSelection: (inst) => console.log('selection', inst?.asset ?? null),
 });
 window.editor = editor; // console test hook
+
+function renderPalette(items, autoOpen) {
+  const wrap = document.getElementById('palette');
+  wrap.innerHTML = '';
+  const groups = catalog.groupByCategory(items);
+  const known = CATEGORY_ORDER.filter((c) => groups.has(c));
+  const extra = [...groups.keys()].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
+  for (const cat of [...known, ...extra]) {
+    const details = document.createElement('details');
+    details.open = !!autoOpen;
+    const summary = document.createElement('summary');
+    summary.textContent = `${cat} (${groups.get(cat).length})`;
+    details.appendChild(summary);
+    details.addEventListener('toggle', () => {
+      if (details.open) fillItems(details, groups.get(cat));
+    });
+    if (autoOpen) fillItems(details, groups.get(cat));
+    wrap.appendChild(details);
+  }
+}
+
+function fillItems(details, items) {
+  if (details.dataset.filled) return;
+  details.dataset.filled = '1';
+  const grid = document.createElement('div');
+  grid.className = 'palette-grid';
+  for (const item of items) {
+    const btn = document.createElement('button');
+    btn.className = 'palette-item';
+    btn.title = item.name;
+    const img = document.createElement('img');
+    img.alt = item.name;
+    catalog.makeThumb(item.name).then((url) => { img.src = url; });
+    const label = document.createElement('span');
+    label.textContent = item.name;
+    btn.append(img, label);
+    btn.onclick = () => editor.setPlace(item.name);
+    grid.appendChild(btn);
+  }
+  details.appendChild(grid);
+}
+
+document.getElementById('palette-search').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  renderPalette(q ? allItems.filter((i) => i.name.toLowerCase().includes(q)) : allItems, !!q);
+});
+
+let allItems = [];
+try {
+  allItems = await catalog.fetchManifest();
+  renderPalette(allItems, false);
+} catch (err) {
+  const banner = document.getElementById('banner');
+  banner.textContent = err.message;
+  banner.hidden = false;
+}
 
 renderer.setAnimationLoop(() => {
   cam.controls.update();
