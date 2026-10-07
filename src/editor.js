@@ -122,6 +122,7 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
       dragging = inst;
       dom.style.cursor = 'grabbing';
       controls.enabled = false; // don't orbit while moving an object
+      try { dom.setPointerCapture(e.pointerId); } catch { /* pointer already gone */ }
     }
   }
 
