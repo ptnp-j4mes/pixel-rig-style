@@ -20,9 +20,12 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
   let objects = [];     // [{ id, asset, obj }]
   let nextId = 1;
 
-  dom.addEventListener('pointermove', onPointerMove);
+  // OrbitControls (attached to the container) setPointerCaptures on every
+  // pointerdown, retargeting moves/ups away from the canvas — so move/up must
+  // be observed on window, which stays in every retarget's bubble path.
   dom.addEventListener('pointerdown', onPointerDown);
-  dom.addEventListener('pointerup', onPointerUp);
+  window.addEventListener('pointermove', onPointerMove);
+  window.addEventListener('pointerup', onPointerUp);
   window.addEventListener('keydown', onKeyDown);
 
   function setPointer(e) {
