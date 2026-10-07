@@ -1,0 +1,10 @@
+# Asset pack (licensed, large binaries) — copy glTF files into public/kit/ locally
+assets/
+public/kit/
+
+# Node
+node_modules/
+dist/
+
+# OS / editor
+.DS_Store
