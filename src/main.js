@@ -1,5 +1,7 @@
 import * as THREE from 'three';
 import { createCamera } from './camera.js';
+import * as catalog from './catalog.js';
+import { createEditor } from './editor.js';
 import { GRID_SIZE, MAP_EXTENT } from './lib.js';
 
 const viewport = document.getElementById('viewport');
@@ -41,6 +43,17 @@ new ResizeObserver(() => {
   cam.camera.aspect = w / h;
   cam.camera.updateProjectionMatrix();
 }).observe(viewport);
+
+const editor = createEditor({
+  scene,
+  camera: cam.camera,
+  controls: cam.controls,
+  dom: renderer.domElement,
+  catalog,
+  onChange: () => console.log('changed', editor.getObjects().length, 'objects'),
+  onSelection: (inst) => console.log('selection', inst?.asset ?? null),
+});
+window.editor = editor; // console test hook
 
 renderer.setAnimationLoop(() => {
   cam.controls.update();
