@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { snapToGrid, quantizeRotY, SNAP_SIZE } from './lib.js';
+import { quantizeRotY, SNAP_SIZE } from './lib.js';
 
 const CLICK_SLOP = 6; // px — between down and up that still counts as a click
 const GROUND_PLANE = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
@@ -57,9 +57,10 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
 
   async function setPlace(pack, assetName) {
     cancelPlace();
-    placing = { pack, asset: assetName };
+    const entry = { pack, asset: assetName };
+    placing = entry;
     const model = await catalog.loadModel(pack, assetName);
-    if (placing?.asset !== assetName) return; // user switched away while loading
+    if (placing !== entry) return; // user switched away while loading
     model.traverse((c) => {
       if (c.isMesh) {
         c.material.transparent = true;

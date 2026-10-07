@@ -3,7 +3,7 @@ import { createCamera } from './camera.js';
 import * as catalog from './catalog.js';
 import { createEditor } from './editor.js';
 import * as storage from './storage.js';
-import { CATEGORY_ORDER, GRID_SIZE, MAP_EXTENT, serializeMap } from './lib.js';
+import { SNAP_SIZE, MAP_EXTENT, serializeMap, CATEGORY_ORDER } from './lib.js';
 
 const viewport = document.getElementById('viewport');
 
@@ -32,7 +32,7 @@ ground.rotation.x = -Math.PI / 2;
 ground.receiveShadow = true;
 scene.add(ground);
 
-const grid = new THREE.GridHelper(MAP_EXTENT, MAP_EXTENT / GRID_SIZE, 0x5a7a44, 0x5a7a44);
+const grid = new THREE.GridHelper(MAP_EXTENT, MAP_EXTENT / SNAP_SIZE, 0x5a7a44, 0x5a7a44);
 grid.position.y = 0.02;
 scene.add(grid);
 
@@ -98,6 +98,12 @@ btnGrid.onclick = () => {
   btnGrid.classList.toggle('active', grid.visible);
 };
 
+const btnSnap = document.getElementById('btn-snap');
+btnSnap.onclick = () => {
+  editor.setSnap(!editor.getSnap());
+  btnSnap.classList.toggle('active', editor.getSnap());
+};
+
 // ---- properties panel ----
 const propsEl = document.getElementById('properties');
 const propFields = {
@@ -157,56 +163,80 @@ document.getElementById('scale-reset').onclick = () => {
 };
 document.getElementById('btn-delete').onclick = () => editor.deleteSelected();
 
-function renderPalette(items, autoOpen) {
+function categoriesOf(entries) {
+  const cats = new Map();
+  for (const e of entries) {
+    const c = e.name.split('_')[0];
+    if (!cats.has(c)) cats.set(c, []);
+    cats.get(c).push(e);
+  }
+  const known = CATEGORY_ORDER.filter((c) => cats.has(c));
+  const extra = [...cats.keys()].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
+  return [...known, ...extra].map((c) => [c, cats.get(c)]);
+}
+
+function renderPackPalette(packs, autoOpen) {
   const wrap = document.getElementById('palette');
   wrap.innerHTML = '';
-  const groups = catalog.groupByCategory(items);
-  const known = CATEGORY_ORDER.filter((c) => groups.has(c));
-  const extra = [...groups.keys()].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
-  for (const cat of [...known, ...extra]) {
-    const details = document.createElement('details');
-    details.open = !!autoOpen;
-    const summary = document.createElement('summary');
-    summary.textContent = `${cat} (${groups.get(cat).length})`;
-    details.appendChild(summary);
-    details.addEventListener('toggle', () => {
-      if (details.open) fillItems(details, groups.get(cat));
-    });
-    if (autoOpen) fillItems(details, groups.get(cat));
-    wrap.appendChild(details);
+  for (const pack of packs) {
+    const packDetails = document.createElement('details');
+    packDetails.open = !!autoOpen;
+    const packSummary = document.createElement('summary');
+    packSummary.textContent = `${pack.name} (${pack.entries.length})`;
+    packDetails.appendChild(packSummary);
+    packDetails.addEventListener('toggle', () => { if (packDetails.open) fillPack(packDetails, pack); });
+    if (autoOpen) fillPack(packDetails, pack);
+    wrap.appendChild(packDetails);
   }
 }
 
-function fillItems(details, items) {
+function fillPack(details, pack) {
   if (details.dataset.filled) return;
   details.dataset.filled = '1';
-  const grid = document.createElement('div');
-  grid.className = 'palette-grid';
-  for (const item of items) {
+  for (const [cat, entries] of categoriesOf(pack.entries)) {
+    const catDetails = document.createElement('details');
+    const catSummary = document.createElement('summary');
+    catSummary.textContent = `${cat} (${entries.length})`;
+    catDetails.appendChild(catSummary);
+    catDetails.addEventListener('toggle', () => { if (catDetails.open) fillItems(catDetails, pack.id, entries); });
+    fillItems(catDetails, pack.id, entries); // categories are small — fill eagerly
+    details.appendChild(catDetails);
+  }
+}
+
+function fillItems(details, packId, entries) {
+  if (details.dataset.filled) return;
+  details.dataset.filled = '1';
+  const gridEl = document.createElement('div');
+  gridEl.className = 'palette-grid';
+  for (const item of entries) {
     const btn = document.createElement('button');
     btn.className = 'palette-item';
     btn.title = item.name;
     const img = document.createElement('img');
     img.alt = item.name;
-    catalog.makeThumb(item.name).then((url) => { img.src = url; });
+    catalog.makeThumb(packId, item.name).then((url) => { img.src = url; });
     const label = document.createElement('span');
     label.textContent = item.name;
     btn.append(img, label);
-    btn.onclick = () => editor.setPlace(item.name);
-    grid.appendChild(btn);
+    btn.onclick = () => editor.setPlace(packId, item.name);
+    gridEl.appendChild(btn);
   }
-  details.appendChild(grid);
+  details.appendChild(gridEl);
 }
 
 document.getElementById('palette-search').addEventListener('input', (e) => {
   const q = e.target.value.trim().toLowerCase();
-  renderPalette(q ? allItems.filter((i) => i.name.toLowerCase().includes(q)) : allItems, !!q);
+  const packs = catalog.getPacks();
+  const filtered = q
+    ? packs.map((p) => ({ ...p, entries: p.entries.filter((i) => i.name.toLowerCase().includes(q)) })).filter((p) => p.entries.length)
+    : packs;
+  renderPackPalette(filtered, !!q);
 });
 
-let allItems = [];
 try {
-  allItems = await catalog.fetchManifest();
-  renderPalette(allItems, false);
+  const packs = await catalog.fetchManifest();
+  renderPackPalette(packs, false);
 } catch (err) {
   const banner = document.getElementById('banner');
   banner.textContent = err.message;
