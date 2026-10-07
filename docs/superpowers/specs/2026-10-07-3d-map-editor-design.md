@@ -137,3 +137,45 @@ npm install
 python3 scripts/gen_manifest.py   # once, after public/kit/ is populated
 npm run dev                       # http://localhost:5173
 ```
+
+---
+
+# Revision v2 (2026-10-07): Object packs & free placement
+
+User pivot: the goal is placing **complete objects** (a whole house, a fence, a prop)
+onto the map — not assembling buildings from modular pieces. Two example packs
+define the target structure:
+
+- **Japan Village** (`Free_JapanVillage.zip` → `FreePack/GLTF/`): 35 self-contained
+  `.gltf` objects (House_4x5, Fence_Wood, ToriGate, Road_*, MarketStall_*, props),
+  meter-scaled, one shared ColorAtlas material per file, textures in `textures/`.
+- **Village Pack** (`VillagePack.rar` → `VillagePack.glb`): 84 named nodes in ONE
+  .glb (altar, arch, barrel_*, bell, bridge, building_*, cart, ...), one shared
+  palette material, per-node transforms with non-meter scales (node scale
+  compensates; real sizes ≈ 1–5 m). The pack loader must extract each named node
+  as an individual object.
+
+## Changes from v1
+
+1. **Pack concept replaces the kit catalog.** `public/packs/<pack-id>/` holds
+   either a folder of `.gltf` files (`type: "gltf-folder"`) or a single `.glb`
+   (`type: "glb"`). `public/manifest.json` becomes an array of packs:
+   `[{id, name, type, file?, entries: [{name, size?}]}]`. `gen_manifest.py`
+   scans `public/packs/`; for .glb packs it lists named mesh nodes (size from
+   accessor bounds × node scale).
+2. **Medieval Village kit removed** from the palette (and `public/kit/`). The
+   pack system stays generic so packs can be added later by dropping files.
+3. **Free placement** is the default (object follows the cursor exactly, no
+   snapping) with a toolbar **"Snap 1m"** toggle for aligning roads/fences.
+   `R` = 90° rotate; free rotation/scale via the properties panel (unchanged).
+4. **Origin normalization:** every loaded prototype is re-centred (X/Z center at
+   origin, bbox base on y=0) so placement position means "where the object
+   stands" for every pack. Per-entry runtime size comes from the normalized
+   Box3 (manifest sizes are advisory).
+5. **Map document v2:** `{version: 2, gridSize: 1, mapName, objects:
+   [{pack, asset, pos, rotY, scale}]}`. v1 maps still load; their objects are
+   reported as missing (the medieval assets are gone).
+6. Palette UI: two levels — Pack → category (name prefix) → items; search
+   across all packs.
+7. `public/packs/` is git-ignored (same licensing reasoning as before); README
+   documents copying both packs.
