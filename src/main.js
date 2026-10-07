@@ -66,7 +66,7 @@ const editor = createEditor({
   dom: renderer.domElement,
   catalog,
   onChange: () => storage.scheduleAutosave(currentDoc()),
-  onSelection: () => {}, // Task 9 fills this in
+  onSelection,
 });
 
 document.getElementById('btn-new').onclick = () => {
@@ -95,6 +95,65 @@ btnGrid.onclick = () => {
   grid.visible = !grid.visible;
   btnGrid.classList.toggle('active', grid.visible);
 };
+
+// ---- properties panel ----
+const propsEl = document.getElementById('properties');
+const propFields = {
+  posX: document.getElementById('pos-x'),
+  posY: document.getElementById('pos-y'),
+  posZ: document.getElementById('pos-z'),
+  rotY: document.getElementById('rot-y'),
+  scaleX: document.getElementById('scale-x'),
+  scaleY: document.getElementById('scale-y'),
+  scaleZ: document.getElementById('scale-z'),
+};
+
+function onSelection(inst) {
+  propsEl.hidden = !inst;
+  if (inst) syncPanel();
+}
+
+function syncPanel() {
+  const inst = editor.getSelected();
+  if (!inst) return;
+  const o = inst.obj;
+  document.getElementById('prop-name').textContent = inst.asset;
+  propFields.posX.value = o.position.x;
+  propFields.posY.value = o.position.y;
+  propFields.posZ.value = o.position.z;
+  propFields.rotY.value = Math.round(THREE.MathUtils.radToDeg(o.rotation.y));
+  propFields.scaleX.value = o.scale.x;
+  propFields.scaleY.value = o.scale.y;
+  propFields.scaleZ.value = o.scale.z;
+}
+
+for (const [key, input] of Object.entries(propFields)) {
+  input.addEventListener('input', () => {
+    const inst = editor.getSelected();
+    if (!inst) return;
+    const o = inst.obj;
+    o.position.x = parseFloat(propFields.posX.value) || 0;
+    o.position.y = parseFloat(propFields.posY.value) || 0;
+    o.position.z = parseFloat(propFields.posZ.value) || 0;
+    o.rotation.y = THREE.MathUtils.degToRad(parseFloat(propFields.rotY.value) || 0);
+    o.scale.set(
+      parseFloat(propFields.scaleX.value) || 1,
+      parseFloat(propFields.scaleY.value) || 1,
+      parseFloat(propFields.scaleZ.value) || 1
+    );
+    editor.changed(); // autosave
+  });
+}
+
+document.getElementById('rot-90').onclick = () => { editor.rotateSelected90(); syncPanel(); };
+document.getElementById('scale-reset').onclick = () => {
+  const inst = editor.getSelected();
+  if (!inst) return;
+  inst.obj.scale.set(1, 1, 1);
+  editor.changed();
+  syncPanel();
+};
+document.getElementById('btn-delete').onclick = () => editor.deleteSelected();
 
 function renderPalette(items, autoOpen) {
   const wrap = document.getElementById('palette');
