@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { snapToGrid, quantizeRotY } from './lib.js';
+import { snapToGrid, quantizeRotY, SNAP_SIZE } from './lib.js';
 
 const CLICK_SLOP = 6; // px — between down and up that still counts as a click
 const GROUND_PLANE = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
@@ -12,13 +12,20 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
   const raycaster = new THREE.Raycaster();
   const pointer = new THREE.Vector2();
 
-  let placing = null;   // asset name being placed
+  let placing = null;   // { pack, asset } being placed
   let ghost = null;     // preview instance
   let dragging = null;  // instance being dragged
   let selected = null;  // instance
   let downPos = null;
-  let objects = [];     // [{ id, asset, obj }]
+  let objects = [];     // [{ id, pack, asset, obj }]
   let nextId = 1;
+
+  let snap = false;
+
+  function rounded(v) {
+    const q = snap ? SNAP_SIZE : 0.01;
+    return Math.round(v / q) * q;
+  }
 
   // OrbitControls (attached to the container) setPointerCaptures on every
   // pointerdown, retargeting moves/ups away from the canvas — so move/up must
@@ -48,11 +55,11 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
 
   // ---- placement ----
 
-  async function setPlace(assetName) {
+  async function setPlace(pack, assetName) {
     cancelPlace();
-    placing = assetName;
-    const model = await catalog.loadModel(assetName);
-    if (placing !== assetName) return; // user switched away while loading
+    placing = { pack, asset: assetName };
+    const model = await catalog.loadModel(pack, assetName);
+    if (placing?.asset !== assetName) return; // user switched away while loading
     model.traverse((c) => {
       if (c.isMesh) {
         c.material.transparent = true;
@@ -71,12 +78,12 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     placing = null;
   }
 
-  async function addInstance(asset, position, rotY, scale = [1, 1, 1]) {
-    const obj = await catalog.loadModel(asset);
+  async function addInstance(pack, asset, position, rotY, scale = [1, 1, 1]) {
+    const obj = await catalog.loadModel(pack, asset);
     obj.position.copy(position);
     obj.rotation.y = THREE.MathUtils.degToRad(rotY);
     obj.scale.set(...scale);
-    const inst = { id: nextId++, asset, obj };
+    const inst = { id: nextId++, pack, asset, obj };
     obj.userData.editorRoot = inst;
     group.add(obj);
     objects.push(inst);
@@ -134,15 +141,15 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
       const p = groundPoint(e);
       if (p) {
         ghost.visible = true;
-        ghost.position.set(snapToGrid(p.x), 0, snapToGrid(p.z));
+        ghost.position.set(rounded(p.x), 0, rounded(p.z));
       }
       return;
     }
     if (dragging) {
       const p = groundPoint(e);
       if (p) {
-        dragging.obj.position.x = snapToGrid(p.x);
-        dragging.obj.position.z = snapToGrid(p.z);
+        dragging.obj.position.x = rounded(p.x);
+        dragging.obj.position.z = rounded(p.z);
       }
     }
   }
@@ -164,9 +171,9 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     if (!wasClick) return;
     if (placing && ghost) {
       const p = groundPoint(e);
-      if (p) ghost.position.set(snapToGrid(p.x), 0, snapToGrid(p.z));
+      if (p) ghost.position.set(rounded(p.x), 0, rounded(p.z));
       // onChange must wait for the instance to exist, or the autosave misses it
-      addInstance(placing, ghost.position.clone(), quantizeRotY(THREE.MathUtils.radToDeg(ghost.rotation.y))).then(onChange);
+      addInstance(placing.pack, placing.asset, ghost.position.clone(), quantizeRotY(THREE.MathUtils.radToDeg(ghost.rotation.y))).then(onChange);
       return; // stay in placing mode for rapid placement
     }
     setPointer(e);
@@ -214,11 +221,12 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
 
   function getObjects() {
     return objects.map((o) => ({
+      pack: o.pack,
       asset: o.asset,
       pos: [
-        +o.obj.position.x.toFixed(3),
+        +o.obj.position.x.toFixed(2),
         +o.obj.position.y.toFixed(3),
-        +o.obj.position.z.toFixed(3),
+        +o.obj.position.z.toFixed(2),
       ],
       rotY: +THREE.MathUtils.radToDeg(o.obj.rotation.y).toFixed(2),
       scale: [o.obj.scale.x, o.obj.scale.y, o.obj.scale.z],
@@ -229,12 +237,13 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     clear();
     const missing = [];
     for (const entry of list) {
-      if (!catalog.has(entry.asset)) {
+      if (!catalog.has(entry.pack, entry.asset)) {
         if (!missing.includes(entry.asset)) missing.push(entry.asset);
         continue;
       }
       try {
         await addInstance(
+          entry.pack,
           entry.asset,
           new THREE.Vector3(...entry.pos),
           entry.rotY ?? 0,
@@ -257,6 +266,8 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
 
   return {
     setPlace, cancelPlace, deleteSelected, rotateSelected90,
+    setSnap: (on) => { snap = !!on; },
+    getSnap: () => snap,
     getSelected: () => selected,
     changed: onChange,
     getObjects, loadObjects, clear,
