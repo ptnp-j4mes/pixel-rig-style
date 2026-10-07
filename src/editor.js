@@ -158,8 +158,8 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     if (placing && ghost) {
       const p = groundPoint(e);
       if (p) ghost.position.set(snapToGrid(p.x), 0, snapToGrid(p.z));
-      addInstance(placing, ghost.position.clone(), quantizeRotY(THREE.MathUtils.radToDeg(ghost.rotation.y)));
-      onChange();
+      // onChange must wait for the instance to exist, or the autosave misses it
+      addInstance(placing, ghost.position.clone(), quantizeRotY(THREE.MathUtils.radToDeg(ghost.rotation.y))).then(onChange);
       return; // stay in placing mode for rapid placement
     }
     setPointer(e);
