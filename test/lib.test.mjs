@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   GRID_SIZE, MAP_VERSION,
-  snapToGrid, quantizeRotY, categoryOf,
+  snapToGrid, quantizeRotY,
   serializeMap, deserializeMap,
 } from '../src/lib.js';
 
@@ -20,11 +20,6 @@ test('quantizeRotY snaps to 90° steps, normalized 0-345', () => {
   assert.equal(quantizeRotY(450), 90);
   assert.equal(quantizeRotY(-15), 0);
   assert.equal(quantizeRotY(270), 270);
-});
-
-test('categoryOf uses the prefix before the first underscore', () => {
-  assert.equal(categoryOf('Roof_2x4_RoundTile'), 'Roof');
-  assert.equal(categoryOf('Wall_Plaster_Door_Flat'), 'Wall');
 });
 
 test('serialize -> deserialize round-trips objects', () => {

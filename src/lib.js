@@ -18,10 +18,6 @@ export function quantizeRotY(deg) {
   return (Math.round(norm / 90) * 90) % 360;
 }
 
-export function categoryOf(assetName) {
-  return assetName.split('_')[0];
-}
-
 export function serializeMap(mapName, objects) {
   return {
     version: MAP_VERSION,

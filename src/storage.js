@@ -9,7 +9,7 @@ export function saveMapFile(doc) {
   a.href = URL.createObjectURL(blob);
   a.download = `${doc.mapName || 'map'}.json`;
   a.click();
-  URL.revokeObjectURL(a.href);
+  setTimeout(() => URL.revokeObjectURL(a.href));
 }
 
 export function openMapFile() {
@@ -26,6 +26,7 @@ export function openMapFile() {
         resolve({ error: err.message });
       }
     };
+    input.oncancel = () => resolve(null);
     input.click();
   });
 }

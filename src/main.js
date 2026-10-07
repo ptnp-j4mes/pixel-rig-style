@@ -78,6 +78,8 @@ document.getElementById('btn-new').onclick = () => {
 
 document.getElementById('btn-save').onclick = () => storage.saveMapFile(currentDoc());
 
+mapNameInput.addEventListener('input', () => storage.scheduleAutosave(currentDoc()));
+
 document.getElementById('btn-load').onclick = async () => {
   const doc = await storage.openMapFile();
   if (!doc) return;
