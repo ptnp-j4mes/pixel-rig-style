@@ -1,11 +1,10 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const KIT_BASE = '/kit/';
-
-const prototypes = new Map(); // name -> original Object3D
-const inflight = new Map();   // name -> Promise<boolean: loaded ok>
-const thumbs = new Map();     // name -> dataURL
+const prototypes = new Map(); // "pack/name" -> normalized prototype
+const inflight = new Map();   // "pack/name" -> Promise<boolean: ok>
+const thumbs = new Map();     // "pack/name" -> dataURL
+const glbCache = new Map();   // pack id -> loaded glb scene (for 'glb' packs)
 let manifest = null;
 
 let thumbRenderer, thumbScene, thumbCamera;
@@ -17,56 +16,102 @@ export async function fetchManifest() {
   return manifest;
 }
 
-export function getManifest() {
-  return manifest;
+export function getPacks() {
+  return manifest ?? [];
 }
 
-export function has(name) {
-  return !!manifest?.some((e) => e.name === name);
+export function packName(id) {
+  return manifest?.find((p) => p.id === id)?.name ?? id;
 }
 
-export function groupByCategory(items) {
+export function has(pack, name) {
+  const p = manifest?.find((x) => x.id === pack);
+  return !!p?.entries?.some((e) => e.name === name);
+}
+
+export function entrySize(pack, name) {
+  const p = manifest?.find((x) => x.id === pack);
+  return p?.entries?.find((e) => e.name === name)?.size ?? null;
+}
+
+export function groupByPack(packs) {
   const groups = new Map();
-  for (const item of items) {
-    if (!groups.has(item.category)) groups.set(item.category, []);
-    groups.get(item.category).push(item);
-  }
+  for (const p of packs) groups.set(p.id, p.entries);
   return groups;
 }
 
-// Per-model LoadingManager so onLoad fires only after the .bin AND textures finished.
-function loadGLTF(name) {
+function key(pack, name) {
+  return `${pack}/${name}`;
+}
+
+// Per-model LoadingManager: onLoad fires only after .bin AND textures finished.
+function loadGLTF(url) {
   return new Promise((resolve, reject) => {
     let gltf = null;
     const manager = new THREE.LoadingManager();
     manager.onLoad = () => resolve(gltf);
-    new GLTFLoader(manager).load(
-      KIT_BASE + name + '.gltf',
-      (result) => { gltf = result; },
-      undefined,
-      reject
-    );
+    new GLTFLoader(manager).load(url, (result) => { gltf = result; }, undefined, reject);
   });
 }
 
-export function loadModel(name) {
-  if (prototypes.has(name)) return Promise.resolve(instantiate(prototypes.get(name)));
-  if (!inflight.has(name)) {
+// Re-centre: X/Z center at origin, bbox base on y=0. Records measured size.
+function normalizePrototype(obj) {
+  const box = new THREE.Box3().setFromObject(obj);
+  const center = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3());
+  const wrapper = new THREE.Group();
+  obj.position.sub(new THREE.Vector3(center.x, box.min.y, center.z));
+  wrapper.add(obj);
+  wrapper.userData.size = [+size.x.toFixed(3), +size.y.toFixed(3), +size.z.toFixed(3)];
+  return wrapper;
+}
+
+async function getPrototype(pack, name) {
+  const k = key(pack, name);
+  if (prototypes.has(k)) return prototypes.get(k);
+  const entry = manifest.find((p) => p.id === pack);
+  if (!entry) throw new Error(`unknown pack: ${pack}`);
+  let raw;
+  if (entry.type === 'glb') {
+    if (!glbCache.has(pack)) {
+      const gltf = await loadGLTF('/packs/' + pack + '/' + entry.file);
+      glbCache.set(pack, gltf.scene);
+    }
+    const scene = glbCache.get(pack);
+    let node = null;
+    scene.traverse((c) => { if (!node && c.name === name && c.isMesh) node = c; });
+    if (!node) throw new Error(`node not found in ${pack}: ${name}`);
+    // detach a copy of the node (with its transform) as a standalone object
+    raw = node.clone(true);
+  } else {
+    const gltf = await loadGLTF('/packs/' + pack + '/' + name + '.gltf');
+    raw = gltf.scene;
+  }
+  const proto = normalizePrototype(raw);
+  prototypes.set(k, proto);
+  return proto;
+}
+
+export function loadModel(pack, name) {
+  const k = key(pack, name);
+  if (prototypes.has(k)) return Promise.resolve(instantiate(prototypes.get(k)));
+  if (!inflight.has(k)) {
     inflight.set(
-      name,
-      loadGLTF(name)
-        .then((gltf) => { prototypes.set(name, gltf.scene); inflight.delete(name); return true; })
-        .catch(() => { inflight.delete(name); return false; })
+      k,
+      getPrototype(pack, name)
+        .then((proto) => { inflight.delete(k); return true; })
+        .catch((err) => { console.warn(`model missing: ${pack}/${name}`, err); inflight.delete(k); return false; })
     );
   }
-  return inflight.get(name).then((ok) => (ok ? instantiate(prototypes.get(name)) : placeholder(name)));
+  return inflight.get(k).then((ok) => (ok ? instantiate(prototypes.get(k)) : placeholder(pack, name)));
 }
 
 function instantiate(proto) {
   const obj = proto.clone(true);
+  obj.userData.size = proto.userData.size;
   obj.traverse((child) => {
     if (child.isMesh) {
-      child.material = child.material.clone(); // per-instance: highlight must not leak to siblings
+      child.material = child.material.clone(); // per-instance: highlight must not leak
       child.castShadow = true;
       child.receiveShadow = true;
     }
@@ -74,18 +119,17 @@ function instantiate(proto) {
   return obj;
 }
 
-function placeholder(name) {
-  console.warn(`model missing: ${name}`);
-  const entry = manifest?.find((e) => e.name === name);
-  const s = entry?.size ?? [1, 1, 1];
+function placeholder(pack, name) {
+  const s = entrySize(pack, name) ?? [1, 1, 1];
   const geo = new THREE.BoxGeometry(Math.max(s[0], 0.5), Math.max(s[1], 0.5), Math.max(s[2], 0.5));
   return new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: 0xff00ff, wireframe: true }));
 }
 
-export function makeThumb(name) {
-  if (thumbs.has(name)) return Promise.resolve(thumbs.get(name));
+export function makeThumb(pack, name) {
+  const k = key(pack, name);
+  if (thumbs.has(k)) return Promise.resolve(thumbs.get(k));
   if (!thumbRenderer) initThumbStage();
-  return loadModel(name).then((obj) => {
+  return loadModel(pack, name).then((obj) => {
     thumbScene.add(obj);
     const box = new THREE.Box3().setFromObject(obj);
     const size = box.getSize(new THREE.Vector3());
@@ -96,7 +140,7 @@ export function makeThumb(name) {
     thumbRenderer.render(thumbScene, thumbCamera);
     const url = thumbRenderer.domElement.toDataURL('image/png');
     thumbScene.remove(obj);
-    thumbs.set(name, url);
+    thumbs.set(k, url);
     return url;
   });
 }
