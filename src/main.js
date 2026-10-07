@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import { createCamera } from './camera.js';
 import * as catalog from './catalog.js';
 import { createEditor } from './editor.js';
-import { CATEGORY_ORDER, GRID_SIZE, MAP_EXTENT } from './lib.js';
+import * as storage from './storage.js';
+import { CATEGORY_ORDER, GRID_SIZE, MAP_EXTENT, serializeMap } from './lib.js';
 
 const viewport = document.getElementById('viewport');
 
@@ -44,16 +45,56 @@ new ResizeObserver(() => {
   cam.camera.updateProjectionMatrix();
 }).observe(viewport);
 
+const mapNameInput = document.getElementById('map-name');
+const toastEl = document.getElementById('toast');
+let toastTimer;
+function toast(msg, ms = 4000) {
+  toastEl.textContent = msg;
+  toastEl.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => (toastEl.hidden = true), ms);
+}
+
+function currentDoc() {
+  return serializeMap(mapNameInput.value.trim() || 'my-village', editor.getObjects());
+}
+
 const editor = createEditor({
   scene,
   camera: cam.camera,
   controls: cam.controls,
   dom: renderer.domElement,
   catalog,
-  onChange: () => console.log('changed', editor.getObjects().length, 'objects'),
-  onSelection: (inst) => console.log('selection', inst?.asset ?? null),
+  onChange: () => storage.scheduleAutosave(currentDoc()),
+  onSelection: () => {}, // Task 9 fills this in
 });
-window.editor = editor; // console test hook
+
+document.getElementById('btn-new').onclick = () => {
+  if (editor.getObjects().length && !confirm('ล้าง map ปัจจุบัน?')) return;
+  editor.clear();
+  storage.clearAutosave();
+  toast('เริ่ม map ใหม่แล้ว');
+};
+
+document.getElementById('btn-save').onclick = () => storage.saveMapFile(currentDoc());
+
+document.getElementById('btn-load').onclick = async () => {
+  const doc = await storage.openMapFile();
+  if (!doc) return;
+  if (doc.error) return toast(`เปิดไฟล์ไม่สำเร็จ: ${doc.error}`);
+  const { missing } = await editor.loadObjects(doc.objects);
+  mapNameInput.value = doc.mapName || 'my-village';
+  storage.scheduleAutosave(currentDoc());
+  toast(`โหลด ${doc.objects.length - missing.length} ชิ้น` + (missing.length ? ` — ข้ามไม่รู้จัก: ${missing.join(', ')}` : ''));
+};
+
+document.getElementById('btn-reset-cam').onclick = () => cam.reset();
+
+const btnGrid = document.getElementById('btn-grid');
+btnGrid.onclick = () => {
+  grid.visible = !grid.visible;
+  btnGrid.classList.toggle('active', grid.visible);
+};
 
 function renderPalette(items, autoOpen) {
   const wrap = document.getElementById('palette');
@@ -109,6 +150,13 @@ try {
   const banner = document.getElementById('banner');
   banner.textContent = err.message;
   banner.hidden = false;
+}
+
+const saved = storage.readAutosave();
+if (saved && saved.objects.length) {
+  const { missing } = await editor.loadObjects(saved.objects);
+  mapNameInput.value = saved.mapName || 'my-village';
+  toast(`กู้คืน autosave ${saved.objects.length - missing.length} ชิ้น${missing.length ? ` (ข้าม ${missing.length})` : ''} — กด "ใหม่" เพื่อเริ่มใหม่`);
 }
 
 renderer.setAnimationLoop(() => {
