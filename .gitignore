@@ -1,6 +1,6 @@
-# Asset pack (licensed, large binaries) — copy glTF files into public/kit/ locally
+# Asset packs (licensed, large binaries) — copy pack files into public/packs/ locally
 assets/
-public/kit/
+public/packs/
 
 # Node
 node_modules/

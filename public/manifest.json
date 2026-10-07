@@ -1,1762 +1,969 @@
 [
  {
-  "name": "Balcony_Cross_Corner",
-  "file": "Balcony_Cross_Corner.gltf",
-  "category": "Balcony",
-  "size": [
-   2.104,
-   1.23,
-   2.104
-  ]
- },
- {
-  "name": "Balcony_Cross_Straight",
-  "file": "Balcony_Cross_Straight.gltf",
-  "category": "Balcony",
-  "size": [
-   2.0,
-   1.23,
-   0.206
-  ]
- },
- {
-  "name": "Balcony_Simple_Corner",
-  "file": "Balcony_Simple_Corner.gltf",
-  "category": "Balcony",
-  "size": [
-   2.104,
-   1.23,
-   2.104
-  ]
- },
- {
-  "name": "Balcony_Simple_Straight",
-  "file": "Balcony_Simple_Straight.gltf",
-  "category": "Balcony",
-  "size": [
-   2.0,
-   1.23,
-   0.206
-  ]
- },
- {
-  "name": "Corner_ExteriorWide_Brick",
-  "file": "Corner_ExteriorWide_Brick.gltf",
-  "category": "Corner",
-  "size": [
-   0.712,
-   3.043,
-   0.756
-  ]
- },
- {
-  "name": "Corner_ExteriorWide_Wood",
-  "file": "Corner_ExteriorWide_Wood.gltf",
-  "category": "Corner",
-  "size": [
-   0.29,
-   3.0,
-   0.331
-  ]
- },
- {
-  "name": "Corner_Exterior_Brick",
-  "file": "Corner_Exterior_Brick.gltf",
-  "category": "Corner",
-  "size": [
-   0.531,
-   3.016,
-   0.576
-  ]
- },
- {
-  "name": "Corner_Exterior_TopDown",
-  "file": "Corner_Exterior_TopDown.gltf",
-  "category": "Corner",
-  "size": [
-   0.093,
-   2.467,
-   0.093
-  ]
- },
- {
-  "name": "Corner_Exterior_TopOnly",
-  "file": "Corner_Exterior_TopOnly.gltf",
-  "category": "Corner",
-  "size": [
-   0.093,
-   0.234,
-   0.093
-  ]
- },
- {
-  "name": "Corner_Exterior_Wood",
-  "file": "Corner_Exterior_Wood.gltf",
-  "category": "Corner",
-  "size": [
-   0.21,
-   3.0,
-   0.24
-  ]
- },
- {
-  "name": "Corner_Interior_Big",
-  "file": "Corner_Interior_Big.gltf",
-  "category": "Corner",
-  "size": [
-   0.333,
-   3.0,
-   0.368
-  ]
- },
- {
-  "name": "Corner_Interior_Small",
-  "file": "Corner_Interior_Small.gltf",
-  "category": "Corner",
-  "size": [
-   0.21,
-   3.0,
-   0.24
-  ]
- },
- {
-  "name": "Door_1_Flat",
-  "file": "Door_1_Flat.gltf",
-  "category": "Door",
-  "size": [
-   1.118,
-   2.1,
-   0.121
-  ]
- },
- {
-  "name": "Door_1_Round",
-  "file": "Door_1_Round.gltf",
-  "category": "Door",
-  "size": [
-   1.12,
-   2.318,
-   0.121
-  ]
- },
- {
-  "name": "Door_2_Flat",
-  "file": "Door_2_Flat.gltf",
-  "category": "Door",
-  "size": [
-   1.114,
-   2.1,
-   0.261
-  ]
- },
- {
-  "name": "Door_2_Round",
-  "file": "Door_2_Round.gltf",
-  "category": "Door",
-  "size": [
-   1.115,
-   2.327,
-   0.261
-  ]
- },
- {
-  "name": "Door_4_Flat",
-  "file": "Door_4_Flat.gltf",
-  "category": "Door",
-  "size": [
-   1.118,
-   2.092,
-   0.209
-  ]
- },
- {
-  "name": "Door_4_Round",
-  "file": "Door_4_Round.gltf",
-  "category": "Door",
-  "size": [
-   1.115,
-   2.323,
-   0.209
-  ]
- },
- {
-  "name": "Door_8_Flat",
-  "file": "Door_8_Flat.gltf",
-  "category": "Door",
-  "size": [
-   1.118,
-   2.099,
-   0.199
-  ]
- },
- {
-  "name": "Door_8_Round",
-  "file": "Door_8_Round.gltf",
-  "category": "Door",
-  "size": [
-   1.152,
-   2.324,
-   0.199
-  ]
- },
- {
-  "name": "DoorFrame_Flat_Brick",
-  "file": "DoorFrame_Flat_Brick.gltf",
-  "category": "DoorFrame",
-  "size": [
-   1.575,
-   2.376,
-   0.494
-  ]
- },
- {
-  "name": "DoorFrame_Flat_WoodDark",
-  "file": "DoorFrame_Flat_WoodDark.gltf",
-  "category": "DoorFrame",
-  "size": [
-   1.574,
-   2.312,
-   0.388
-  ]
- },
- {
-  "name": "DoorFrame_Round_Brick",
-  "file": "DoorFrame_Round_Brick.gltf",
-  "category": "DoorFrame",
-  "size": [
-   1.603,
-   2.586,
-   0.477
-  ]
- },
- {
-  "name": "DoorFrame_Round_WoodDark",
-  "file": "DoorFrame_Round_WoodDark.gltf",
-  "category": "DoorFrame",
-  "size": [
-   1.407,
-   2.563,
-   0.539
-  ]
- },
- {
-  "name": "Floor_Brick",
-  "file": "Floor_Brick.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_RedBrick",
-  "file": "Floor_RedBrick.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_UnevenBrick",
-  "file": "Floor_UnevenBrick.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_WoodDark",
-  "file": "Floor_WoodDark.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_WoodDark_Half1",
-  "file": "Floor_WoodDark_Half1.gltf",
-  "category": "Floor",
-  "size": [
-   1,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_WoodDark_Half2",
-  "file": "Floor_WoodDark_Half2.gltf",
-  "category": "Floor",
-  "size": [
-   1,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_WoodDark_Half3",
-  "file": "Floor_WoodDark_Half3.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   1.0
-  ]
- },
- {
-  "name": "Floor_WoodDark_OverhangCorner",
-  "file": "Floor_WoodDark_OverhangCorner.gltf",
-  "category": "Floor",
-  "size": [
-   1.0,
-   0.02,
-   1.756
-  ]
- },
- {
-  "name": "Floor_WoodDark_OverhangCorner2",
-  "file": "Floor_WoodDark_OverhangCorner2.gltf",
-  "category": "Floor",
-  "size": [
-   0.957,
-   0.02,
-   1.75
-  ]
- },
- {
-  "name": "Floor_WoodLight",
-  "file": "Floor_WoodLight.gltf",
-  "category": "Floor",
-  "size": [
-   2,
-   0.02,
-   2
-  ]
- },
- {
-  "name": "Floor_WoodLight_OverhangCorner",
-  "file": "Floor_WoodLight_OverhangCorner.gltf",
-  "category": "Floor",
-  "size": [
-   1.0,
-   0.02,
-   1.756
-  ]
- },
- {
-  "name": "Floor_WoodLight_OverhangCorner2",
-  "file": "Floor_WoodLight_OverhangCorner2.gltf",
-  "category": "Floor",
-  "size": [
-   0.957,
-   0.02,
-   1.75
-  ]
- },
- {
-  "name": "HoleCover_90Angle",
-  "file": "HoleCover_90Angle.gltf",
-  "category": "HoleCover",
-  "size": [
-   2.12,
-   0.21,
-   2.12
-  ]
- },
- {
-  "name": "HoleCover_90Half",
-  "file": "HoleCover_90Half.gltf",
-  "category": "HoleCover",
-  "size": [
-   1.12,
-   0.21,
-   1.12
-  ]
- },
- {
-  "name": "HoleCover_90Stairs",
-  "file": "HoleCover_90Stairs.gltf",
-  "category": "HoleCover",
-  "size": [
-   0.324,
-   0.21,
-   2.12
-  ]
- },
- {
-  "name": "HoleCover_Straight",
-  "file": "HoleCover_Straight.gltf",
-  "category": "HoleCover",
-  "size": [
-   2.0,
-   0.21,
-   0.24
-  ]
- },
- {
-  "name": "HoleCover_StraightHalf",
-  "file": "HoleCover_StraightHalf.gltf",
-  "category": "HoleCover",
-  "size": [
-   1.0,
-   0.21,
-   0.24
-  ]
- },
- {
-  "name": "Overhang_Plaster_Corner",
-  "file": "Overhang_Plaster_Corner.gltf",
-  "category": "Overhang",
-  "size": [
-   3.101,
-   3.117,
-   3.101
-  ]
- },
- {
-  "name": "Overhang_Plaster_Corner_Front",
-  "file": "Overhang_Plaster_Corner_Front.gltf",
-  "category": "Overhang",
-  "size": [
-   3.118,
-   3.14,
-   3.118
-  ]
- },
- {
-  "name": "Overhang_Plaster_Long",
-  "file": "Overhang_Plaster_Long.gltf",
-  "category": "Overhang",
-  "size": [
-   2.0,
-   3.028,
-   2.2
-  ]
- },
- {
-  "name": "Overhang_Plaster_Short",
-  "file": "Overhang_Plaster_Short.gltf",
-  "category": "Overhang",
-  "size": [
-   2.0,
-   3.123,
-   1.323
-  ]
- },
- {
-  "name": "Overhang_RoofIncline_Plaster",
-  "file": "Overhang_RoofIncline_Plaster.gltf",
-  "category": "Overhang",
-  "size": [
-   2,
-   0.266,
-   1.43
-  ]
- },
- {
-  "name": "Overhang_RoofIncline_UnevenBricks",
-  "file": "Overhang_RoofIncline_UnevenBricks.gltf",
-  "category": "Overhang",
-  "size": [
-   2,
-   0.266,
-   1.43
-  ]
- },
- {
-  "name": "Overhang_Roof_Plaster",
-  "file": "Overhang_Roof_Plaster.gltf",
-  "category": "Overhang",
-  "size": [
-   2,
-   0.266,
-   2.022
-  ]
- },
- {
-  "name": "Overhang_Roof_UnevenBricks",
-  "file": "Overhang_Roof_UnevenBricks.gltf",
-  "category": "Overhang",
-  "size": [
-   2,
-   0.266,
-   2.022
-  ]
- },
- {
-  "name": "Overhang_Side_Plaster_Long_L",
-  "file": "Overhang_Side_Plaster_Long_L.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   2.314
-  ]
- },
- {
-  "name": "Overhang_Side_Plaster_Long_R",
-  "file": "Overhang_Side_Plaster_Long_R.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   2.314
-  ]
- },
- {
-  "name": "Overhang_Side_Plaster_Short_L",
-  "file": "Overhang_Side_Plaster_Short_L.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   1.437
-  ]
- },
- {
-  "name": "Overhang_Side_Plaster_Short_R",
-  "file": "Overhang_Side_Plaster_Short_R.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   1.437
-  ]
- },
- {
-  "name": "Overhang_Side_UnevenBrick_Long_L",
-  "file": "Overhang_Side_UnevenBrick_Long_L.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   2.314
-  ]
- },
- {
-  "name": "Overhang_Side_UnevenBrick_Long_R",
-  "file": "Overhang_Side_UnevenBrick_Long_R.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   2.314
-  ]
- },
- {
-  "name": "Overhang_Side_UnevenBrick_Short_L",
-  "file": "Overhang_Side_UnevenBrick_Short_L.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   1.437
-  ]
- },
- {
-  "name": "Overhang_Side_UnevenBrick_Short_R",
-  "file": "Overhang_Side_UnevenBrick_Short_R.gltf",
-  "category": "Overhang",
-  "size": [
-   0.479,
-   6.117,
-   1.437
-  ]
- },
- {
-  "name": "Overhang_UnevenBrick_Corner",
-  "file": "Overhang_UnevenBrick_Corner.gltf",
-  "category": "Overhang",
-  "size": [
-   3.101,
-   3.117,
-   3.101
-  ]
- },
- {
-  "name": "Overhang_UnevenBrick_Corner_Front",
-  "file": "Overhang_UnevenBrick_Corner_Front.gltf",
-  "category": "Overhang",
-  "size": [
-   3.118,
-   3.117,
-   3.118
-  ]
- },
- {
-  "name": "Overhang_UnevenBrick_Long",
-  "file": "Overhang_UnevenBrick_Long.gltf",
-  "category": "Overhang",
-  "size": [
-   2.0,
-   3.028,
-   2.2
-  ]
- },
- {
-  "name": "Overhang_UnevenBrick_Short",
-  "file": "Overhang_UnevenBrick_Short.gltf",
-  "category": "Overhang",
-  "size": [
-   2.0,
-   3.123,
-   1.323
-  ]
- },
- {
-  "name": "Prop_Brick1",
-  "file": "Prop_Brick1.gltf",
-  "category": "Prop",
-  "size": [
-   0.346,
-   0.208,
-   0.25
-  ]
- },
- {
-  "name": "Prop_Brick2",
-  "file": "Prop_Brick2.gltf",
-  "category": "Prop",
-  "size": [
-   0.395,
-   0.245,
-   0.217
-  ]
- },
- {
-  "name": "Prop_Brick3",
-  "file": "Prop_Brick3.gltf",
-  "category": "Prop",
-  "size": [
-   0.381,
-   0.25,
-   0.216
-  ]
- },
- {
-  "name": "Prop_Brick4",
-  "file": "Prop_Brick4.gltf",
-  "category": "Prop",
-  "size": [
-   0.257,
-   0.25,
-   0.216
-  ]
- },
- {
-  "name": "Prop_Chimney",
-  "file": "Prop_Chimney.gltf",
-  "category": "Prop",
-  "size": [
-   0.946,
-   3.178,
-   1.0
-  ]
- },
- {
-  "name": "Prop_Chimney2",
-  "file": "Prop_Chimney2.gltf",
-  "category": "Prop",
-  "size": [
-   0.946,
-   3.0,
-   0.988
-  ]
- },
- {
-  "name": "Prop_Crate",
-  "file": "Prop_Crate.gltf",
-  "category": "Prop",
-  "size": [
-   1.084,
-   1.06,
-   1.084
-  ]
- },
- {
-  "name": "Prop_ExteriorBorder_Corner",
-  "file": "Prop_ExteriorBorder_Corner.gltf",
-  "category": "Prop",
-  "size": [
-   0.7,
-   0.134,
-   0.7
-  ]
- },
- {
-  "name": "Prop_ExteriorBorder_Straight1",
-  "file": "Prop_ExteriorBorder_Straight1.gltf",
-  "category": "Prop",
-  "size": [
-   2.0,
-   0.134,
-   0.7
-  ]
- },
- {
-  "name": "Prop_ExteriorBorder_Straight2",
-  "file": "Prop_ExteriorBorder_Straight2.gltf",
-  "category": "Prop",
-  "size": [
-   2.0,
-   0.134,
-   0.7
-  ]
- },
- {
-  "name": "Prop_MetalFence_Ornament",
-  "file": "Prop_MetalFence_Ornament.gltf",
-  "category": "Prop",
-  "size": [
-   1.952,
-   2.852,
-   0.156
-  ]
- },
- {
-  "name": "Prop_MetalFence_Simple",
-  "file": "Prop_MetalFence_Simple.gltf",
-  "category": "Prop",
-  "size": [
-   1.949,
-   2.868,
-   0.156
-  ]
- },
- {
-  "name": "Prop_Support",
-  "file": "Prop_Support.gltf",
-  "category": "Prop",
-  "size": [
-   0.199,
-   1.709,
-   2.036
-  ]
- },
- {
-  "name": "Prop_Vine1",
-  "file": "Prop_Vine1.gltf",
-  "category": "Prop",
-  "size": [
-   1.536,
-   2.603,
-   0.219
-  ]
- },
- {
-  "name": "Prop_Vine2",
-  "file": "Prop_Vine2.gltf",
-  "category": "Prop",
-  "size": [
-   1.386,
-   2.603,
-   0.214
-  ]
- },
- {
-  "name": "Prop_Vine4",
-  "file": "Prop_Vine4.gltf",
-  "category": "Prop",
-  "size": [
-   1.017,
-   1.588,
-   0.15
-  ]
- },
- {
-  "name": "Prop_Vine5",
-  "file": "Prop_Vine5.gltf",
-  "category": "Prop",
-  "size": [
-   2.301,
-   2.986,
-   1.126
-  ]
- },
- {
-  "name": "Prop_Vine6",
-  "file": "Prop_Vine6.gltf",
-  "category": "Prop",
-  "size": [
-   4.137,
-   2.468,
-   1.47
-  ]
- },
- {
-  "name": "Prop_Vine9",
-  "file": "Prop_Vine9.gltf",
-  "category": "Prop",
-  "size": [
-   4.137,
-   1.467,
-   1.47
-  ]
- },
- {
-  "name": "Prop_Wagon",
-  "file": "Prop_Wagon.gltf",
-  "category": "Prop",
-  "size": [
-   1.951,
-   1.529,
-   4.024
-  ]
- },
- {
-  "name": "Prop_WoodenFence_Extension1",
-  "file": "Prop_WoodenFence_Extension1.gltf",
-  "category": "Prop",
-  "size": [
-   2.045,
-   0.838,
-   0.11
-  ]
- },
- {
-  "name": "Prop_WoodenFence_Extension2",
-  "file": "Prop_WoodenFence_Extension2.gltf",
-  "category": "Prop",
-  "size": [
-   2.027,
-   0.838,
-   0.11
-  ]
- },
- {
-  "name": "Prop_WoodenFence_Single",
-  "file": "Prop_WoodenFence_Single.gltf",
-  "category": "Prop",
-  "size": [
-   2.064,
-   0.838,
-   0.12
-  ]
- },
- {
-  "name": "Roof_2x4_RoundTile",
-  "file": "Roof_2x4_RoundTile.gltf",
-  "category": "Roof",
-  "size": [
-   3.293,
-   2.666,
-   4.232
-  ]
- },
- {
-  "name": "Roof_Dormer_RoundTile",
-  "file": "Roof_Dormer_RoundTile.gltf",
-  "category": "Roof",
-  "size": [
-   1.966,
-   2.673,
-   2.439
-  ]
- },
- {
-  "name": "Roof_FrontSupports",
-  "file": "Roof_FrontSupports.gltf",
-  "category": "Roof",
-  "size": [
-   5.486,
-   0.231,
-   0.655
-  ]
- },
- {
-  "name": "Roof_Front_Brick2",
-  "file": "Roof_Front_Brick2.gltf",
-  "category": "Roof",
-  "size": [
-   2.607,
-   1.775,
-   0.751
-  ]
- },
- {
-  "name": "Roof_Front_Brick4",
-  "file": "Roof_Front_Brick4.gltf",
-  "category": "Roof",
-  "size": [
-   4.4,
-   3.069,
-   1.129
-  ]
- },
- {
-  "name": "Roof_Front_Brick4_Half_L",
-  "file": "Roof_Front_Brick4_Half_L.gltf",
-  "category": "Roof",
-  "size": [
-   2.41,
-   3.197,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Front_Brick4_Half_R",
-  "file": "Roof_Front_Brick4_Half_R.gltf",
-  "category": "Roof",
-  "size": [
-   2.416,
-   3.197,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Front_Brick6",
-  "file": "Roof_Front_Brick6.gltf",
-  "category": "Roof",
-  "size": [
-   6.694,
-   4.516,
-   1.129
-  ]
- },
- {
-  "name": "Roof_Front_Brick6_Half_L",
-  "file": "Roof_Front_Brick6_Half_L.gltf",
-  "category": "Roof",
-  "size": [
-   3.414,
-   4.516,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Front_Brick6_Half_R",
-  "file": "Roof_Front_Brick6_Half_R.gltf",
-  "category": "Roof",
-  "size": [
-   3.4,
-   4.516,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Front_Brick8",
-  "file": "Roof_Front_Brick8.gltf",
-  "category": "Roof",
-  "size": [
-   8.511,
-   5.446,
-   1.129
-  ]
- },
- {
-  "name": "Roof_Front_Brick8_Half_L",
-  "file": "Roof_Front_Brick8_Half_L.gltf",
-  "category": "Roof",
-  "size": [
-   4.327,
-   5.446,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Front_Brick8_Half_R",
-  "file": "Roof_Front_Brick8_Half_R.gltf",
-  "category": "Roof",
-  "size": [
-   4.349,
-   5.446,
-   0.49
-  ]
- },
- {
-  "name": "Roof_Log",
-  "file": "Roof_Log.gltf",
-  "category": "Roof",
-  "size": [
-   1.149,
-   1.387,
-   10.696
-  ]
- },
- {
-  "name": "Roof_Modular_RoundTiles",
-  "file": "Roof_Modular_RoundTiles.gltf",
-  "category": "Roof",
-  "size": [
-   0.663,
-   0.505,
-   2.252
-  ]
- },
- {
-  "name": "Roof_RoundTile_2x1",
-  "file": "Roof_RoundTile_2x1.gltf",
-  "category": "Roof",
-  "size": [
-   3.297,
-   2.659,
-   1.952
-  ]
- },
- {
-  "name": "Roof_RoundTile_2x1_Long",
-  "file": "Roof_RoundTile_2x1_Long.gltf",
-  "category": "Roof",
-  "size": [
-   4.347,
-   3.325,
-   1.952
-  ]
- },
- {
-  "name": "Roof_RoundTiles_4x4",
-  "file": "Roof_RoundTiles_4x4.gltf",
-  "category": "Roof",
-  "size": [
-   5.513,
-   4.249,
-   5.561
-  ]
- },
- {
-  "name": "Roof_RoundTiles_4x6",
-  "file": "Roof_RoundTiles_4x6.gltf",
-  "category": "Roof",
-  "size": [
-   5.513,
-   4.234,
-   7.572
-  ]
- },
- {
-  "name": "Roof_RoundTiles_4x8",
-  "file": "Roof_RoundTiles_4x8.gltf",
-  "category": "Roof",
-  "size": [
-   5.513,
-   4.229,
-   9.683
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x10",
-  "file": "Roof_RoundTiles_6x10.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   11.852
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x12",
-  "file": "Roof_RoundTiles_6x12.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   13.658
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x14",
-  "file": "Roof_RoundTiles_6x14.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   15.706
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x4",
-  "file": "Roof_RoundTiles_6x4.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   4.992
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x6",
-  "file": "Roof_RoundTiles_6x6.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   8.032
-  ]
- },
- {
-  "name": "Roof_RoundTiles_6x8",
-  "file": "Roof_RoundTiles_6x8.gltf",
-  "category": "Roof",
-  "size": [
-   8.25,
-   5.672,
-   9.683
-  ]
- },
- {
-  "name": "Roof_RoundTiles_8x10",
-  "file": "Roof_RoundTiles_8x10.gltf",
-  "category": "Roof",
-  "size": [
-   9.952,
-   6.781,
-   11.859
-  ]
- },
- {
-  "name": "Roof_RoundTiles_8x12",
-  "file": "Roof_RoundTiles_8x12.gltf",
-  "category": "Roof",
-  "size": [
-   9.952,
-   6.781,
-   14.132
-  ]
- },
- {
-  "name": "Roof_RoundTiles_8x14",
-  "file": "Roof_RoundTiles_8x14.gltf",
-  "category": "Roof",
-  "size": [
-   9.952,
-   6.781,
-   15.706
-  ]
- },
- {
-  "name": "Roof_RoundTiles_8x8",
-  "file": "Roof_RoundTiles_8x8.gltf",
-  "category": "Roof",
-  "size": [
-   9.952,
-   6.781,
-   10.332
-  ]
- },
- {
-  "name": "Roof_Support2",
-  "file": "Roof_Support2.gltf",
-  "category": "Roof",
-  "size": [
-   0.2,
-   0.743,
-   0.765
-  ]
- },
- {
-  "name": "Roof_Tower_RoundTiles",
-  "file": "Roof_Tower_RoundTiles.gltf",
-  "category": "Roof",
-  "size": [
-   5.651,
-   7.361,
-   5.427
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1",
-  "file": "Roof_Wooden_2x1.gltf",
-  "category": "Roof",
-  "size": [
-   2.258,
-   1.248,
-   1.56
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_Center",
-  "file": "Roof_Wooden_2x1_Center.gltf",
-  "category": "Roof",
-  "size": [
-   2.0,
-   1.208,
-   1.499
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_Center_Mirror",
-  "file": "Roof_Wooden_2x1_Center_Mirror.gltf",
-  "category": "Roof",
-  "size": [
-   2.0,
-   1.208,
-   1.499
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_Corner",
-  "file": "Roof_Wooden_2x1_Corner.gltf",
-  "category": "Roof",
-  "size": [
-   1.544,
-   1.183,
-   1.557
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_L",
-  "file": "Roof_Wooden_2x1_L.gltf",
-  "category": "Roof",
-  "size": [
-   2.129,
-   1.248,
-   1.56
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_Middle",
-  "file": "Roof_Wooden_2x1_Middle.gltf",
-  "category": "Roof",
-  "size": [
-   2.0,
-   0.138,
-   2
-  ]
- },
- {
-  "name": "Roof_Wooden_2x1_R",
-  "file": "Roof_Wooden_2x1_R.gltf",
-  "category": "Roof",
-  "size": [
-   2.129,
-   1.248,
-   1.56
-  ]
- },
- {
-  "name": "Stair_Interior_Rails",
-  "file": "Stair_Interior_Rails.gltf",
-  "category": "Stairs",
-  "size": [
-   1.717,
-   3.931,
-   4.563
-  ]
- },
- {
-  "name": "Stair_Interior_Simple",
-  "file": "Stair_Interior_Simple.gltf",
-  "category": "Stairs",
-  "size": [
-   1.676,
-   3.035,
-   4.62
-  ]
- },
- {
-  "name": "Stair_Interior_Solid",
-  "file": "Stair_Interior_Solid.gltf",
-  "category": "Stairs",
-  "size": [
-   1.769,
-   3.046,
-   4.71
-  ]
- },
- {
-  "name": "Stair_Interior_SolidExtended",
-  "file": "Stair_Interior_SolidExtended.gltf",
-  "category": "Stairs",
-  "size": [
-   1.769,
-   3.046,
-   6.158
-  ]
- },
- {
-  "name": "Stairs_Exterior_NoFirstStep",
-  "file": "Stairs_Exterior_NoFirstStep.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.077
-  ]
- },
- {
-  "name": "Stairs_Exterior_Platform",
-  "file": "Stairs_Exterior_Platform.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.001
-  ]
- },
- {
-  "name": "Stairs_Exterior_Platform45",
-  "file": "Stairs_Exterior_Platform45.gltf",
-  "category": "Stairs",
-  "size": [
-   2.001,
-   1.0,
-   2.001
-  ]
- },
- {
-  "name": "Stairs_Exterior_Platform45Clean",
-  "file": "Stairs_Exterior_Platform45Clean.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.001
-  ]
- },
- {
-  "name": "Stairs_Exterior_PlatformU",
-  "file": "Stairs_Exterior_PlatformU.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.001
-  ]
- },
- {
-  "name": "Stairs_Exterior_SidePlatform",
-  "file": "Stairs_Exterior_SidePlatform.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.001
-  ]
- },
- {
-  "name": "Stairs_Exterior_Sides",
-  "file": "Stairs_Exterior_Sides.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2
-  ]
- },
- {
-  "name": "Stairs_Exterior_Sides45",
-  "file": "Stairs_Exterior_Sides45.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.0
-  ]
- },
- {
-  "name": "Stairs_Exterior_SidesU",
-  "file": "Stairs_Exterior_SidesU.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.0,
-   2.0
-  ]
- },
- {
-  "name": "Stairs_Exterior_SingleSide",
-  "file": "Stairs_Exterior_SingleSide.gltf",
-  "category": "Stairs",
-  "size": [
-   0.2,
-   1,
-   2
-  ]
- },
- {
-  "name": "Stairs_Exterior_SingleSideThick",
-  "file": "Stairs_Exterior_SingleSideThick.gltf",
-  "category": "Stairs",
-  "size": [
-   0.4,
-   1,
-   2
-  ]
- },
- {
-  "name": "Stairs_Exterior_Straight",
-  "file": "Stairs_Exterior_Straight.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.204,
-   2.078
-  ]
- },
- {
-  "name": "Stairs_Exterior_Straight_Center",
-  "file": "Stairs_Exterior_Straight_Center.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.022,
-   2.078
-  ]
- },
- {
-  "name": "Stairs_Exterior_Straight_L",
-  "file": "Stairs_Exterior_Straight_L.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.204,
-   2.078
-  ]
- },
- {
-  "name": "Stairs_Exterior_Straight_R",
-  "file": "Stairs_Exterior_Straight_R.gltf",
-  "category": "Stairs",
-  "size": [
-   2.0,
-   1.204,
-   2.078
-  ]
- },
- {
-  "name": "Wall_Arch",
-  "file": "Wall_Arch.gltf",
-  "category": "Wall",
-  "size": [
-   2,
-   3.0,
-   0.064
-  ]
- },
- {
-  "name": "Wall_BottomCover",
-  "file": "Wall_BottomCover.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   0.238,
-   0.432
-  ]
- },
- {
-  "name": "Wall_Plaster_Door_Flat",
-  "file": "Wall_Plaster_Door_Flat.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Door_Round",
-  "file": "Wall_Plaster_Door_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Door_RoundInset",
-  "file": "Wall_Plaster_Door_RoundInset.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   1.092
-  ]
- },
- {
-  "name": "Wall_Plaster_Straight",
-  "file": "Wall_Plaster_Straight.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.125,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Straight_Base",
-  "file": "Wall_Plaster_Straight_Base.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Straight_L",
-  "file": "Wall_Plaster_Straight_L.gltf",
-  "category": "Wall",
-  "size": [
-   2.002,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Straight_R",
-  "file": "Wall_Plaster_Straight_R.gltf",
-  "category": "Wall",
-  "size": [
-   2.002,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Window_Thin_Round",
-  "file": "Wall_Plaster_Window_Thin_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Window_Wide_Flat",
-  "file": "Wall_Plaster_Window_Wide_Flat.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Window_Wide_Flat2",
-  "file": "Wall_Plaster_Window_Wide_Flat2.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.146,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_Window_Wide_Round",
-  "file": "Wall_Plaster_Window_Wide_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_Plaster_WoodGrid",
-  "file": "Wall_Plaster_WoodGrid.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Door_Flat",
-  "file": "Wall_UnevenBrick_Door_Flat.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Door_Round",
-  "file": "Wall_UnevenBrick_Door_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Straight",
-  "file": "Wall_UnevenBrick_Straight.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Window_Thin_Round",
-  "file": "Wall_UnevenBrick_Window_Thin_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Window_Wide_Flat",
-  "file": "Wall_UnevenBrick_Window_Wide_Flat.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Wall_UnevenBrick_Window_Wide_Round",
-  "file": "Wall_UnevenBrick_Window_Wide_Round.gltf",
-  "category": "Wall",
-  "size": [
-   2.0,
-   3.123,
-   0.406
-  ]
- },
- {
-  "name": "Window_Roof_Thin",
-  "file": "Window_Roof_Thin.gltf",
-  "category": "Window",
-  "size": [
-   0.852,
-   1.177,
-   1.179
-  ]
- },
- {
-  "name": "Window_Roof_Wide",
-  "file": "Window_Roof_Wide.gltf",
-  "category": "Window",
-  "size": [
-   1.416,
-   1.181,
-   1.179
-  ]
- },
- {
-  "name": "Window_Thin_Flat1",
-  "file": "Window_Thin_Flat1.gltf",
-  "category": "Window",
-  "size": [
-   0.788,
-   1.558,
-   0.436
-  ]
- },
- {
-  "name": "Window_Thin_Round1",
-  "file": "Window_Thin_Round1.gltf",
-  "category": "Window",
-  "size": [
-   0.888,
-   1.605,
-   0.344
-  ]
- },
- {
-  "name": "Window_Wide_Flat1",
-  "file": "Window_Wide_Flat1.gltf",
-  "category": "Window",
-  "size": [
-   1.608,
-   1.58,
-   0.683
-  ]
- },
- {
-  "name": "Window_Wide_Round1",
-  "file": "Window_Wide_Round1.gltf",
-  "category": "Window",
-  "size": [
-   1.365,
-   1.726,
-   0.53
-  ]
- },
- {
-  "name": "WindowShutters_Thin_Flat_Closed",
-  "file": "WindowShutters_Thin_Flat_Closed.gltf",
-  "category": "WindowShutters",
-  "size": [
-   0.852,
-   1.424,
-   0.136
-  ]
- },
- {
-  "name": "WindowShutters_Thin_Flat_Open",
-  "file": "WindowShutters_Thin_Flat_Open.gltf",
-  "category": "WindowShutters",
-  "size": [
-   1.354,
-   1.424,
-   0.377
-  ]
- },
- {
-  "name": "WindowShutters_Thin_Round_Closed",
-  "file": "WindowShutters_Thin_Round_Closed.gltf",
-  "category": "WindowShutters",
-  "size": [
-   0.867,
-   1.518,
-   0.136
-  ]
- },
- {
-  "name": "WindowShutters_Thin_Round_Open",
-  "file": "WindowShutters_Thin_Round_Open.gltf",
-  "category": "WindowShutters",
-  "size": [
-   1.606,
-   1.518,
-   0.376
-  ]
- },
- {
-  "name": "WindowShutters_Wide_Flat_Closed",
-  "file": "WindowShutters_Wide_Flat_Closed.gltf",
-  "category": "WindowShutters",
-  "size": [
-   1.347,
-   1.424,
-   0.136
-  ]
- },
- {
-  "name": "WindowShutters_Wide_Flat_Open",
-  "file": "WindowShutters_Wide_Flat_Open.gltf",
-  "category": "WindowShutters",
-  "size": [
-   2.481,
-   1.424,
-   0.457
-  ]
- },
- {
-  "name": "WindowShutters_Wide_Round_Closed",
-  "file": "WindowShutters_Wide_Round_Closed.gltf",
-  "category": "WindowShutters",
-  "size": [
-   1.347,
-   1.647,
-   0.136
-  ]
- },
- {
-  "name": "WindowShutters_Wide_Round_Open",
-  "file": "WindowShutters_Wide_Round_Open.gltf",
-  "category": "WindowShutters",
-  "size": [
-   2.303,
-   1.647,
-   0.472
+  "id": "japan-village",
+  "name": "Japan Village",
+  "type": "gltf-folder",
+  "entries": [
+   {
+    "name": "Barrel",
+    "size": [
+     1.04,
+     1.2,
+     1.04
+    ]
+   },
+   {
+    "name": "Basket_L",
+    "size": [
+     1.1,
+     0.4,
+     1.1
+    ]
+   },
+   {
+    "name": "Basket_S",
+    "size": [
+     0.55,
+     0.2,
+     0.55
+    ]
+   },
+   {
+    "name": "Carrot_Orange",
+    "size": [
+     0.18,
+     0.35,
+     0.15
+    ]
+   },
+   {
+    "name": "CeremicPot",
+    "size": [
+     0.51,
+     0.4,
+     0.49
+    ]
+   },
+   {
+    "name": "Chair",
+    "size": [
+     0.73,
+     0.91,
+     0.68
+    ]
+   },
+   {
+    "name": "Corn",
+    "size": [
+     0.16,
+     0.32,
+     0.16
+    ]
+   },
+   {
+    "name": "Fence_Wood",
+    "size": [
+     4.0,
+     1.15,
+     0.27
+    ]
+   },
+   {
+    "name": "House_4x5",
+    "size": [
+     5.52,
+     4.78,
+     6.35
+    ]
+   },
+   {
+    "name": "Ladder",
+    "size": [
+     0.94,
+     1.81,
+     0.2
+    ]
+   },
+   {
+    "name": "LogStorage",
+    "size": [
+     1.9,
+     1.5,
+     1.07
+    ]
+   },
+   {
+    "name": "Log_Cluster",
+    "size": [
+     1.13,
+     0.68,
+     0.84
+    ]
+   },
+   {
+    "name": "Mallet",
+    "size": [
+     0.3,
+     0.45,
+     0.18
+    ]
+   },
+   {
+    "name": "MarketStall_Table_Flat",
+    "size": [
+     1.0,
+     0.5,
+     0.5
+    ]
+   },
+   {
+    "name": "MarketStall_Table_SideTiered",
+    "size": [
+     2,
+     0.7,
+     1.0
+    ]
+   },
+   {
+    "name": "MarketStall_Table_Tiered",
+    "size": [
+     3.0,
+     0.8,
+     1.5
+    ]
+   },
+   {
+    "name": "MarketStall_Table_wSpace",
+    "size": [
+     2,
+     0.5,
+     1.0
+    ]
+   },
+   {
+    "name": "Potato",
+    "size": [
+     0.15,
+     0.21,
+     0.12
+    ]
+   },
+   {
+    "name": "RiceBin",
+    "size": [
+     0.93,
+     1.02,
+     0.93
+    ]
+   },
+   {
+    "name": "Road_Corner_Open",
+    "size": [
+     5.59,
+     0.17,
+     5.44
+    ]
+   },
+   {
+    "name": "Road_Cross",
+    "size": [
+     7.8,
+     0.22,
+     7.45
+    ]
+   },
+   {
+    "name": "Road_End_S",
+    "size": [
+     3.12,
+     0.12,
+     3.0
+    ]
+   },
+   {
+    "name": "Sickle",
+    "size": [
+     0.47,
+     0.9,
+     0.17
+    ]
+   },
+   {
+    "name": "Sprout",
+    "size": [
+     0.69,
+     0.41,
+     0.33
+    ]
+   },
+   {
+    "name": "StoneLantern",
+    "size": [
+     0.66,
+     1.71,
+     0.66
+    ]
+   },
+   {
+    "name": "Sweets_RiceDumpling_SoySauce",
+    "size": [
+     0.09,
+     0.41,
+     0.11
+    ]
+   },
+   {
+    "name": "Sweets_RiceDumpling_Spring",
+    "size": [
+     0.09,
+     0.41,
+     0.11
+    ]
+   },
+   {
+    "name": "Table_Circular",
+    "size": [
+     1.14,
+     0.71,
+     1.14
+    ]
+   },
+   {
+    "name": "Tomato",
+    "size": [
+     0.21,
+     0.2,
+     0.21
+    ]
+   },
+   {
+    "name": "ToriGate",
+    "size": [
+     5.15,
+     4.28,
+     1.34
+    ]
+   },
+   {
+    "name": "Tree_RedPlum",
+    "size": [
+     4.48,
+     4.8,
+     3.55
+    ]
+   },
+   {
+    "name": "WoodenBox",
+    "size": [
+     0.94,
+     0.88,
+     0.94
+    ]
+   },
+   {
+    "name": "WoodenBox_Stack",
+    "size": [
+     2.26,
+     1.77,
+     1.41
+    ]
+   },
+   {
+    "name": "WoodenCrate_L",
+    "size": [
+     1.51,
+     0.7,
+     0.91
+    ]
+   },
+   {
+    "name": "WoodenCrate_S",
+    "size": [
+     1.04,
+     0.5,
+     0.65
+    ]
+   }
+  ]
+ },
+ {
+  "id": "village-pack",
+  "name": "Village Pack",
+  "type": "glb",
+  "file": "VillagePack.glb",
+  "entries": [
+   {
+    "name": "altar",
+    "size": [
+     6.5,
+     5.02,
+     6.5
+    ]
+   },
+   {
+    "name": "altar2",
+    "size": [
+     6.5,
+     5.02,
+     6.5
+    ]
+   },
+   {
+    "name": "arch",
+    "size": [
+     0.47,
+     0.9,
+     4.67
+    ]
+   },
+   {
+    "name": "arch_2",
+    "size": [
+     3.66,
+     1.53,
+     3.07
+    ]
+   },
+   {
+    "name": "barrel_1",
+    "size": [
+     1.2,
+     0.97,
+     0.96
+    ]
+   },
+   {
+    "name": "barrel_2",
+    "size": [
+     1.28,
+     0.97,
+     0.99
+    ]
+   },
+   {
+    "name": "bell",
+    "size": [
+     1.29,
+     2.92,
+     3.99
+    ]
+   },
+   {
+    "name": "brazier",
+    "size": [
+     0.8,
+     0.87,
+     0.63
+    ]
+   },
+   {
+    "name": "bridge",
+    "size": [
+     4.87,
+     2.12,
+     6.73
+    ]
+   },
+   {
+    "name": "bridge2",
+    "size": [
+     3.32,
+     2.62,
+     4.22
+    ]
+   },
+   {
+    "name": "bridge3",
+    "size": [
+     2.63,
+     2.62,
+     3.57
+    ]
+   },
+   {
+    "name": "bridge_stone",
+    "size": [
+     4.93,
+     3.64,
+     5.33
+    ]
+   },
+   {
+    "name": "building_1",
+    "size": [
+     4.73,
+     3.49,
+     3.01
+    ]
+   },
+   {
+    "name": "building_2",
+    "size": [
+     4.73,
+     4.69,
+     3.01
+    ]
+   },
+   {
+    "name": "building_3",
+    "size": [
+     3.67,
+     3.49,
+     3.01
+    ]
+   },
+   {
+    "name": "cart",
+    "size": [
+     2.7,
+     1.31,
+     1.08
+    ]
+   },
+   {
+    "name": "door_left",
+    "size": [
+     1.07,
+     3.0,
+     0.55
+    ]
+   },
+   {
+    "name": "door_right",
+    "size": [
+     1.07,
+     3.0,
+     0.55
+    ]
+   },
+   {
+    "name": "drum",
+    "size": [
+     2.45,
+     2.28,
+     2.51
+    ]
+   },
+   {
+    "name": "egg",
+    "size": [
+     0.43,
+     0.55,
+     0.43
+    ]
+   },
+   {
+    "name": "fence_1",
+    "size": [
+     2.46,
+     0.88,
+     2.46
+    ]
+   },
+   {
+    "name": "fence_2",
+    "size": [
+     0.49,
+     0.88,
+     2.46
+    ]
+   },
+   {
+    "name": "fence_3",
+    "size": [
+     0.49,
+     0.88,
+     2.46
+    ]
+   },
+   {
+    "name": "fighting_post",
+    "size": [
+     1.38,
+     1.04,
+     1.97
+    ]
+   },
+   {
+    "name": "forge",
+    "size": [
+     1.25,
+     1.18,
+     0.97
+    ]
+   },
+   {
+    "name": "frame",
+    "size": [
+     3.49,
+     2.06,
+     0.78
+    ]
+   },
+   {
+    "name": "garden_bush_1",
+    "size": [
+     0.79,
+     0.88,
+     0.79
+    ]
+   },
+   {
+    "name": "garden_bush_2",
+    "size": [
+     1.76,
+     0.88,
+     0.79
+    ]
+   },
+   {
+    "name": "gong",
+    "size": [
+     1.11,
+     2.92,
+     3.99
+    ]
+   },
+   {
+    "name": "granary",
+    "size": [
+     2.55,
+     2.23,
+     4.03
+    ]
+   },
+   {
+    "name": "granary_big",
+    "size": [
+     6.52,
+     6.2,
+     6.32
+    ]
+   },
+   {
+    "name": "grave_1",
+    "size": [
+     0.95,
+     0.9,
+     1.29
+    ]
+   },
+   {
+    "name": "grave_2",
+    "size": [
+     0.95,
+     0.9,
+     1.35
+    ]
+   },
+   {
+    "name": "grave_3",
+    "size": [
+     0.88,
+     0.84,
+     1.36
+    ]
+   },
+   {
+    "name": "grave_4",
+    "size": [
+     0.95,
+     0.9,
+     1.35
+    ]
+   },
+   {
+    "name": "gravel_1",
+    "size": [
+     1.36,
+     1.33,
+     0.09
+    ]
+   },
+   {
+    "name": "gravel_2",
+    "size": [
+     1.03,
+     1.33,
+     0.09
+    ]
+   },
+   {
+    "name": "gravel_3",
+    "size": [
+     0.9,
+     0.54,
+     0.07
+    ]
+   },
+   {
+    "name": "graves_group",
+    "size": [
+     2.3,
+     2.32,
+     1.21
+    ]
+   },
+   {
+    "name": "graves_group2",
+    "size": [
+     2.3,
+     2.32,
+     1.21
+    ]
+   },
+   {
+    "name": "hive",
+    "size": [
+     1.21,
+     0.77,
+     1.16
+    ]
+   },
+   {
+    "name": "lamp",
+    "size": [
+     0.88,
+     0.83,
+     1.69
+    ]
+   },
+   {
+    "name": "mineral_ore",
+    "size": [
+     1.49,
+     1.47,
+     0.64
+    ]
+   },
+   {
+    "name": "mineral_ore_jade",
+    "size": [
+     1.49,
+     1.47,
+     0.64
+    ]
+   },
+   {
+    "name": "nest",
+    "size": [
+     1.18,
+     0.7,
+     1.11
+    ]
+   },
+   {
+    "name": "net",
+    "size": [
+     2.35,
+     2.15,
+     0.25
+    ]
+   },
+   {
+    "name": "pillar_1",
+    "size": [
+     0.78,
+     2.06,
+     0.78
+    ]
+   },
+   {
+    "name": "pillar_2",
+    "size": [
+     1.11,
+     2.15,
+     1.11
+    ]
+   },
+   {
+    "name": "pillar_2_long",
+    "size": [
+     1.11,
+     2.79,
+     1.11
+    ]
+   },
+   {
+    "name": "pillar_3",
+    "size": [
+     1.11,
+     2.15,
+     1.11
+    ]
+   },
+   {
+    "name": "pillar_3_long",
+    "size": [
+     1.11,
+     2.79,
+     1.11
+    ]
+   },
+   {
+    "name": "pillar_4",
+    "size": [
+     1.11,
+     2.15,
+     1.11
+    ]
+   },
+   {
+    "name": "pillar_4_long",
+    "size": [
+     1.11,
+     2.79,
+     1.11
+    ]
+   },
+   {
+    "name": "platform",
+    "size": [
+     6.5,
+     0.89,
+     6.5
+    ]
+   },
+   {
+    "name": "post_1",
+    "size": [
+     0.84,
+     0.84,
+     2.37
+    ]
+   },
+   {
+    "name": "post_2",
+    "size": [
+     1.29,
+     0.66,
+     2.14
+    ]
+   },
+   {
+    "name": "pot_1",
+    "size": [
+     1.66,
+     1.66,
+     1.22
+    ]
+   },
+   {
+    "name": "pot_2",
+    "size": [
+     0.87,
+     0.87,
+     0.82
+    ]
+   },
+   {
+    "name": "roof",
+    "size": [
+     5.29,
+     1.73,
+     5.29
+    ]
+   },
+   {
+    "name": "shop",
+    "size": [
+     3.67,
+     3.44,
+     3.01
+    ]
+   },
+   {
+    "name": "shrine",
+    "size": [
+     1.76,
+     2.75,
+     2.0
+    ]
+   },
+   {
+    "name": "shrine_2",
+    "size": [
+     3.67,
+     3.44,
+     3.01
+    ]
+   },
+   {
+    "name": "stand",
+    "size": [
+     1.85,
+     1.97,
+     1.29
+    ]
+   },
+   {
+    "name": "statue_frog",
+    "size": [
+     1.82,
+     1.52,
+     1.82
+    ]
+   },
+   {
+    "name": "statue_monk",
+    "size": [
+     1.82,
+     2.43,
+     1.82
+    ]
+   },
+   {
+    "name": "steps",
+    "size": [
+     1.95,
+     0.77,
+     1.35
+    ]
+   },
+   {
+    "name": "stonewall_1",
+    "size": [
+     3.31,
+     0.63,
+     1.52
+    ]
+   },
+   {
+    "name": "stonewall_2",
+    "size": [
+     3.31,
+     0.63,
+     1.52
+    ]
+   },
+   {
+    "name": "stonewall_3",
+    "size": [
+     3.31,
+     0.63,
+     1.52
+    ]
+   },
+   {
+    "name": "stonewall_4",
+    "size": [
+     3.31,
+     0.63,
+     1.52
+    ]
+   },
+   {
+    "name": "stonewall_5",
+    "size": [
+     3.31,
+     0.63,
+     1.02
+    ]
+   },
+   {
+    "name": "tower",
+    "size": [
+     2.78,
+     2.44,
+     4.34
+    ]
+   },
+   {
+    "name": "urn_1",
+    "size": [
+     0.76,
+     0.77,
+     0.96
+    ]
+   },
+   {
+    "name": "urn_2",
+    "size": [
+     0.76,
+     0.77,
+     0.96
+    ]
+   },
+   {
+    "name": "wall_decor_1",
+    "size": [
+     0.89,
+     0.75,
+     0.42
+    ]
+   },
+   {
+    "name": "wall_decor_2",
+    "size": [
+     0.89,
+     0.75,
+     0.42
+    ]
+   },
+   {
+    "name": "wall_decor_3",
+    "size": [
+     0.52,
+     1.12,
+     1.11
+    ]
+   },
+   {
+    "name": "wall_decor_4",
+    "size": [
+     0.52,
+     1.12,
+     1.11
+    ]
+   },
+   {
+    "name": "well",
+    "size": [
+     2.02,
+     1.97,
+     0.89
+    ]
+   },
+   {
+    "name": "wheel",
+    "size": [
+     4.18,
+     3.51,
+     4.16
+    ]
+   },
+   {
+    "name": "wood_1",
+    "size": [
+     0.55,
+     2.08,
+     0.18
+    ]
+   },
+   {
+    "name": "wood_2",
+    "size": [
+     0.55,
+     1.97,
+     0.18
+    ]
+   },
+   {
+    "name": "wood_3",
+    "size": [
+     0.53,
+     2.1,
+     0.18
+    ]
+   },
+   {
+    "name": "wood_4",
+    "size": [
+     0.53,
+     2.05,
+     0.18
+    ]
+   }
   ]
  }
 ]
