@@ -1232,7 +1232,7 @@
  {
   "name": "Stair_Interior_Rails",
   "file": "Stair_Interior_Rails.gltf",
-  "category": "Stair",
+  "category": "Stairs",
   "size": [
    1.717,
    3.931,
@@ -1242,7 +1242,7 @@
  {
   "name": "Stair_Interior_Simple",
   "file": "Stair_Interior_Simple.gltf",
-  "category": "Stair",
+  "category": "Stairs",
   "size": [
    1.676,
    3.035,
@@ -1252,7 +1252,7 @@
  {
   "name": "Stair_Interior_Solid",
   "file": "Stair_Interior_Solid.gltf",
-  "category": "Stair",
+  "category": "Stairs",
   "size": [
    1.769,
    3.046,
@@ -1262,7 +1262,7 @@
  {
   "name": "Stair_Interior_SolidExtended",
   "file": "Stair_Interior_SolidExtended.gltf",
-  "category": "Stair",
+  "category": "Stairs",
   "size": [
    1.769,
    3.046,

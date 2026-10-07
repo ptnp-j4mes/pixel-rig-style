@@ -30,10 +30,13 @@ def main():
     entries = []
     for f in files:
         name = f[: -len('.gltf')]
+        category = name.split('_')[0]
+        if category == 'Stair':
+            category = 'Stairs'  # kit names interior stairs Stair_*, exterior Stairs_*
         entries.append({
             'name': name,
             'file': f,
-            'category': name.split('_')[0],
+            'category': category,
             'size': piece_size(os.path.join(KIT_DIR, f)),
         })
     entries.sort(key=lambda e: (e['category'], e['name']))
