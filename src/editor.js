@@ -24,7 +24,8 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
 
   function rounded(v) {
     const q = snap ? SNAP_SIZE : 0.01;
-    return Math.round(v / q) * q;
+    // parseFloat(toFixed) scrubs float noise (0.01 quantum yields 4.0200000000000005)
+    return parseFloat((Math.round(v / q) * q).toFixed(2));
   }
 
   // OrbitControls (attached to the container) setPointerCaptures on every
