@@ -293,6 +293,361 @@
   "file": "VillagePack.glb",
   "entries": [
    {
+    "name": "Bamboo_Clump",
+    "size": [
+     3.3,
+     5.01,
+     2.16
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Bridge_Stone",
+    "size": [
+     4.24,
+     2.22,
+     4.2
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Bush_Cluster",
+    "size": [
+     2.5,
+     1.19,
+     2.1
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Ground_Earth_8",
+    "size": [
+     8,
+     0.01,
+     8
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Ground_Grass_8",
+    "size": [
+     8,
+     0.01,
+     8
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_Cliff",
+    "size": [
+     20,
+     16.86,
+     14
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_GraniteMassif",
+    "size": [
+     30.49,
+     15.02,
+     17.74
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_Peak",
+    "size": [
+     22,
+     9.62,
+     16
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_Ridge_A",
+    "size": [
+     24,
+     4.97,
+     11.0
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_Ridge_B",
+    "size": [
+     24,
+     5.08,
+     11.0
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_StoneRidge",
+    "size": [
+     18.46,
+     12.04,
+     11.07
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Mountain_WeatheredTor",
+    "size": [
+     16.26,
+     17.86,
+     8.54
+    ],
+    "file": "VillageReferenceSet.glb"
+   },
+   {
+    "name": "River_Bend",
+    "size": [
+     4.28,
+     0.51,
+     4.18
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "River_End",
+    "size": [
+     4,
+     0.47,
+     4
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "River_Straight",
+    "size": [
+     4,
+     0.49,
+     4
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "River_TJunction",
+    "size": [
+     4,
+     0.27,
+     4
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Road_Corner",
+    "size": [
+     3.05,
+     0.07,
+     3.19
+    ]
+   },
+   {
+    "name": "Road_Cross",
+    "size": [
+     4.0,
+     0.07,
+     4.0
+    ]
+   },
+   {
+    "name": "Road_End",
+    "size": [
+     2.78,
+     0.08,
+     3.87
+    ]
+   },
+   {
+    "name": "Road_Straight",
+    "size": [
+     2.77,
+     0.07,
+     4.0
+    ]
+   },
+   {
+    "name": "Road_TJunction",
+    "size": [
+     4.0,
+     0.07,
+     3.4
+    ]
+   },
+   {
+    "name": "Rock_Cluster",
+    "size": [
+     6.09,
+     4.35,
+     5.57
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Tree_Blossom",
+    "size": [
+     3.05,
+     5.33,
+     2.48
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Tree_Broadleaf",
+    "size": [
+     3.01,
+     5.34,
+     2.25
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Tree_Bush_01",
+    "size": [
+     5.29,
+     5.5,
+     5.24
+    ],
+    "file": "Tree_Bush_01.glb"
+   },
+   {
+    "name": "Tree_Bush_02",
+    "size": [
+     5.5,
+     4.45,
+     5.33
+    ],
+    "file": "Tree_Bush_02.glb"
+   },
+   {
+    "name": "Tree_Bush_03",
+    "size": [
+     4.89,
+     3.18,
+     5.5
+    ],
+    "file": "Tree_Bush_03.glb"
+   },
+   {
+    "name": "Tree_Bush_04",
+    "size": [
+     3.61,
+     5.5,
+     3.81
+    ],
+    "file": "Tree_Bush_04.glb"
+   },
+   {
+    "name": "Tree_Bush_05",
+    "size": [
+     4.09,
+     5.5,
+     4.71
+    ],
+    "file": "Tree_Bush_05.glb"
+   },
+   {
+    "name": "Tree_Bush_06",
+    "size": [
+     2.14,
+     5.5,
+     2.2
+    ],
+    "file": "Tree_Bush_06.glb"
+   },
+   {
+    "name": "Tree_Bush_07",
+    "size": [
+     3.93,
+     5.45,
+     4.07
+    ],
+    "file": "Tree_Bush_07.glb"
+   },
+   {
+    "name": "Tree_EZ_OakMedium",
+    "size": [
+     4.47,
+     5.5,
+     4.55
+    ],
+    "file": "Tree_EZ_OakMedium.glb"
+   },
+   {
+    "name": "Tree_Pine",
+    "size": [
+     2.74,
+     6.5,
+     2.79
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Tree_VillageBroadleaf",
+    "size": [
+     5.19,
+     5.47,
+     5.4
+    ],
+    "file": "VillageReferenceSet.glb"
+   },
+   {
+    "name": "Wall_Corner",
+    "size": [
+     3,
+     3.49,
+     2.94
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Wall_Gate",
+    "size": [
+     8.4,
+     7.22,
+     4.04
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Wall_Straight",
+    "size": [
+     4,
+     3.48,
+     1.2
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Wall_Tower",
+    "size": [
+     4.93,
+     5.98,
+     4.94
+    ],
+    "file": "VillageEnvironment.glb"
+   },
+   {
+    "name": "Wall_Weathered_Corner",
+    "size": [
+     2.85,
+     3.17,
+     2.89
+    ],
+    "file": "VillageReferenceSet.glb"
+   },
+   {
+    "name": "Wall_Weathered_Straight",
+    "size": [
+     4.09,
+     3.17,
+     1.65
+    ],
+    "file": "VillageReferenceSet.glb"
+   },
+   {
     "name": "altar",
     "size": [
      6.5,

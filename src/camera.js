@@ -16,12 +16,15 @@ export function createCamera(container) {
   controls.maxPolarAngle = THREE.MathUtils.degToRad(90 - PITCH_MIN);
   controls.minDistance = ZOOM_MIN;
   controls.maxDistance = ZOOM_MAX;
-  // Left = orbit, right = pan (editor claims left-presses on objects first —
-  // controls live on the container so the canvas' own listeners run before these).
+  // Left/right = orbit; middle = dolly. The editor claims left-presses on objects first.
   controls.mouseButtons = {
     LEFT: THREE.MOUSE.ROTATE,
     MIDDLE: THREE.MOUSE.DOLLY,
-    RIGHT: THREE.MOUSE.PAN,
+    RIGHT: THREE.MOUSE.ROTATE,
+  };
+  controls.touches = {
+    ONE: THREE.TOUCH.ROTATE,
+    TWO: THREE.TOUCH.DOLLY_PAN,
   };
   const reset = () => {
     const pitch = THREE.MathUtils.degToRad(DEFAULT_PITCH);

@@ -3,7 +3,7 @@
 
 Pack types:
   gltf-folder: a directory of *.gltf files (each = one object)
-  glb:         a single .glb whose named mesh nodes are the objects
+  glb:         one or more .glb files whose named mesh nodes share one pack
 """
 import json
 import os
@@ -61,16 +61,26 @@ def main():
         pack_dir = os.path.join(PACKS_DIR, dir_name)
         if not os.path.isdir(pack_dir):
             continue
-        glb_files = [f for f in os.listdir(pack_dir) if f.endswith('.glb')]
+        glb_files = sorted(f for f in os.listdir(pack_dir) if f.endswith('.glb'))
         gltf_files = sorted(f[:-5] for f in os.listdir(pack_dir) if f.endswith('.gltf'))
         if glb_files:
-            assert len(glb_files) == 1, f'{dir_name}: expected one .glb'
+            main_file = f'{dir_name.title().replace("-", "")}.glb'
+            if main_file not in glb_files:
+                main_file = glb_files[0]
+            entries = glb_nodes(os.path.join(pack_dir, main_file))
+            for source_file in glb_files:
+                if source_file == main_file:
+                    continue
+                for entry in glb_nodes(os.path.join(pack_dir, source_file)):
+                    entry['file'] = source_file
+                    entries.append(entry)
+            entries.sort(key=lambda e: e['name'])
             packs.append({
                 'id': dir_name,
                 'name': dir_name.replace('-', ' ').title(),
                 'type': 'glb',
-                'file': glb_files[0],
-                'entries': glb_nodes(os.path.join(pack_dir, glb_files[0])),
+                'file': main_file,
+                'entries': entries,
             })
         elif gltf_files:
             packs.append({
@@ -84,8 +94,8 @@ def main():
             })
     assert len(packs) == 2, f'expected 2 packs, found {len(packs)}'
     by_id = {p['id']: p for p in packs}
-    assert len(by_id['japan-village']['entries']) == 35, 'japan-village should have 35 objects'
-    assert len(by_id['village-pack']['entries']) == 84, 'village-pack should have 84 objects'
+    assert len(by_id['japan-village']['entries']) >= 35, 'japan-village base assets are incomplete'
+    assert len(by_id['village-pack']['entries']) >= 84, 'village-pack base assets are incomplete'
     for p in packs:
         assert all(e['size'][0] > 0 and e['size'][1] > 0 and e['size'][2] > 0 for e in p['entries']), \
             f"degenerate size in {p['id']}"

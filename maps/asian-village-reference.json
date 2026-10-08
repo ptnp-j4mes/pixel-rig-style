@@ -1,0 +1,4657 @@
+{
+ "version": 3,
+ "gridSize": 1,
+ "mapName": "Asian Village - Reference",
+ "layers": [
+  {
+   "id": "layer-default",
+   "name": "Default Layer",
+   "visible": true,
+   "locked": false
+  }
+ ],
+ "groups": [],
+ "objects": [
+  {
+   "id": "object-1-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_A",
+   "name": "Mountain_Ridge_A",
+   "layerId": "layer-default",
+   "pos": [
+    -13,
+    0,
+    -24
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 0
+  },
+  {
+   "id": "object-2-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_B",
+   "name": "Mountain_Ridge_B",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    -24
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 1
+  },
+  {
+   "id": "object-3-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Peak",
+   "name": "Mountain_Peak",
+   "layerId": "layer-default",
+   "pos": [
+    13,
+    0,
+    -24
+   ],
+   "rotY": 0,
+   "scale": [
+    0.78,
+    0.78,
+    0.78
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 2
+  },
+  {
+   "id": "object-4-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_B",
+   "name": "Mountain_Ridge_B",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    -6
+   ],
+   "rotY": 90,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 3
+  },
+  {
+   "id": "object-5-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_A",
+   "name": "Mountain_Ridge_A",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 4
+  },
+  {
+   "id": "object-6-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_A",
+   "name": "Mountain_Ridge_A",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -7
+   ],
+   "rotY": 270,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 5
+  },
+  {
+   "id": "object-7-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Ridge_B",
+   "name": "Mountain_Ridge_B",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    7
+   ],
+   "rotY": 270,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 6
+  },
+  {
+   "id": "object-8-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Peak",
+   "name": "Mountain_Peak",
+   "layerId": "layer-default",
+   "pos": [
+    -16,
+    0,
+    -23
+   ],
+   "rotY": 0,
+   "scale": [
+    0.67,
+    0.67,
+    0.67
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 7
+  },
+  {
+   "id": "object-9-1",
+   "pack": "village-pack",
+   "asset": "Mountain_Peak",
+   "name": "Mountain_Peak",
+   "layerId": "layer-default",
+   "pos": [
+    18,
+    0,
+    -23
+   ],
+   "rotY": 0,
+   "scale": [
+    0.63,
+    0.63,
+    0.63
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 8
+  },
+  {
+   "id": "object-10-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 9
+  },
+  {
+   "id": "object-11-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 10
+  },
+  {
+   "id": "object-12-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 11
+  },
+  {
+   "id": "object-13-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 12
+  },
+  {
+   "id": "object-14-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 13
+  },
+  {
+   "id": "object-15-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 14
+  },
+  {
+   "id": "object-16-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 15
+  },
+  {
+   "id": "object-17-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 16
+  },
+  {
+   "id": "object-18-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 17
+  },
+  {
+   "id": "object-19-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 18
+  },
+  {
+   "id": "object-20-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 19
+  },
+  {
+   "id": "object-21-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 20
+  },
+  {
+   "id": "object-22-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 21
+  },
+  {
+   "id": "object-23-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 22
+  },
+  {
+   "id": "object-24-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 23
+  },
+  {
+   "id": "object-25-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 24
+  },
+  {
+   "id": "object-26-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 25
+  },
+  {
+   "id": "object-27-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 26
+  },
+  {
+   "id": "object-28-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 27
+  },
+  {
+   "id": "object-29-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 28
+  },
+  {
+   "id": "object-30-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 29
+  },
+  {
+   "id": "object-31-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 30
+  },
+  {
+   "id": "object-32-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 31
+  },
+  {
+   "id": "object-33-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 32
+  },
+  {
+   "id": "object-34-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    4.86,
+    0,
+    -3.62
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 33
+  },
+  {
+   "id": "object-35-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    4
+   ],
+   "rotY": 1.4210854715202004e-14,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 34
+  },
+  {
+   "id": "object-36-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 35
+  },
+  {
+   "id": "object-37-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 36
+  },
+  {
+   "id": "object-38-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 37
+  },
+  {
+   "id": "object-39-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 38
+  },
+  {
+   "id": "object-40-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 39
+  },
+  {
+   "id": "object-41-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 40
+  },
+  {
+   "id": "object-42-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 41
+  },
+  {
+   "id": "object-43-1",
+   "pack": "village-pack",
+   "asset": "Ground_Earth_8",
+   "name": "Ground_Earth_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 42
+  },
+  {
+   "id": "object-44-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 43
+  },
+  {
+   "id": "object-45-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 44
+  },
+  {
+   "id": "object-46-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 45
+  },
+  {
+   "id": "object-47-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 46
+  },
+  {
+   "id": "object-48-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 47
+  },
+  {
+   "id": "object-49-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 48
+  },
+  {
+   "id": "object-50-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 49
+  },
+  {
+   "id": "object-51-1",
+   "pack": "village-pack",
+   "asset": "Ground_Grass_8",
+   "name": "Ground_Grass_8",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 50
+  },
+  {
+   "id": "object-52-1",
+   "pack": "village-pack",
+   "asset": "River_Bend",
+   "name": "River_Bend",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 51
+  },
+  {
+   "id": "object-53-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -10,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 52
+  },
+  {
+   "id": "object-54-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -6,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 53
+  },
+  {
+   "id": "object-55-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -2,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 54
+  },
+  {
+   "id": "object-56-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    2,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 55
+  },
+  {
+   "id": "object-57-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    6,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 56
+  },
+  {
+   "id": "object-58-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    10,
+    0,
+    8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 57
+  },
+  {
+   "id": "object-59-1",
+   "pack": "village-pack",
+   "asset": "River_Bend",
+   "name": "River_Bend",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    8
+   ],
+   "rotY": 180,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 58
+  },
+  {
+   "id": "object-60-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 59
+  },
+  {
+   "id": "object-61-1",
+   "pack": "village-pack",
+   "asset": "River_End",
+   "name": "River_End",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    0
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 60
+  },
+  {
+   "id": "object-62-1",
+   "pack": "village-pack",
+   "asset": "River_Straight",
+   "name": "River_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 61
+  },
+  {
+   "id": "object-63-1",
+   "pack": "village-pack",
+   "asset": "River_End",
+   "name": "River_End",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    0
+   ],
+   "rotY": 180,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 62
+  },
+  {
+   "id": "object-64-1",
+   "pack": "village-pack",
+   "asset": "Bridge_Stone",
+   "name": "Bridge_Stone",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    8
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 63
+  },
+  {
+   "id": "object-65-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -22,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 64
+  },
+  {
+   "id": "object-66-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -18,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 65
+  },
+  {
+   "id": "object-67-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 66
+  },
+  {
+   "id": "object-68-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -10,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 67
+  },
+  {
+   "id": "object-69-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    -6,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 68
+  },
+  {
+   "id": "object-70-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    6,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 69
+  },
+  {
+   "id": "object-71-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    10,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 70
+  },
+  {
+   "id": "object-72-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 71
+  },
+  {
+   "id": "object-73-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    18,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 72
+  },
+  {
+   "id": "object-74-1",
+   "pack": "village-pack",
+   "asset": "Wall_Straight",
+   "name": "Wall_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    22,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 73
+  },
+  {
+   "id": "object-75-1",
+   "pack": "village-pack",
+   "asset": "Wall_Gate",
+   "name": "Wall_Gate",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 74
+  },
+  {
+   "id": "object-76-1",
+   "pack": "village-pack",
+   "asset": "Wall_Tower",
+   "name": "Wall_Tower",
+   "layerId": "layer-default",
+   "pos": [
+    -22,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 75
+  },
+  {
+   "id": "object-77-1",
+   "pack": "village-pack",
+   "asset": "Wall_Tower",
+   "name": "Wall_Tower",
+   "layerId": "layer-default",
+   "pos": [
+    22,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 76
+  },
+  {
+   "id": "object-78-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    20
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 77
+  },
+  {
+   "id": "object-79-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    16
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 78
+  },
+  {
+   "id": "object-80-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 79
+  },
+  {
+   "id": "object-81-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 80
+  },
+  {
+   "id": "object-82-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 81
+  },
+  {
+   "id": "object-83-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    -4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 82
+  },
+  {
+   "id": "object-84-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    -12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 83
+  },
+  {
+   "id": "object-85-1",
+   "pack": "village-pack",
+   "asset": "Road_TJunction",
+   "name": "Road_TJunction",
+   "layerId": "layer-default",
+   "pos": [
+    0,
+    0,
+    -8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 84
+  },
+  {
+   "id": "object-86-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    4,
+    0,
+    -8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 85
+  },
+  {
+   "id": "object-87-1",
+   "pack": "village-pack",
+   "asset": "Road_Straight",
+   "name": "Road_Straight",
+   "layerId": "layer-default",
+   "pos": [
+    8,
+    0,
+    -8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 86
+  },
+  {
+   "id": "object-88-1",
+   "pack": "village-pack",
+   "asset": "Road_End",
+   "name": "Road_End",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    -8
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 87
+  },
+  {
+   "id": "object-89-1",
+   "pack": "village-pack",
+   "asset": "Road_Corner",
+   "name": "Road_Corner",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    0
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 88
+  },
+  {
+   "id": "object-90-1",
+   "pack": "village-pack",
+   "asset": "building_1",
+   "name": "building_1",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    -12
+   ],
+   "rotY": 35,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 89
+  },
+  {
+   "id": "object-91-1",
+   "pack": "village-pack",
+   "asset": "shop",
+   "name": "shop",
+   "layerId": "layer-default",
+   "pos": [
+    -7,
+    0,
+    -12
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 90
+  },
+  {
+   "id": "object-92-1",
+   "pack": "village-pack",
+   "asset": "shop",
+   "name": "shop",
+   "layerId": "layer-default",
+   "pos": [
+    7,
+    0,
+    -12
+   ],
+   "rotY": 270,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 91
+  },
+  {
+   "id": "object-93-1",
+   "pack": "village-pack",
+   "asset": "building_1",
+   "name": "building_1",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    -12
+   ],
+   "rotY": 270,
+   "scale": [
+    0.92,
+    0.92,
+    0.92
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 92
+  },
+  {
+   "id": "object-94-1",
+   "pack": "village-pack",
+   "asset": "building_2",
+   "name": "building_2",
+   "layerId": "layer-default",
+   "pos": [
+    -14,
+    0,
+    -18
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 93
+  },
+  {
+   "id": "object-95-1",
+   "pack": "village-pack",
+   "asset": "granary",
+   "name": "granary",
+   "layerId": "layer-default",
+   "pos": [
+    -7,
+    0,
+    -18
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 94
+  },
+  {
+   "id": "object-96-1",
+   "pack": "village-pack",
+   "asset": "shrine",
+   "name": "shrine",
+   "layerId": "layer-default",
+   "pos": [
+    7,
+    0,
+    -18
+   ],
+   "rotY": 0,
+   "scale": [
+    1.05,
+    1.05,
+    1.05
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 95
+  },
+  {
+   "id": "object-97-1",
+   "pack": "village-pack",
+   "asset": "tower",
+   "name": "tower",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    -18
+   ],
+   "rotY": 0,
+   "scale": [
+    0.88,
+    0.88,
+    0.88
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 96
+  },
+  {
+   "id": "object-98-1",
+   "pack": "village-pack",
+   "asset": "building_2",
+   "name": "building_2",
+   "layerId": "layer-default",
+   "pos": [
+    -10,
+    0,
+    1
+   ],
+   "rotY": 90,
+   "scale": [
+    0.95,
+    0.95,
+    0.95
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 97
+  },
+  {
+   "id": "object-99-1",
+   "pack": "village-pack",
+   "asset": "building_3",
+   "name": "building_3",
+   "layerId": "layer-default",
+   "pos": [
+    10,
+    0,
+    1
+   ],
+   "rotY": 270,
+   "scale": [
+    0.95,
+    0.95,
+    0.95
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 98
+  },
+  {
+   "id": "object-100-1",
+   "pack": "village-pack",
+   "asset": "shop",
+   "name": "shop",
+   "layerId": "layer-default",
+   "pos": [
+    -18,
+    0,
+    -1
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 99
+  },
+  {
+   "id": "object-101-1",
+   "pack": "village-pack",
+   "asset": "granary",
+   "name": "granary",
+   "layerId": "layer-default",
+   "pos": [
+    18,
+    0,
+    -1
+   ],
+   "rotY": 180,
+   "scale": [
+    0.88,
+    0.88,
+    0.88
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 100
+  },
+  {
+   "id": "object-102-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -19,
+    0,
+    15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 101
+  },
+  {
+   "id": "object-103-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -15,
+    0,
+    10
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 102
+  },
+  {
+   "id": "object-104-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -11,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 103
+  },
+  {
+   "id": "object-105-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    14,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    0.92,
+    0.92,
+    0.92
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 104
+  },
+  {
+   "id": "object-106-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    19,
+    0,
+    14
+   ],
+   "rotY": 0,
+   "scale": [
+    0.86,
+    0.86,
+    0.86
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 105
+  },
+  {
+   "id": "object-107-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    11,
+    0,
+    18
+   ],
+   "rotY": 0,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 106
+  },
+  {
+   "id": "object-108-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    18
+   ],
+   "rotY": 0,
+   "scale": [
+    0.83,
+    0.83,
+    0.83
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 107
+  },
+  {
+   "id": "object-109-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -18,
+    0,
+    -11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.78,
+    0.78,
+    0.78
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 108
+  },
+  {
+   "id": "object-110-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    18,
+    0,
+    -11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.86,
+    0.86,
+    0.86
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 109
+  },
+  {
+   "id": "object-111-1",
+   "pack": "village-pack",
+   "asset": "Tree_Broadleaf",
+   "name": "Tree_Broadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -18
+   ],
+   "rotY": 0,
+   "scale": [
+    0.7,
+    0.7,
+    0.7
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 110
+  },
+  {
+   "id": "object-112-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    -18,
+    0,
+    -17
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 111
+  },
+  {
+   "id": "object-113-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    -8,
+    0,
+    -21
+   ],
+   "rotY": 0,
+   "scale": [
+    0.78,
+    0.78,
+    0.78
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 112
+  },
+  {
+   "id": "object-114-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    2,
+    0,
+    -22
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 113
+  },
+  {
+   "id": "object-115-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    9,
+    0,
+    -20
+   ],
+   "rotY": 0,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 114
+  },
+  {
+   "id": "object-116-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    -17
+   ],
+   "rotY": 0,
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 115
+  },
+  {
+   "id": "object-117-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    3
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 116
+  },
+  {
+   "id": "object-118-1",
+   "pack": "village-pack",
+   "asset": "Tree_Pine",
+   "name": "Tree_Pine",
+   "layerId": "layer-default",
+   "pos": [
+    20,
+    0,
+    11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 117
+  },
+  {
+   "id": "object-119-1",
+   "pack": "village-pack",
+   "asset": "Tree_Blossom",
+   "name": "Tree_Blossom",
+   "layerId": "layer-default",
+   "pos": [
+    -8,
+    0,
+    10
+   ],
+   "rotY": 0,
+   "scale": [
+    0.78,
+    0.78,
+    0.78
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 118
+  },
+  {
+   "id": "object-120-1",
+   "pack": "village-pack",
+   "asset": "Tree_Blossom",
+   "name": "Tree_Blossom",
+   "layerId": "layer-default",
+   "pos": [
+    8,
+    0,
+    15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.82,
+    0.82,
+    0.82
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 119
+  },
+  {
+   "id": "object-121-1",
+   "pack": "village-pack",
+   "asset": "Tree_Blossom",
+   "name": "Tree_Blossom",
+   "layerId": "layer-default",
+   "pos": [
+    15,
+    0,
+    -14
+   ],
+   "rotY": 0,
+   "scale": [
+    0.7,
+    0.7,
+    0.7
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 120
+  },
+  {
+   "id": "object-122-1",
+   "pack": "village-pack",
+   "asset": "Bamboo_Clump",
+   "name": "Bamboo_Clump",
+   "layerId": "layer-default",
+   "pos": [
+    -16,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 121
+  },
+  {
+   "id": "object-123-1",
+   "pack": "village-pack",
+   "asset": "Bamboo_Clump",
+   "name": "Bamboo_Clump",
+   "layerId": "layer-default",
+   "pos": [
+    16,
+    0,
+    4
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 122
+  },
+  {
+   "id": "object-124-1",
+   "pack": "village-pack",
+   "asset": "Bamboo_Clump",
+   "name": "Bamboo_Clump",
+   "layerId": "layer-default",
+   "pos": [
+    -5,
+    0,
+    15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.7,
+    0.7,
+    0.7
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 123
+  },
+  {
+   "id": "object-125-1",
+   "pack": "village-pack",
+   "asset": "Bamboo_Clump",
+   "name": "Bamboo_Clump",
+   "layerId": "layer-default",
+   "pos": [
+    5,
+    0,
+    16
+   ],
+   "rotY": 0,
+   "scale": [
+    0.72,
+    0.72,
+    0.72
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 124
+  },
+  {
+   "id": "object-126-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -9,
+    0,
+    11
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 125
+  },
+  {
+   "id": "object-127-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    8
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 126
+  },
+  {
+   "id": "object-128-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    11,
+    0,
+    11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 127
+  },
+  {
+   "id": "object-129-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    13,
+    0,
+    8
+   ],
+   "rotY": 0,
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 128
+  },
+  {
+   "id": "object-130-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -15,
+    0,
+    -7
+   ],
+   "rotY": 0,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 129
+  },
+  {
+   "id": "object-131-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    15,
+    0,
+    -7
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 130
+  },
+  {
+   "id": "object-132-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -4,
+    0,
+    -15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.7,
+    0.7,
+    0.7
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 131
+  },
+  {
+   "id": "object-133-1",
+   "pack": "village-pack",
+   "asset": "Bush_Cluster",
+   "name": "Bush_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    5,
+    0,
+    -11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 132
+  },
+  {
+   "id": "object-134-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -18,
+    0,
+    -19
+   ],
+   "rotY": 0,
+   "scale": [
+    0.72,
+    0.72,
+    0.72
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 133
+  },
+  {
+   "id": "object-135-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -21,
+    0,
+    11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 134
+  },
+  {
+   "id": "object-136-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    19,
+    0,
+    11
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 135
+  },
+  {
+   "id": "object-137-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    16,
+    0,
+    -19
+   ],
+   "rotY": 0,
+   "scale": [
+    0.72,
+    0.72,
+    0.72
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 136
+  },
+  {
+   "id": "object-138-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    -12,
+    0,
+    2
+   ],
+   "rotY": 0,
+   "scale": [
+    0.66,
+    0.66,
+    0.66
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 137
+  },
+  {
+   "id": "object-139-1",
+   "pack": "village-pack",
+   "asset": "Rock_Cluster",
+   "name": "Rock_Cluster",
+   "layerId": "layer-default",
+   "pos": [
+    12,
+    0,
+    2
+   ],
+   "rotY": 0,
+   "scale": [
+    0.68,
+    0.68,
+    0.68
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 138
+  },
+  {
+   "id": "object-140-1",
+   "pack": "village-pack",
+   "asset": "well",
+   "name": "well",
+   "layerId": "layer-default",
+   "pos": [
+    -9,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 139
+  },
+  {
+   "id": "object-141-1",
+   "pack": "village-pack",
+   "asset": "cart",
+   "name": "cart",
+   "layerId": "layer-default",
+   "pos": [
+    5,
+    0,
+    14
+   ],
+   "rotY": 25,
+   "scale": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 140
+  },
+  {
+   "id": "object-142-1",
+   "pack": "village-pack",
+   "asset": "lamp",
+   "name": "lamp",
+   "layerId": "layer-default",
+   "pos": [
+    -5,
+    0,
+    3
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 141
+  },
+  {
+   "id": "object-143-1",
+   "pack": "village-pack",
+   "asset": "lamp",
+   "name": "lamp",
+   "layerId": "layer-default",
+   "pos": [
+    5,
+    0,
+    3
+   ],
+   "rotY": 180,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 142
+  },
+  {
+   "id": "object-144-1",
+   "pack": "village-pack",
+   "asset": "fence_1",
+   "name": "fence_1",
+   "layerId": "layer-default",
+   "pos": [
+    -11,
+    0,
+    15
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 143
+  },
+  {
+   "id": "object-145-1",
+   "pack": "village-pack",
+   "asset": "fence_2",
+   "name": "fence_2",
+   "layerId": "layer-default",
+   "pos": [
+    10,
+    0,
+    15
+   ],
+   "rotY": 90,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 144
+  },
+  {
+   "id": "object-146-1",
+   "pack": "village-pack",
+   "asset": "barrel_1",
+   "name": "barrel_1",
+   "layerId": "layer-default",
+   "pos": [
+    -2,
+    0,
+    14
+   ],
+   "rotY": 35,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 145
+  },
+  {
+   "id": "object-147-1",
+   "pack": "village-pack",
+   "asset": "barrel_2",
+   "name": "barrel_2",
+   "layerId": "layer-default",
+   "pos": [
+    2,
+    0,
+    14
+   ],
+   "rotY": 14.999999999999998,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 146
+  },
+  {
+   "id": "object-148-1",
+   "pack": "village-pack",
+   "asset": "brazier",
+   "name": "brazier",
+   "layerId": "layer-default",
+   "pos": [
+    -3,
+    0,
+    -15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 147
+  },
+  {
+   "id": "object-149-1",
+   "pack": "village-pack",
+   "asset": "urn_1",
+   "name": "urn_1",
+   "layerId": "layer-default",
+   "pos": [
+    3,
+    0,
+    -15
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 148
+  },
+  {
+   "id": "object-150-1",
+   "pack": "village-pack",
+   "asset": "garden_bush_1",
+   "name": "garden_bush_1",
+   "layerId": "layer-default",
+   "pos": [
+    -2,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 149
+  },
+  {
+   "id": "object-151-1",
+   "pack": "village-pack",
+   "asset": "garden_bush_2",
+   "name": "garden_bush_2",
+   "layerId": "layer-default",
+   "pos": [
+    2,
+    0,
+    5
+   ],
+   "rotY": 0,
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 150
+  },
+  {
+   "id": "object-1",
+   "pack": "village-pack",
+   "asset": "altar",
+   "name": "altar",
+   "layerId": "layer-default",
+   "pos": [
+    -0.09,
+    0,
+    0.7
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 151
+  },
+  {
+   "id": "object-2",
+   "pack": "village-pack",
+   "asset": "arch_2",
+   "name": "arch_2",
+   "layerId": "layer-default",
+   "pos": [
+    -0.05,
+    0,
+    11.54
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 152
+  },
+  {
+   "id": "object-3",
+   "pack": "village-pack",
+   "asset": "cart",
+   "name": "cart",
+   "layerId": "layer-default",
+   "pos": [
+    -2.49,
+    0,
+    19.08
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 153
+  },
+  {
+   "id": "object-4",
+   "pack": "village-pack",
+   "asset": "nest",
+   "name": "nest",
+   "layerId": "layer-default",
+   "pos": [
+    -10.78,
+    0,
+    15.13
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 154
+  },
+  {
+   "id": "object-5",
+   "pack": "village-pack",
+   "asset": "net",
+   "name": "net",
+   "layerId": "layer-default",
+   "pos": [
+    -5.28,
+    0,
+    15.99
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 155
+  },
+  {
+   "id": "object-6",
+   "pack": "village-pack",
+   "asset": "shrine",
+   "name": "shrine",
+   "layerId": "layer-default",
+   "pos": [
+    -11.44,
+    0,
+    10.64
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 156
+  },
+  {
+   "id": "object-7",
+   "pack": "village-pack",
+   "asset": "stand",
+   "name": "stand",
+   "layerId": "layer-default",
+   "pos": [
+    -8.93,
+    0,
+    15.16
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 157
+  },
+  {
+   "id": "object-8",
+   "pack": "village-pack",
+   "asset": "stonewall_5",
+   "name": "stonewall_5",
+   "layerId": "layer-default",
+   "pos": [
+    5.67,
+    0,
+    -2.78
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 158
+  },
+  {
+   "id": "object-9",
+   "pack": "village-pack",
+   "asset": "tower",
+   "name": "tower",
+   "layerId": "layer-default",
+   "pos": [
+    11.19,
+    0,
+    5.13
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 159
+  },
+  {
+   "id": "object-10",
+   "pack": "village-pack",
+   "asset": "wall_decor_3",
+   "name": "wall_decor_3",
+   "layerId": "layer-default",
+   "pos": [
+    8.96,
+    0,
+    -3.2
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 160
+  },
+  {
+   "id": "object-11",
+   "pack": "village-pack",
+   "asset": "wheel",
+   "name": "wheel",
+   "layerId": "layer-default",
+   "pos": [
+    8.61,
+    0,
+    7.23
+   ],
+   "rotY": 90.00000000000001,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 161
+  },
+  {
+   "id": "object-12",
+   "pack": "village-pack",
+   "asset": "Tree_EZ_OakMedium",
+   "name": "Tree_EZ_OakMedium",
+   "layerId": "layer-default",
+   "pos": [
+    12.33,
+    0,
+    19.61
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 162
+  },
+  {
+   "id": "object-13",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -7.36,
+    0,
+    2.13
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 163
+  },
+  {
+   "id": "object-14",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -6.06,
+    0,
+    4.94
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 164
+  },
+  {
+   "id": "object-15",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -3.44,
+    0,
+    4.8
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 165
+  },
+  {
+   "id": "object-16",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -6.1,
+    0,
+    5.8
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 166
+  },
+  {
+   "id": "object-17",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -6.11,
+    0,
+    5.79
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 167
+  },
+  {
+   "id": "object-18",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -5.71,
+    0,
+    7.39
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 168
+  },
+  {
+   "id": "object-19",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -5.67,
+    0,
+    7.75
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 169
+  },
+  {
+   "id": "object-20",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_03",
+   "name": "Tree_Bush_03",
+   "layerId": "layer-default",
+   "pos": [
+    -5.17,
+    0,
+    11.44
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 170
+  },
+  {
+   "id": "object-21",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -20,
+    0,
+    28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 171
+  },
+  {
+   "id": "object-22",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_05",
+   "name": "Tree_Bush_05",
+   "layerId": "layer-default",
+   "pos": [
+    -5.25,
+    0,
+    21.28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 172
+  },
+  {
+   "id": "object-23",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_06",
+   "name": "Tree_Bush_06",
+   "layerId": "layer-default",
+   "pos": [
+    -2.42,
+    0,
+    23.59
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 173
+  },
+  {
+   "id": "object-24",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_04",
+   "name": "Tree_Bush_04",
+   "layerId": "layer-default",
+   "pos": [
+    2.69,
+    0,
+    21.47
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 174
+  },
+  {
+   "id": "object-25",
+   "pack": "village-pack",
+   "asset": "Tree_VillageBroadleaf",
+   "name": "Tree_VillageBroadleaf",
+   "layerId": "layer-default",
+   "pos": [
+    5.07,
+    0,
+    10.49
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 175
+  },
+  {
+   "id": "object-26",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    6.81,
+    0,
+    -0.04
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 176
+  },
+  {
+   "id": "object-27",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    4.46,
+    0,
+    3.37
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 177
+  },
+  {
+   "id": "object-28",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    2.63,
+    0,
+    9.37
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 178
+  },
+  {
+   "id": "object-29",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -5.92,
+    0,
+    -1.78
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 179
+  },
+  {
+   "id": "object-30",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -4.71,
+    0,
+    1.3
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 180
+  },
+  {
+   "id": "object-31",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -3.65,
+    0,
+    -5.43
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 181
+  },
+  {
+   "id": "object-32",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -1.03,
+    0,
+    -1.54
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 182
+  },
+  {
+   "id": "object-33",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    1.1,
+    0,
+    1.83
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 183
+  },
+  {
+   "id": "object-34",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -0.25,
+    0,
+    1.8
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 184
+  },
+  {
+   "id": "object-35",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    -0.38,
+    0,
+    3.6
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 185
+  },
+  {
+   "id": "object-36",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    2.43,
+    0,
+    4.85
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 186
+  },
+  {
+   "id": "object-37",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    4.17,
+    0,
+    5.14
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 187
+  },
+  {
+   "id": "object-38",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    5.54,
+    0,
+    3.26
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 188
+  },
+  {
+   "id": "object-39",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    5.53,
+    0,
+    1.59
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 189
+  },
+  {
+   "id": "object-40",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    6.53,
+    0,
+    1.02
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 190
+  },
+  {
+   "id": "object-41",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    7.26,
+    0,
+    3.02
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 191
+  },
+  {
+   "id": "object-42",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    7.24,
+    0,
+    3.28
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 192
+  },
+  {
+   "id": "object-43",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    5.7,
+    0,
+    5.06
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 193
+  },
+  {
+   "id": "object-44",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    4.07,
+    0,
+    7.15
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 194
+  },
+  {
+   "id": "object-45",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    2.23,
+    0,
+    11.73
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 195
+  },
+  {
+   "id": "object-46",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    1.55,
+    0,
+    12.74
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 196
+  },
+  {
+   "id": "object-47",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    0.88,
+    0,
+    13.11
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 197
+  },
+  {
+   "id": "object-48",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_01",
+   "name": "Tree_Bush_01",
+   "layerId": "layer-default",
+   "pos": [
+    0.49,
+    0,
+    13.14
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 198
+  },
+  {
+   "id": "object-49",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -3.38,
+    0,
+    -14.22
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 199
+  },
+  {
+   "id": "object-50",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -1.14,
+    0,
+    -13.17
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 200
+  },
+  {
+   "id": "object-51",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    0.57,
+    0,
+    -11.06
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 201
+  },
+  {
+   "id": "object-52",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    1.2,
+    0,
+    -10.49
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 202
+  },
+  {
+   "id": "object-53",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    1.92,
+    0,
+    -7.86
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 203
+  },
+  {
+   "id": "object-54",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -1.36,
+    0,
+    -4.41
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 204
+  },
+  {
+   "id": "object-55",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -1.36,
+    0,
+    -4.4
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 205
+  },
+  {
+   "id": "object-56",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -0.18,
+    0,
+    3.48
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 206
+  },
+  {
+   "id": "object-57",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -13.99,
+    0,
+    -13.56
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 207
+  },
+  {
+   "id": "object-58",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -10.38,
+    0,
+    -9.09
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 208
+  },
+  {
+   "id": "object-59",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -10.33,
+    0,
+    -8.96
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 209
+  },
+  {
+   "id": "object-60",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -15.55,
+    0,
+    -5.51
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 210
+  },
+  {
+   "id": "object-61",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -14.97,
+    0,
+    -5.12
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 211
+  },
+  {
+   "id": "object-62",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -11.01,
+    0,
+    -0.67
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 212
+  },
+  {
+   "id": "object-63",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -12.84,
+    0,
+    4.73
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 213
+  },
+  {
+   "id": "object-64",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -9.07,
+    0,
+    4.24
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 214
+  },
+  {
+   "id": "object-65",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -10.09,
+    0,
+    8.13
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 215
+  },
+  {
+   "id": "object-66",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -6.95,
+    0,
+    12.04
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 216
+  },
+  {
+   "id": "object-67",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_02",
+   "name": "Tree_Bush_02",
+   "layerId": "layer-default",
+   "pos": [
+    -8.37,
+    0,
+    12.98
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 217
+  },
+  {
+   "id": "object-68",
+   "pack": "village-pack",
+   "asset": "Tree_Bush_07",
+   "name": "Tree_Bush_07",
+   "layerId": "layer-default",
+   "pos": [
+    2.94,
+    0,
+    -18.7
+   ],
+   "rotY": 0,
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 218
+  },
+  {
+   "id": "object-69",
+   "pack": "village-pack",
+   "asset": "Mountain_StoneRidge",
+   "name": "Mountain_StoneRidge",
+   "layerId": "layer-default",
+   "pos": [
+    2,
+    0,
+    -24
+   ],
+   "rotY": 0,
+   "scale": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 219
+  },
+  {
+   "id": "object-70",
+   "pack": "village-pack",
+   "asset": "Mountain_GraniteMassif",
+   "name": "Mountain_GraniteMassif",
+   "layerId": "layer-default",
+   "pos": [
+    -2,
+    0,
+    -34
+   ],
+   "rotY": 0,
+   "scale": [
+    0.58,
+    0.58,
+    0.58
+   ],
+   "visible": true,
+   "locked": false,
+   "order": 220
+  }
+ ]
+}

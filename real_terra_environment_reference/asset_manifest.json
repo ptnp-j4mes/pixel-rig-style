@@ -1,0 +1,2184 @@
+{
+  "project": "Real Terra",
+  "reference_image": "image(20261008-032130).png",
+  "image_size_px": [
+    1200,
+    560
+  ],
+  "asset_count": 77,
+  "note": "All dimensions are estimates, not measurements; observed visible region is one camera angle.",
+  "materials": [
+    {
+      "id": "M01",
+      "name": "Fine gray masonry / cut brick",
+      "base": "#918A7E",
+      "light": "#C2B8A8",
+      "shadow": "#4E514F",
+      "roughness": 0.88,
+      "metallic": 0,
+      "reference_pixels": [
+        "#8F836F",
+        "#97876E",
+        "#69655C"
+      ],
+      "notes": "Small rectangular stone pieces, dark mortar, stains at joints."
+    },
+    {
+      "id": "M02",
+      "name": "Large irregular wall foundation stone",
+      "base": "#807E75",
+      "light": "#B8AB95",
+      "shadow": "#4A4B4A",
+      "roughness": 0.92,
+      "metallic": 0,
+      "reference_pixels": [
+        "#665950",
+        "#917D64"
+      ],
+      "notes": "Rounded polygon stones, highly varied shapes, dark recessed joints."
+    },
+    {
+      "id": "M03",
+      "name": "Gate arch stone",
+      "base": "#A49A87",
+      "light": "#CBC0AF",
+      "shadow": "#6C6863",
+      "roughness": 0.84,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Bigger radial voussoir blocks with central keystone."
+    },
+    {
+      "id": "M04",
+      "name": "Dark navy blue fired roof tiles",
+      "base": "#425066",
+      "light": "#788394",
+      "shadow": "#182338",
+      "roughness": 0.48,
+      "metallic": 0,
+      "reference_pixels": [
+        "#20283A",
+        "#4E5568",
+        "#616A79"
+      ],
+      "notes": "Raised concave rows, ridge caps, localized sky sheen; not mirror-like."
+    },
+    {
+      "id": "M05",
+      "name": "Golden dried thatch",
+      "base": "#BC935F",
+      "light": "#E1C18A",
+      "shadow": "#73532D",
+      "roughness": 0.95,
+      "metallic": 0,
+      "reference_pixels": [
+        "#C7A469",
+        "#DABC80",
+        "#72522C"
+      ],
+      "notes": "Layered straw bundles, fraying eaves, dark gaps between bundles."
+    },
+    {
+      "id": "M06",
+      "name": "Old dark timber",
+      "base": "#67432F",
+      "light": "#9B6B49",
+      "shadow": "#38231D",
+      "roughness": 0.82,
+      "metallic": 0,
+      "reference_pixels": [
+        "#663B28",
+        "#3A2818"
+      ],
+      "notes": "Heavy posts and beams, chipped beveled edges and exposed grain."
+    },
+    {
+      "id": "M07",
+      "name": "Brown shingle / worn plank roofing",
+      "base": "#8E5B35",
+      "light": "#C0884F",
+      "shadow": "#4A3027",
+      "roughness": 0.84,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Overlapping aged brown plates with irregular edges."
+    },
+    {
+      "id": "M08",
+      "name": "White-beige lime plaster",
+      "base": "#D4C5A9",
+      "light": "#F0E1C8",
+      "shadow": "#988A75",
+      "roughness": 0.92,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Earthen infill patches in timber frames; subtle dirt at bottom."
+    },
+    {
+      "id": "M09",
+      "name": "Compacted warm ochre dirt",
+      "base": "#BC9161",
+      "light": "#D8AF7C",
+      "shadow": "#8C6849",
+      "roughness": 0.97,
+      "metallic": 0,
+      "reference_pixels": [
+        "#BD9261",
+        "#D0A76F"
+      ],
+      "notes": "Fine dusty granular micro-normal, footsteps, path ruts."
+    },
+    {
+      "id": "M10",
+      "name": "Grassland / short grass",
+      "base": "#697A46",
+      "light": "#A4B66A",
+      "shadow": "#395536",
+      "roughness": 0.95,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Mixed color blades, drier brown patches at edges."
+    },
+    {
+      "id": "M11",
+      "name": "Sunlit deciduous leaves",
+      "base": "#628347",
+      "light": "#A2B76D",
+      "shadow": "#355535",
+      "roughness": 0.78,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Leaf clusters with translucent edges, multi-hue scatter."
+    },
+    {
+      "id": "M12",
+      "name": "Conifer needles",
+      "base": "#35513C",
+      "light": "#697955",
+      "shadow": "#20392E",
+      "roughness": 0.82,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Compact darker layered cloud/needle clumps."
+    },
+    {
+      "id": "M13",
+      "name": "Autumn foliage",
+      "base": "#B3892A",
+      "light": "#D8B943",
+      "shadow": "#7A551E",
+      "roughness": 0.8,
+      "metallic": 0,
+      "reference_pixels": [
+        "#9F791C",
+        "#A1791D"
+      ],
+      "notes": "Single bright yellow-orange accent tree on west hill."
+    },
+    {
+      "id": "M14",
+      "name": "Pink blossom foliage",
+      "base": "#C78D95",
+      "light": "#EDBFC3",
+      "shadow": "#875666",
+      "roughness": 0.77,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Small pink bloom clusters, no uniform cotton-ball sphere."
+    },
+    {
+      "id": "M15",
+      "name": "Warm-gray mountain rock",
+      "base": "#918A7A",
+      "light": "#C3B8A1",
+      "shadow": "#525454",
+      "roughness": 0.93,
+      "metallic": 0,
+      "reference_pixels": [
+        "#B2A68C",
+        "#A2937D",
+        "#585959"
+      ],
+      "notes": "Huge smooth-weathered masses, fissures and shelf-like ledges."
+    },
+    {
+      "id": "M16",
+      "name": "Distant cool blue rock",
+      "base": "#68717A",
+      "light": "#9CA7AC",
+      "shadow": "#444D5A",
+      "roughness": 0.92,
+      "metallic": 0,
+      "reference_pixels": [
+        "#5B6C7E",
+        "#717783"
+      ],
+      "notes": "Atmospheric cool/desaturated version of mountain material."
+    },
+    {
+      "id": "M17",
+      "name": "Stream water",
+      "base": "#4D6276",
+      "light": "#8EA2AE",
+      "shadow": "#2C4152",
+      "roughness": 0.11,
+      "metallic": 0,
+      "reference_pixels": [
+        "#48576A",
+        "#5A6577"
+      ],
+      "notes": "Flowing slightly opaque blue-gray water, white foam in narrow bends."
+    },
+    {
+      "id": "M18",
+      "name": "White water foam",
+      "base": "#DAE3E0",
+      "light": "#F7F7EE",
+      "shadow": "#A3B7B4",
+      "roughness": 0.45,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Thin streaks, bubbles only near obstructions and drops."
+    },
+    {
+      "id": "M19",
+      "name": "Red pennant/banner cloth",
+      "base": "#A32E2B",
+      "light": "#CC4A36",
+      "shadow": "#642321",
+      "roughness": 0.87,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Long narrow vertical banners with dark printed emblems."
+    },
+    {
+      "id": "M20",
+      "name": "Decorative eave paint",
+      "base": "#276D6E",
+      "light": "#A8C8BA",
+      "shadow": "#24485A",
+      "roughness": 0.56,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Teal, cream, muted gold, red ornamental banding on brackets and poles."
+    },
+    {
+      "id": "M21",
+      "name": "Fired earthenware / clay pot",
+      "base": "#8F4E39",
+      "light": "#C07B50",
+      "shadow": "#4A2C27",
+      "roughness": 0.56,
+      "metallic": 0,
+      "reference_pixels": [],
+      "notes": "Rust brown terra-cotta, occasionally glazed highlights."
+    },
+    {
+      "id": "M22",
+      "name": "Blue sky and broken soft cloud",
+      "base": "#9FC9E3",
+      "light": "#D4DFE5",
+      "shadow": "#82ADC3",
+      "roughness": 1,
+      "metallic": 0,
+      "reference_pixels": [
+        "#A5C4D8",
+        "#B4CBD9"
+      ],
+      "notes": "Daytime atmospheric backdrop; source is display-referred."
+    }
+  ],
+  "landmark_regions": [
+    {
+      "name": "Southwest farmhouse",
+      "screen_roi_px": [
+        59,
+        365,
+        314,
+        560
+      ]
+    },
+    {
+      "name": "South-center farmhouse",
+      "screen_roi_px": [
+        609,
+        375,
+        835,
+        560
+      ]
+    },
+    {
+      "name": "Main stone wall",
+      "screen_roi_px": [
+        0,
+        220,
+        1200,
+        380
+      ]
+    },
+    {
+      "name": "Main arched gate",
+      "screen_roi_px": [
+        625,
+        187,
+        838,
+        407
+      ]
+    },
+    {
+      "name": "Creek",
+      "screen_roi_px": [
+        512,
+        323,
+        615,
+        560
+      ]
+    },
+    {
+      "name": "Right woodworking terrace",
+      "screen_roi_px": [
+        898,
+        252,
+        1150,
+        428
+      ]
+    },
+    {
+      "name": "Inner village center",
+      "screen_roi_px": [
+        310,
+        120,
+        840,
+        260
+      ]
+    },
+    {
+      "name": "Left mountains",
+      "screen_roi_px": [
+        26,
+        15,
+        420,
+        178
+      ]
+    },
+    {
+      "name": "Central/far mountains",
+      "screen_roi_px": [
+        382,
+        12,
+        900,
+        167
+      ]
+    },
+    {
+      "name": "Right pagoda hill",
+      "screen_roi_px": [
+        906,
+        0,
+        1199,
+        186
+      ]
+    },
+    {
+      "name": "Main south road",
+      "screen_roi_px": [
+        755,
+        315,
+        1199,
+        560
+      ]
+    },
+    {
+      "name": "Yellow autumn tree",
+      "screen_roi_px": [
+        30,
+        101,
+        154,
+        184
+      ]
+    },
+    {
+      "name": "Pink garden tree",
+      "screen_roi_px": [
+        444,
+        464,
+        582,
+        560
+      ]
+    },
+    {
+      "name": "Gate roof",
+      "screen_roi_px": [
+        619,
+        181,
+        829,
+        281
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "S01",
+      "name": "Fine coursed outer city wall",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        0,
+        225,
+        1200,
+        360
+      ],
+      "shape": "Long continuous gray stone band; courses of small flat rectangular blocks; offsets at wall joints.",
+      "surface": "Gray-beige masonry with dark mortar, sporadic chipped corners and streaks.",
+      "suggested_size_m": "module 4x1.1x3.0 (LxDxH), above base",
+      "detailing": "Modular straight, 45-degree corner, 90-degree corner and curved sections; no obvious perfect repeating texture.",
+      "material_ids": [
+        "M01"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Fine coursed outer city wall' (S01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Long continuous gray stone band; courses of small flat rectangular blocks; offsets at wall joints. Surface description: Gray-beige masonry with dark mortar, sporadic chipped corners and streaks. Modeling specifics: Modular straight, 45-degree corner, 90-degree corner and curved sections; no obvious perfect repeating texture. Approximate dimensions at an adopted human height of 1.75m: module 4x1.1x3.0 (LxDxH), above base (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S02",
+      "name": "Large irregular boulder foundation",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        0,
+        270,
+        1200,
+        385
+      ],
+      "shape": "Bottom 1/3-1/2 of fortification built from big rounded polygon stones with irregular interlocking joints.",
+      "surface": "Broader light gray stones, dark crevices, dusty near ground.",
+      "suggested_size_m": "module 4x1.6x2.2; stones .35-1.3 diameter",
+      "detailing": "Use 8-15 stone silhouettes per 4m panel, varied rotation and no uniform cobblestone grid.",
+      "material_ids": [
+        "M02"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Large irregular boulder foundation' (S02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Bottom 1/3-1/2 of fortification built from big rounded polygon stones with irregular interlocking joints. Surface description: Broader light gray stones, dark crevices, dusty near ground. Modeling specifics: Use 8-15 stone silhouettes per 4m panel, varied rotation and no uniform cobblestone grid. Approximate dimensions at an adopted human height of 1.75m: module 4x1.6x2.2; stones .35-1.3 diameter (estimate, adjust by composition). Material palette and PBR: Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S03",
+      "name": "Upper parapet and crenels",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        100,
+        265,
+        1200,
+        330
+      ],
+      "shape": "Flat wall-walk with raised outer protective lip and regular short block projections.",
+      "surface": "Same fine masonry; chipped raised outer edges, dirt in foot zones.",
+      "suggested_size_m": "parapet 1.0-1.3 high; walkway 2-3 wide",
+      "detailing": "Build walkable top, crenel repeat module, 2-4 variants.",
+      "material_ids": [
+        "M01"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Upper parapet and crenels' (S03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Flat wall-walk with raised outer protective lip and regular short block projections. Surface description: Same fine masonry; chipped raised outer edges, dirt in foot zones. Modeling specifics: Build walkable top, crenel repeat module, 2-4 variants. Approximate dimensions at an adopted human height of 1.75m: parapet 1.0-1.3 high; walkway 2-3 wide (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S04",
+      "name": "Main arched gate opening",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        660,
+        282,
+        808,
+        395
+      ],
+      "shape": "Tall round-headed opening with visibly larger radial stones and recessed dark tunnel.",
+      "surface": "Pale keystone arch, old brown interior shadows, coarse stone sidewalls.",
+      "suggested_size_m": "opening 5-7 wide x 4-5 high (prototype estimate)",
+      "detailing": "Build actual tunnel walls/ceiling for 360-degree camera; radial voussoirs need geometry.",
+      "material_ids": [
+        "M02",
+        "M03"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Main arched gate opening' (S04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tall round-headed opening with visibly larger radial stones and recessed dark tunnel. Surface description: Pale keystone arch, old brown interior shadows, coarse stone sidewalls. Modeling specifics: Build actual tunnel walls/ceiling for 360-degree camera; radial voussoirs need geometry. Approximate dimensions at an adopted human height of 1.75m: opening 5-7 wide x 4-5 high (prototype estimate) (estimate, adjust by composition). Material palette and PBR: Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92; Gate arch stone: base #A49A87, highlight #CBC0AF, shadow #6C6863, roughness 0.84. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S05",
+      "name": "Gate-top watch terrace",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        620,
+        220,
+        850,
+        315
+      ],
+      "shape": "Rectangular raised bastion over gate; dense small masonry and repeated tiny square openings.",
+      "surface": "Dirty gray dressed stone, recesses very dark.",
+      "suggested_size_m": "12-17 wide x 8 deep x 3 high above gate",
+      "detailing": "Corner caps, wall walk and visible floor slabs; square vent/arrow slit modules.",
+      "material_ids": [
+        "M01",
+        "M03"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 2,
+      "modeling_prompt_en": "Create 'Gate-top watch terrace' (S05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Rectangular raised bastion over gate; dense small masonry and repeated tiny square openings. Surface description: Dirty gray dressed stone, recesses very dark. Modeling specifics: Corner caps, wall walk and visible floor slabs; square vent/arrow slit modules. Approximate dimensions at an adopted human height of 1.75m: 12-17 wide x 8 deep x 3 high above gate (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88; Gate arch stone: base #A49A87, highlight #CBC0AF, shadow #6C6863, roughness 0.84. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 2 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S06",
+      "name": "Narrow guard openings in wall",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        630,
+        255,
+        830,
+        310
+      ],
+      "shape": "Tiny repeated black rectangle/square holes on gate tower facade.",
+      "surface": "Strong black AO/recess; pale beveled stone border.",
+      "suggested_size_m": "0.18-0.30 wide",
+      "detailing": "Model at least inset dark geometry on near hero wall, decal on distant repeats.",
+      "material_ids": [
+        "M01"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Narrow guard openings in wall' (S06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tiny repeated black rectangle/square holes on gate tower facade. Surface description: Strong black AO/recess; pale beveled stone border. Modeling specifics: Model at least inset dark geometry on near hero wall, decal on distant repeats. Approximate dimensions at an adopted human height of 1.75m: 0.18-0.30 wide (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S07",
+      "name": "Ascending wall ramp / stepped terrace",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        830,
+        170,
+        1190,
+        275
+      ],
+      "shape": "Wall changes elevation toward right upper ramparts, with terraces and a long walkway.",
+      "surface": "Gray stone paving and retaining faces; irregular rock foundation.",
+      "suggested_size_m": "ramp width 2.5-4; elevation tailored to slopes",
+      "detailing": "Keep pathway traversable; adapt endpoints to wall segment heights.",
+      "material_ids": [
+        "M01",
+        "M02"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 2,
+      "modeling_prompt_en": "Create 'Ascending wall ramp / stepped terrace' (S07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Wall changes elevation toward right upper ramparts, with terraces and a long walkway. Surface description: Gray stone paving and retaining faces; irregular rock foundation. Modeling specifics: Keep pathway traversable; adapt endpoints to wall segment heights. Approximate dimensions at an adopted human height of 1.75m: ramp width 2.5-4; elevation tailored to slopes (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88; Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 2 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S08",
+      "name": "Stone stairs and retaining plinths",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        920,
+        325,
+        1200,
+        430
+      ],
+      "shape": "Several gray stone steps elevate an open timber workshop from surrounding dirt.",
+      "surface": "Worn step centers with darker edge dirt.",
+      "suggested_size_m": "step rise .15-.22, tread .3-.5",
+      "detailing": "Use 4-7 step groups; plasterless stacked stone side walls.",
+      "material_ids": [
+        "M01",
+        "M02"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Stone stairs and retaining plinths' (S08) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Several gray stone steps elevate an open timber workshop from surrounding dirt. Surface description: Worn step centers with darker edge dirt. Modeling specifics: Use 4-7 step groups; plasterless stacked stone side walls. Approximate dimensions at an adopted human height of 1.75m: step rise .15-.22, tread .3-.5 (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88; Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "S09",
+      "name": "Stream culvert beneath wall",
+      "group": "Fortifications",
+      "screen_roi_px": [
+        507,
+        325,
+        585,
+        390
+      ],
+      "shape": "Low curved masonry opening where narrow stream emerges under defensive wall.",
+      "surface": "Deep dark wet recess at opening, waterline staining and slimy stones.",
+      "suggested_size_m": "opening 2-3 wide and 1.7-2.2 tall",
+      "detailing": "Water and opening must be continuous through wall, not a false dark plane.",
+      "material_ids": [
+        "M02",
+        "M03",
+        "M17"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Stream culvert beneath wall' (S09) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Low curved masonry opening where narrow stream emerges under defensive wall. Surface description: Deep dark wet recess at opening, waterline staining and slimy stones. Modeling specifics: Water and opening must be continuous through wall, not a false dark plane. Approximate dimensions at an adopted human height of 1.75m: opening 2-3 wide and 1.7-2.2 tall (estimate, adjust by composition). Material palette and PBR: Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92; Gate arch stone: base #A49A87, highlight #CBC0AF, shadow #6C6863, roughness 0.84; Stream water: base #4D6276, highlight #8EA2AE, shadow #2C4152, roughness 0.11. Create a modular traversable architecture mesh with accurate masonry depth, seamless attachment points, and collision-ready silhouette. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T01",
+      "name": "Broad main dirt road",
+      "group": "Terrain",
+      "screen_roi_px": [
+        775,
+        330,
+        1200,
+        560
+      ],
+      "shape": "Wide tan earth roadway, irregularly tapered, subtle worn center and sporadic paving pieces.",
+      "surface": "Warm ochre packed soil, fine granules, small pebbles and muted traffic ruts.",
+      "suggested_size_m": "5-8 wide",
+      "detailing": "Spline-based path, blend edges 1-2m into grass; preserve readable navigation.",
+      "material_ids": [
+        "M09"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Broad main dirt road' (T01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Wide tan earth roadway, irregularly tapered, subtle worn center and sporadic paving pieces. Surface description: Warm ochre packed soil, fine granules, small pebbles and muted traffic ruts. Modeling specifics: Spline-based path, blend edges 1-2m into grass; preserve readable navigation. Approximate dimensions at an adopted human height of 1.75m: 5-8 wide (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T02",
+      "name": "Inner village street",
+      "group": "Terrain",
+      "screen_roi_px": [
+        480,
+        137,
+        690,
+        275
+      ],
+      "shape": "Village road funnels from near center toward distant temple buildings, widening at nodes.",
+      "surface": "Sunlit beige dirt, slight wheel/foot trails, irregular blotchy dryness.",
+      "suggested_size_m": "4-7 wide",
+      "detailing": "Spline network links houses, market and plaza.",
+      "material_ids": [
+        "M09"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Inner village street' (T02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Village road funnels from near center toward distant temple buildings, widening at nodes. Surface description: Sunlit beige dirt, slight wheel/foot trails, irregular blotchy dryness. Modeling specifics: Spline network links houses, market and plaza. Approximate dimensions at an adopted human height of 1.75m: 4-7 wide (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T03",
+      "name": "Stepping-stone street margins",
+      "group": "Terrain",
+      "screen_roi_px": [
+        260,
+        385,
+        500,
+        560
+      ],
+      "shape": "Loose individual gray slabs form intermittent bordering lines along foreground cottage paths.",
+      "surface": "Dusty flat stone, corners mostly rounded, varied spacing and rotation.",
+      "suggested_size_m": "each stone .25-.65",
+      "detailing": "Place as scatter with exclusions around doorways; avoid perfect evenly spaced bricks.",
+      "material_ids": [
+        "M01",
+        "M09"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Stepping-stone street margins' (T03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Loose individual gray slabs form intermittent bordering lines along foreground cottage paths. Surface description: Dusty flat stone, corners mostly rounded, varied spacing and rotation. Modeling specifics: Place as scatter with exclusions around doorways; avoid perfect evenly spaced bricks. Approximate dimensions at an adopted human height of 1.75m: each stone .25-.65 (estimate, adjust by composition). Material palette and PBR: Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88; Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T04",
+      "name": "Bare farmyard courtyard",
+      "group": "Terrain",
+      "screen_roi_px": [
+        0,
+        375,
+        620,
+        560
+      ],
+      "shape": "Mostly open level dirt with wheel-worn patches and very sparse grass.",
+      "surface": "Broad warm pale ochre soil and random pale scuffs.",
+      "suggested_size_m": "courtyard 15-35 across",
+      "detailing": "Keep center uncluttered; use vertex paint and shallow cracks, tiny stone decals.",
+      "material_ids": [
+        "M09"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 2,
+      "modeling_prompt_en": "Create 'Bare farmyard courtyard' (T04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Mostly open level dirt with wheel-worn patches and very sparse grass. Surface description: Broad warm pale ochre soil and random pale scuffs. Modeling specifics: Keep center uncluttered; use vertex paint and shallow cracks, tiny stone decals. Approximate dimensions at an adopted human height of 1.75m: courtyard 15-35 across (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 2 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T05",
+      "name": "Grass field patch",
+      "group": "Terrain",
+      "screen_roi_px": [
+        835,
+        320,
+        1200,
+        470
+      ],
+      "shape": "Mottled green grass forms irregular islands near fences and house perimeters.",
+      "surface": "Cool-to-warm green variations, sparse brown soil holes and short blades.",
+      "suggested_size_m": "clusters .5-6 across",
+      "detailing": "Terrain splatmap plus instanced short tuft meshes and flower specks.",
+      "material_ids": [
+        "M10"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Grass field patch' (T05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Mottled green grass forms irregular islands near fences and house perimeters. Surface description: Cool-to-warm green variations, sparse brown soil holes and short blades. Modeling specifics: Terrain splatmap plus instanced short tuft meshes and flower specks. Approximate dimensions at an adopted human height of 1.75m: clusters .5-6 across (estimate, adjust by composition). Material palette and PBR: Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T06",
+      "name": "Dirt-grass transition edge",
+      "group": "Terrain",
+      "screen_roi_px": [
+        850,
+        360,
+        1130,
+        510
+      ],
+      "shape": "Uneven feathered boundary from compacted road to patchy lawn.",
+      "surface": "Brown-green gradient; small pebbles and tufts invade road edge.",
+      "suggested_size_m": "transition .5-2 wide",
+      "detailing": "No hard painted polygon border; randomized masks and decals.",
+      "material_ids": [
+        "M09",
+        "M10"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Dirt-grass transition edge' (T06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Uneven feathered boundary from compacted road to patchy lawn. Surface description: Brown-green gradient; small pebbles and tufts invade road edge. Modeling specifics: No hard painted polygon border; randomized masks and decals. Approximate dimensions at an adopted human height of 1.75m: transition .5-2 wide (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T07",
+      "name": "Rocky terrain berm and woodland soil",
+      "group": "Terrain",
+      "screen_roi_px": [
+        0,
+        155,
+        450,
+        350
+      ],
+      "shape": "Shallow undulating wooded banks and soil cut around rocky outcrops.",
+      "surface": "Dirt, embedded gray stone, grass tufts, sparse moss.",
+      "suggested_size_m": "bank heights .5-4",
+      "detailing": "Blend cliff/rock to soft ground with pebbles and dirt skirts.",
+      "material_ids": [
+        "M09",
+        "M10",
+        "M15"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Rocky terrain berm and woodland soil' (T07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Shallow undulating wooded banks and soil cut around rocky outcrops. Surface description: Dirt, embedded gray stone, grass tufts, sparse moss. Modeling specifics: Blend cliff/rock to soft ground with pebbles and dirt skirts. Approximate dimensions at an adopted human height of 1.75m: bank heights .5-4 (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T08",
+      "name": "Fenced small vegetable plot",
+      "group": "Terrain",
+      "screen_roi_px": [
+        398,
+        455,
+        550,
+        560
+      ],
+      "shape": "Tiny crop beds and flowering garden along foreground fence.",
+      "surface": "Dark fertile soil, green sprawling leaves and small warm orange produce.",
+      "suggested_size_m": "bed 1-4 long",
+      "detailing": "Raised soil strips, individual stems and fruits; crop species approximate due small image scale.",
+      "material_ids": [
+        "M09",
+        "M10",
+        "M11"
+      ],
+      "priority": "P2",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Fenced small vegetable plot' (T08) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tiny crop beds and flowering garden along foreground fence. Surface description: Dark fertile soil, green sprawling leaves and small warm orange produce. Modeling specifics: Raised soil strips, individual stems and fruits; crop species approximate due small image scale. Approximate dimensions at an adopted human height of 1.75m: bed 1-4 long (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "T09",
+      "name": "Gravel and road scuff decals",
+      "group": "Terrain",
+      "screen_roi_px": [
+        635,
+        320,
+        1200,
+        560
+      ],
+      "shape": "Small stones and short irregular scrapes break flat road color.",
+      "surface": "Gray-beige tiny gravel, transparent dust overlay.",
+      "suggested_size_m": "stone .02-.25; decals .2-2",
+      "detailing": "Reuse 10-20 decal/gravel silhouettes and random yaw.",
+      "material_ids": [
+        "M09",
+        "M01"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 12,
+      "modeling_prompt_en": "Create 'Gravel and road scuff decals' (T09) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small stones and short irregular scrapes break flat road color. Surface description: Gray-beige tiny gravel, transparent dust overlay. Modeling specifics: Reuse 10-20 decal/gravel silhouettes and random yaw. Approximate dimensions at an adopted human height of 1.75m: stone .02-.25; decals .2-2 (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Fine gray masonry / cut brick: base #918A7E, highlight #C2B8A8, shadow #4E514F, roughness 0.88. Create a terrain tile/patch with seamlessly blended material layers and realistic uneven edges. It must conform to an existing heightfield. Make 12 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B01",
+      "name": "Large long thatched farmhouse",
+      "group": "Buildings",
+      "screen_roi_px": [
+        62,
+        375,
+        318,
+        560
+      ],
+      "shape": "Long rectangular timber house, enormous slightly barrel/hip-shaped thick straw roof, exposed dark wall framing and narrow deck.",
+      "surface": "Golden straw, aged brown beams, dusty low plaster panels.",
+      "suggested_size_m": "13-17 long x 5-7 wide x 5-6 high",
+      "detailing": "Huge overhang .6-1.2m, roof bundle ribbing, occasional loose fraying fringe, stone stepping line.",
+      "material_ids": [
+        "M05",
+        "M06",
+        "M08"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Large long thatched farmhouse' (B01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Long rectangular timber house, enormous slightly barrel/hip-shaped thick straw roof, exposed dark wall framing and narrow deck. Surface description: Golden straw, aged brown beams, dusty low plaster panels. Modeling specifics: Huge overhang .6-1.2m, roof bundle ribbing, occasional loose fraying fringe, stone stepping line. Approximate dimensions at an adopted human height of 1.75m: 13-17 long x 5-7 wide x 5-6 high (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B02",
+      "name": "Front-right long thatched lodge",
+      "group": "Buildings",
+      "screen_roi_px": [
+        605,
+        375,
+        829,
+        560
+      ],
+      "shape": "Second long thatch structure, similar family, slanted toward view, fenced around perimeter.",
+      "surface": "Bright sunny straw top, deep shadow under eaves, brown timber panels.",
+      "suggested_size_m": "12-16 x 5-7 x 5-6 high",
+      "detailing": "Must be related kit to B01, vary roof sag, porch and openings.",
+      "material_ids": [
+        "M05",
+        "M06",
+        "M08"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Front-right long thatched lodge' (B02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Second long thatch structure, similar family, slanted toward view, fenced around perimeter. Surface description: Bright sunny straw top, deep shadow under eaves, brown timber panels. Modeling specifics: Must be related kit to B01, vary roof sag, porch and openings. Approximate dimensions at an adopted human height of 1.75m: 12-16 x 5-7 x 5-6 high (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B03",
+      "name": "Tiny steep-hip straw shelter",
+      "group": "Buildings",
+      "screen_roi_px": [
+        423,
+        303,
+        491,
+        397
+      ],
+      "shape": "Small hut with sharply pitched golden thatch roof directly outside wall.",
+      "surface": "Deep dark doorway, exposed straw tips, pale brown wood.",
+      "suggested_size_m": "3-5 x 3-4 x 3-4 high",
+      "detailing": "Steeper pyramid/rounded hipped silhouette; door and low sill.",
+      "material_ids": [
+        "M05",
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Tiny steep-hip straw shelter' (B03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small hut with sharply pitched golden thatch roof directly outside wall. Surface description: Deep dark doorway, exposed straw tips, pale brown wood. Modeling specifics: Steeper pyramid/rounded hipped silhouette; door and low sill. Approximate dimensions at an adopted human height of 1.75m: 3-5 x 3-4 x 3-4 high (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B04",
+      "name": "Rustic straw barn behind wall",
+      "group": "Buildings",
+      "screen_roi_px": [
+        468,
+        220,
+        593,
+        285
+      ],
+      "shape": "Modest timber building under simple tan roof embedded among shrubs behind wall.",
+      "surface": "Medium golden straw, brown rough frame.",
+      "suggested_size_m": "6-10 x 4-6 x 4-5 high",
+      "detailing": "Alternate gable/hip variants, irregular walls.",
+      "material_ids": [
+        "M05",
+        "M06",
+        "M08"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Rustic straw barn behind wall' (B04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Modest timber building under simple tan roof embedded among shrubs behind wall. Surface description: Medium golden straw, brown rough frame. Modeling specifics: Alternate gable/hip variants, irregular walls. Approximate dimensions at an adopted human height of 1.75m: 6-10 x 4-6 x 4-5 high (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B05",
+      "name": "Traditional blue-roof timber house",
+      "group": "Buildings",
+      "screen_roi_px": [
+        675,
+        132,
+        910,
+        225
+      ],
+      "shape": "One or two-storey timber house with multi-sloped dark blue ceramic roof and slightly lifted roof-tip corners.",
+      "surface": "Navy blue curved tiles, dark reddish-brown posts, beige wall infill.",
+      "suggested_size_m": "7-14 x 6-10 x 5-9 high",
+      "detailing": "Separate porch, pillars, shutters, base platform and eave brackets.",
+      "material_ids": [
+        "M04",
+        "M06",
+        "M08"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Traditional blue-roof timber house' (B05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: One or two-storey timber house with multi-sloped dark blue ceramic roof and slightly lifted roof-tip corners. Surface description: Navy blue curved tiles, dark reddish-brown posts, beige wall infill. Modeling specifics: Separate porch, pillars, shutters, base platform and eave brackets. Approximate dimensions at an adopted human height of 1.75m: 7-14 x 6-10 x 5-9 high (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B06",
+      "name": "Main open gate pavilion",
+      "group": "Buildings",
+      "screen_roi_px": [
+        623,
+        191,
+        821,
+        296
+      ],
+      "shape": "Open pavilion atop gate bastion, broad four-sided dark tiled roof and six-plus narrow red-brown columns.",
+      "surface": "Deep blue tile ribs, decorative teal eave painting, ornate corner upturns.",
+      "suggested_size_m": "11-15 wide x 6-9 deep x 6-8 above terrace",
+      "detailing": "Exposed painted rafters, ridge caps, finials, multi-row tile pattern and banners at entry.",
+      "material_ids": [
+        "M04",
+        "M06",
+        "M20"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Main open gate pavilion' (B06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Open pavilion atop gate bastion, broad four-sided dark tiled roof and six-plus narrow red-brown columns. Surface description: Deep blue tile ribs, decorative teal eave painting, ornate corner upturns. Modeling specifics: Exposed painted rafters, ridge caps, finials, multi-row tile pattern and banners at entry. Approximate dimensions at an adopted human height of 1.75m: 11-15 wide x 6-9 deep x 6-8 above terrace (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Decorative eave paint: base #276D6E, highlight #A8C8BA, shadow #24485A, roughness 0.56. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B07",
+      "name": "Small roofed parapet pavilion",
+      "group": "Buildings",
+      "screen_roi_px": [
+        930,
+        112,
+        1060,
+        201
+      ],
+      "shape": "Open air lookout pavilion on higher wall section at right center.",
+      "surface": "Dark navy hipped roof, brown wood posts, gray stone terrace.",
+      "suggested_size_m": "7-11 x 6-8 x 5-6 high",
+      "detailing": "Use same roof/post/bracket construction system as B06, smaller footprint.",
+      "material_ids": [
+        "M04",
+        "M06",
+        "M20"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Small roofed parapet pavilion' (B07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Open air lookout pavilion on higher wall section at right center. Surface description: Dark navy hipped roof, brown wood posts, gray stone terrace. Modeling specifics: Use same roof/post/bracket construction system as B06, smaller footprint. Approximate dimensions at an adopted human height of 1.75m: 7-11 x 6-8 x 5-6 high (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Decorative eave paint: base #276D6E, highlight #A8C8BA, shadow #24485A, roughness 0.56. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B08",
+      "name": "Raised wood workshop / terrace house",
+      "group": "Buildings",
+      "screen_roi_px": [
+        915,
+        265,
+        1139,
+        408
+      ],
+      "shape": "Raised wooden structure to far right with stacked timber framing, broad brown roof and repeated raised structural ribs.",
+      "surface": "Warm rusty brown, worn overlapping roof boards, dark open bays.",
+      "suggested_size_m": "10-17 x 6-11 x 5-8 high",
+      "detailing": "Keep elevated gray stepped base, open lower gallery, wooden railings and ribbed top roof profile.",
+      "material_ids": [
+        "M06",
+        "M07",
+        "M02"
+      ],
+      "priority": "P1",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Raised wood workshop / terrace house' (B08) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Raised wooden structure to far right with stacked timber framing, broad brown roof and repeated raised structural ribs. Surface description: Warm rusty brown, worn overlapping roof boards, dark open bays. Modeling specifics: Keep elevated gray stepped base, open lower gallery, wooden railings and ribbed top roof profile. Approximate dimensions at an adopted human height of 1.75m: 10-17 x 6-11 x 5-8 high (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Brown shingle / worn plank roofing: base #8E5B35, highlight #C0884F, shadow #4A3027, roughness 0.84; Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B09",
+      "name": "Small wooden market / storage shed",
+      "group": "Buildings",
+      "screen_roi_px": [
+        830,
+        285,
+        940,
+        355
+      ],
+      "shape": "Short low-stature covered stall near gate and workshop.",
+      "surface": "Straw-colored shade and aged timber supports.",
+      "suggested_size_m": "4-7 x 3-5 x 3-4 high",
+      "detailing": "Open sides, sacks/crates and attached rails.",
+      "material_ids": [
+        "M05",
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Small wooden market / storage shed' (B09) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Short low-stature covered stall near gate and workshop. Surface description: Straw-colored shade and aged timber supports. Modeling specifics: Open sides, sacks/crates and attached rails. Approximate dimensions at an adopted human height of 1.75m: 4-7 x 3-5 x 3-4 high (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B10",
+      "name": "Interior shop-houses and balconies",
+      "group": "Buildings",
+      "screen_roi_px": [
+        175,
+        135,
+        619,
+        266
+      ],
+      "shape": "Dense mixed single and two-storey timber buildings with varied brown, tiled and straw roof outlines.",
+      "surface": "Dark timber, cream plaster, dark clay tile, dirt patina.",
+      "suggested_size_m": "5-11 facade wide, 4-9 high",
+      "detailing": "Assemble from 3-5 wall modules and 4 roofs, stagger facades, varied porch and awnings.",
+      "material_ids": [
+        "M04",
+        "M05",
+        "M06",
+        "M08"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Interior shop-houses and balconies' (B10) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Dense mixed single and two-storey timber buildings with varied brown, tiled and straw roof outlines. Surface description: Dark timber, cream plaster, dark clay tile, dirt patina. Modeling specifics: Assemble from 3-5 wall modules and 4 roofs, stagger facades, varied porch and awnings. Approximate dimensions at an adopted human height of 1.75m: 5-11 facade wide, 4-9 high (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B11",
+      "name": "Far central civic or temple buildings",
+      "group": "Buildings",
+      "screen_roi_px": [
+        270,
+        87,
+        610,
+        175
+      ],
+      "shape": "Layered civic palace-like buildings and a far axial gateway creating central skyline focus.",
+      "surface": "Cool blue roofs, muted cream-red walls, distant haze.",
+      "suggested_size_m": "hero building 15-28 wide x 10-20 high",
+      "detailing": "Silhouette first, detail only at near LOD; no exact structure recoverable at this resolution.",
+      "material_ids": [
+        "M04",
+        "M06",
+        "M08",
+        "M16"
+      ],
+      "priority": "P2",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Far central civic or temple buildings' (B11) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Layered civic palace-like buildings and a far axial gateway creating central skyline focus. Surface description: Cool blue roofs, muted cream-red walls, distant haze. Modeling specifics: Silhouette first, detail only at near LOD; no exact structure recoverable at this resolution. Approximate dimensions at an adopted human height of 1.75m: hero building 15-28 wide x 10-20 high (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92; Distant cool blue rock: base #68717A, highlight #9CA7AC, shadow #444D5A, roughness 0.92. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "B12",
+      "name": "Multi-tier hilltop pagoda",
+      "group": "Buildings",
+      "screen_roi_px": [
+        1034,
+        0,
+        1125,
+        75
+      ],
+      "shape": "Distinct tall narrow multi-tier pagoda rising from right mountain crown.",
+      "surface": "Dark blue/black upturned tile floors and dark red-brown timber.",
+      "suggested_size_m": "height ~14-25; scale estimated",
+      "detailing": "Each roof overhangs level below; accentuate tiered skyline and sit on uneven rock plateau.",
+      "material_ids": [
+        "M04",
+        "M06",
+        "M15"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 2,
+      "modeling_prompt_en": "Create 'Multi-tier hilltop pagoda' (B12) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Distinct tall narrow multi-tier pagoda rising from right mountain crown. Surface description: Dark blue/black upturned tile floors and dark red-brown timber. Modeling specifics: Each roof overhangs level below; accentuate tiered skyline and sit on uneven rock plateau. Approximate dimensions at an adopted human height of 1.75m: height ~14-25; scale estimated (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create a standalone building with a fully resolved back and functional openings. Split roof, structural frame, walls, porch and decorative trim into meaningful submeshes. Make 2 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R01",
+      "name": "Blue ceramic roof tile module",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        634,
+        191,
+        801,
+        263
+      ],
+      "shape": "Small concave or convex interlocked longitudinal tiles; parallel striped ribs descend each slope.",
+      "surface": "Light edges dusty blue gray, recesses navy black.",
+      "suggested_size_m": "tile .22-.38 wide, .3-.48 long",
+      "detailing": "Use repeated tile row geometry on near roofs, baked normals in far LODs.",
+      "material_ids": [
+        "M04"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Blue ceramic roof tile module' (R01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small concave or convex interlocked longitudinal tiles; parallel striped ribs descend each slope. Surface description: Light edges dusty blue gray, recesses navy black. Modeling specifics: Use repeated tile row geometry on near roofs, baked normals in far LODs. Approximate dimensions at an adopted human height of 1.75m: tile .22-.38 wide, .3-.48 long (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R02",
+      "name": "Blue hip roof with curled eaves",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        615,
+        181,
+        827,
+        267
+      ],
+      "shape": "Broad sweeping hipped roof; corners project up and out; visible decorative line beneath eave.",
+      "surface": "Shadow beneath edge nearly black; slate blue glazed tiles on upper surfaces.",
+      "suggested_size_m": "module 7-15 wide, slope ~25-40deg",
+      "detailing": "Build roof as mesh surfaces or Bezier/spline lattice; roof ends must curl independently.",
+      "material_ids": [
+        "M04",
+        "M20"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Blue hip roof with curled eaves' (R02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Broad sweeping hipped roof; corners project up and out; visible decorative line beneath eave. Surface description: Shadow beneath edge nearly black; slate blue glazed tiles on upper surfaces. Modeling specifics: Build roof as mesh surfaces or Bezier/spline lattice; roof ends must curl independently. Approximate dimensions at an adopted human height of 1.75m: module 7-15 wide, slope ~25-40deg (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Decorative eave paint: base #276D6E, highlight #A8C8BA, shadow #24485A, roughness 0.56. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R03",
+      "name": "Long rounded thatch roof module",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        615,
+        380,
+        835,
+        558
+      ],
+      "shape": "Thick golden folded roof, curved long crest and giant hanging straw fringe at eave.",
+      "surface": "Sunlit pale golden ridges, warm chestnut weathered grooves.",
+      "suggested_size_m": "roof thickness .2-.45; overhang .5-1",
+      "detailing": "Layer base volume + clump cards + edge hair-like clumps; distinct 2D strand strokes.",
+      "material_ids": [
+        "M05"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Long rounded thatch roof module' (R03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Thick golden folded roof, curved long crest and giant hanging straw fringe at eave. Surface description: Sunlit pale golden ridges, warm chestnut weathered grooves. Modeling specifics: Layer base volume + clump cards + edge hair-like clumps; distinct 2D strand strokes. Approximate dimensions at an adopted human height of 1.75m: roof thickness .2-.45; overhang .5-1 (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R04",
+      "name": "Small conical / four-sided straw cap",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        419,
+        302,
+        494,
+        369
+      ],
+      "shape": "Tight steep roof with radial thatching and short rounded eaves.",
+      "surface": "Golden cap with dark interior underside.",
+      "suggested_size_m": "2.5-5 wide",
+      "detailing": "Fast low-poly geometry, extra strands around edge for silhouette.",
+      "material_ids": [
+        "M05"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Small conical / four-sided straw cap' (R04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tight steep roof with radial thatching and short rounded eaves. Surface description: Golden cap with dark interior underside. Modeling specifics: Fast low-poly geometry, extra strands around edge for silhouette. Approximate dimensions at an adopted human height of 1.75m: 2.5-5 wide (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R05",
+      "name": "Blue ridge ornament and end cap",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        623,
+        192,
+        798,
+        239
+      ],
+      "shape": "Long raised main ridge with dark cap tiles, curved tip-end flourishes.",
+      "surface": "Tile blue with chipped gray lighter rims.",
+      "suggested_size_m": "ridge running module .5-2",
+      "detailing": "Separate topper, finial, corner ornaments to add variety without a new roof mesh.",
+      "material_ids": [
+        "M04"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Blue ridge ornament and end cap' (R05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Long raised main ridge with dark cap tiles, curved tip-end flourishes. Surface description: Tile blue with chipped gray lighter rims. Modeling specifics: Separate topper, finial, corner ornaments to add variety without a new roof mesh. Approximate dimensions at an adopted human height of 1.75m: ridge running module .5-2 (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R06",
+      "name": "Painted bracket / eave timber details",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        620,
+        225,
+        810,
+        280
+      ],
+      "shape": "Interlocking timber brackets and rafter ends colored dark red, teal and soft cream.",
+      "surface": "Dark under-eave AO plus thin accent decorative paint.",
+      "suggested_size_m": "post .22-.5 thick; bracket .25-.8",
+      "detailing": "Use repeated beam prefabs with 3 paint pattern variants; bright trim stays narrow.",
+      "material_ids": [
+        "M06",
+        "M20"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Painted bracket / eave timber details' (R06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Interlocking timber brackets and rafter ends colored dark red, teal and soft cream. Surface description: Dark under-eave AO plus thin accent decorative paint. Modeling specifics: Use repeated beam prefabs with 3 paint pattern variants; bright trim stays narrow. Approximate dimensions at an adopted human height of 1.75m: post .22-.5 thick; bracket .25-.8 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Decorative eave paint: base #276D6E, highlight #A8C8BA, shadow #24485A, roughness 0.56. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "R07",
+      "name": "Small cloth market canopy",
+      "group": "Roof Modules",
+      "screen_roi_px": [
+        609,
+        135,
+        667,
+        186
+      ],
+      "shape": "Small white/pale cream fabric canopy with colorful red fabrics around festival or stalls.",
+      "surface": "Cream cloth, red accent trim; slightly uneven taut fabric.",
+      "suggested_size_m": "3-7 x 3-5",
+      "detailing": "Simple cloth folds, hanging edge, ropes and wooden posts.",
+      "material_ids": [
+        "M08",
+        "M19",
+        "M06"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Small cloth market canopy' (R07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small white/pale cream fabric canopy with colorful red fabrics around festival or stalls. Surface description: Cream cloth, red accent trim; slightly uneven taut fabric. Modeling specifics: Simple cloth folds, hanging edge, ropes and wooden posts. Approximate dimensions at an adopted human height of 1.75m: 3-7 x 3-5 (estimate, adjust by composition). Material palette and PBR: White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92; Red pennant/banner cloth: base #A32E2B, highlight #CC4A36, shadow #642321, roughness 0.87; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a separate reusable roof/construction prefab intended to snap to multiple building footprints, with real silhouette thickness. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V01",
+      "name": "Large green deciduous tree",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        0,
+        225,
+        400,
+        500
+      ],
+      "shape": "Brown trunk with 3-6 main forks carrying irregular rounded overlapping leaf crowns.",
+      "surface": "Dark olive inner foliage, bright medium green flecks catching sun.",
+      "suggested_size_m": "height 7-13, crown 4-9 wide",
+      "detailing": "Avoid single perfect sphere; compose 8-20 leaf clump volumes, trunk twist and exposed gaps.",
+      "material_ids": [
+        "M06",
+        "M11"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Large green deciduous tree' (V01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Brown trunk with 3-6 main forks carrying irregular rounded overlapping leaf crowns. Surface description: Dark olive inner foliage, bright medium green flecks catching sun. Modeling specifics: Avoid single perfect sphere; compose 8-20 leaf clump volumes, trunk twist and exposed gaps. Approximate dimensions at an adopted human height of 1.75m: height 7-13, crown 4-9 wide (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V02",
+      "name": "Medium light-green tree",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        520,
+        235,
+        1080,
+        465
+      ],
+      "shape": "Narrower upright canopy, brighter olive green; many along wall outside gate.",
+      "surface": "Leaf color fades lighter in sun, dark green core.",
+      "suggested_size_m": "height 5-10, crown 3-6",
+      "detailing": "Asymmetric lobes and crown lean; make 6 seed variations and randomized size.",
+      "material_ids": [
+        "M06",
+        "M11"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Medium light-green tree' (V02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Narrower upright canopy, brighter olive green; many along wall outside gate. Surface description: Leaf color fades lighter in sun, dark green core. Modeling specifics: Asymmetric lobes and crown lean; make 6 seed variations and randomized size. Approximate dimensions at an adopted human height of 1.75m: height 5-10, crown 3-6 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V03",
+      "name": "Sculptural evergreen / pine",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        90,
+        115,
+        810,
+        260
+      ],
+      "shape": "Dark evergreen separated horizontal layered crowns with sculptural bent branch silhouettes.",
+      "surface": "Deep forest blue-green, less saturated than broadleaf.",
+      "suggested_size_m": "height 6-12",
+      "detailing": "Tiered flattened foliage pads, exposed branch elbows; avoid Christmas-tree cone.",
+      "material_ids": [
+        "M06",
+        "M12"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Sculptural evergreen / pine' (V03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Dark evergreen separated horizontal layered crowns with sculptural bent branch silhouettes. Surface description: Deep forest blue-green, less saturated than broadleaf. Modeling specifics: Tiered flattened foliage pads, exposed branch elbows; avoid Christmas-tree cone. Approximate dimensions at an adopted human height of 1.75m: height 6-12 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Conifer needles: base #35513C, highlight #697955, shadow #20392E, roughness 0.82. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V04",
+      "name": "Yellow autumn ornamental tree",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        25,
+        106,
+        151,
+        179
+      ],
+      "shape": "One highly visible yellow-gold broadleaf crown on left-upper edge of village.",
+      "surface": "Ochre foliage shifting yellow sun edges, rich rust shadows.",
+      "suggested_size_m": "height 7-11",
+      "detailing": "Use V01 branching with separate autumn leaf kit; few dropped leaf decals.",
+      "material_ids": [
+        "M06",
+        "M13"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Yellow autumn ornamental tree' (V04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: One highly visible yellow-gold broadleaf crown on left-upper edge of village. Surface description: Ochre foliage shifting yellow sun edges, rich rust shadows. Modeling specifics: Use V01 branching with separate autumn leaf kit; few dropped leaf decals. Approximate dimensions at an adopted human height of 1.75m: height 7-11 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Autumn foliage: base #B3892A, highlight #D8B943, shadow #7A551E, roughness 0.80. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V05",
+      "name": "Pink spring blossom tree",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        435,
+        452,
+        585,
+        560
+      ],
+      "shape": "Distinct pale rose-pink flowering tree near foreground stream/garden.",
+      "surface": "Dense pale pink clusters over darker twig core.",
+      "suggested_size_m": "height 3-6",
+      "detailing": "Clusters on irregular branches, scatter some petals near base.",
+      "material_ids": [
+        "M06",
+        "M14"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Pink spring blossom tree' (V05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Distinct pale rose-pink flowering tree near foreground stream/garden. Surface description: Dense pale pink clusters over darker twig core. Modeling specifics: Clusters on irregular branches, scatter some petals near base. Approximate dimensions at an adopted human height of 1.75m: height 3-6 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Pink blossom foliage: base #C78D95, highlight #EDBFC3, shadow #875666, roughness 0.77. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V06",
+      "name": "Small bush and hedge clusters",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        750,
+        250,
+        1200,
+        500
+      ],
+      "shape": "Irregular mounded green shrubs along road, rocks and fences.",
+      "surface": "Dark core, olive-highlight outer leaves, mixed sizes.",
+      "suggested_size_m": "height .3-1.8",
+      "detailing": "4-8 lobes per bush, 12 variants including clipped and wild shapes.",
+      "material_ids": [
+        "M11"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 12,
+      "modeling_prompt_en": "Create 'Small bush and hedge clusters' (V06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Irregular mounded green shrubs along road, rocks and fences. Surface description: Dark core, olive-highlight outer leaves, mixed sizes. Modeling specifics: 4-8 lobes per bush, 12 variants including clipped and wild shapes. Approximate dimensions at an adopted human height of 1.75m: height .3-1.8 (estimate, adjust by composition). Material palette and PBR: Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 12 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V07",
+      "name": "Ground grass blade clumps",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        790,
+        360,
+        1199,
+        558
+      ],
+      "shape": "Tufts stick out from green turf, lightly sparse on roads.",
+      "surface": "Multiple olive / fresh-green blades plus dried tawny ends.",
+      "suggested_size_m": "height .08-.35",
+      "detailing": "Use cross cards in distant LOD and true small tapered clumps near camera.",
+      "material_ids": [
+        "M10"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 10,
+      "modeling_prompt_en": "Create 'Ground grass blade clumps' (V07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tufts stick out from green turf, lightly sparse on roads. Surface description: Multiple olive / fresh-green blades plus dried tawny ends. Modeling specifics: Use cross cards in distant LOD and true small tapered clumps near camera. Approximate dimensions at an adopted human height of 1.75m: height .08-.35 (estimate, adjust by composition). Material palette and PBR: Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 10 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V08",
+      "name": "Wild flowers and tiny light flecks",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        280,
+        320,
+        1120,
+        535
+      ],
+      "shape": "Very small yellow/white flower heads sprinkled amid grasses, especially garden/fence margins.",
+      "surface": "Warm pale cream flower heads with green stalks.",
+      "suggested_size_m": "height .1-.5",
+      "detailing": "Minimal scatter 1-4 flowers per patch, never uniform checkerboard.",
+      "material_ids": [
+        "M10",
+        "M14"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Wild flowers and tiny light flecks' (V08) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Very small yellow/white flower heads sprinkled amid grasses, especially garden/fence margins. Surface description: Warm pale cream flower heads with green stalks. Modeling specifics: Minimal scatter 1-4 flowers per patch, never uniform checkerboard. Approximate dimensions at an adopted human height of 1.75m: height .1-.5 (estimate, adjust by composition). Material palette and PBR: Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Pink blossom foliage: base #C78D95, highlight #EDBFC3, shadow #875666, roughness 0.77. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V09",
+      "name": "Vines and creeping leafy plants",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        365,
+        445,
+        605,
+        560
+      ],
+      "shape": "Low broad leaves climb/stay close to garden soil, with a few trailing tendrils.",
+      "surface": "Saturated green against brown-black garden dirt.",
+      "suggested_size_m": "height .1-.9",
+      "detailing": "Asymmetric vine mesh and squash-like big leaves; cultivar not identifiable.",
+      "material_ids": [
+        "M11",
+        "M09"
+      ],
+      "priority": "P2",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Vines and creeping leafy plants' (V09) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Low broad leaves climb/stay close to garden soil, with a few trailing tendrils. Surface description: Saturated green against brown-black garden dirt. Modeling specifics: Asymmetric vine mesh and squash-like big leaves; cultivar not identifiable. Approximate dimensions at an adopted human height of 1.75m: height .1-.9 (estimate, adjust by composition). Material palette and PBR: Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78; Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V10",
+      "name": "Forest middle-distance tree mass",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        0,
+        100,
+        1200,
+        255
+      ],
+      "shape": "Multiple compact green crowns produce canopy continuum between roofs and foothills.",
+      "surface": "Lower contrast olive-green clusters, softened by distance haze.",
+      "suggested_size_m": "height 5-13",
+      "detailing": "Hybrid near true meshes / distant imposter LOD for budget.",
+      "material_ids": [
+        "M11",
+        "M12",
+        "M16"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 7,
+      "modeling_prompt_en": "Create 'Forest middle-distance tree mass' (V10) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Multiple compact green crowns produce canopy continuum between roofs and foothills. Surface description: Lower contrast olive-green clusters, softened by distance haze. Modeling specifics: Hybrid near true meshes / distant imposter LOD for budget. Approximate dimensions at an adopted human height of 1.75m: height 5-13 (estimate, adjust by composition). Material palette and PBR: Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78; Conifer needles: base #35513C, highlight #697955, shadow #20392E, roughness 0.82; Distant cool blue rock: base #68717A, highlight #9CA7AC, shadow #444D5A, roughness 0.92. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 7 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V11",
+      "name": "Patchy moss at stones and wet bank",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        500,
+        320,
+        630,
+        515
+      ],
+      "shape": "Dark green moss appears on wet stone contacts, shaded rock/ground corners.",
+      "surface": "Low rough velvety dark-green layers.",
+      "suggested_size_m": "thin decals; .03-.2 thick",
+      "detailing": "Decal only near moisture; do not uniformly paint every stone.",
+      "material_ids": [
+        "M10",
+        "M15"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Patchy moss at stones and wet bank' (V11) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Dark green moss appears on wet stone contacts, shaded rock/ground corners. Surface description: Low rough velvety dark-green layers. Modeling specifics: Decal only near moisture; do not uniformly paint every stone. Approximate dimensions at an adopted human height of 1.75m: thin decals; .03-.2 thick (estimate, adjust by composition). Material palette and PBR: Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "V12",
+      "name": "Agricultural vegetable crop clumps",
+      "group": "Vegetation",
+      "screen_roi_px": [
+        425,
+        490,
+        567,
+        560
+      ],
+      "shape": "Clustered broad leaves, twining low plants and a few yellow/orange harvest objects.",
+      "surface": "Bright green leaves and tan/orange fruit accents.",
+      "suggested_size_m": "plant .25-.9 tall",
+      "detailing": "Use distinct leaf, stem, fruit instanced components; exact produce uncertain.",
+      "material_ids": [
+        "M11",
+        "M09"
+      ],
+      "priority": "P2",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Agricultural vegetable crop clumps' (V12) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Clustered broad leaves, twining low plants and a few yellow/orange harvest objects. Surface description: Bright green leaves and tan/orange fruit accents. Modeling specifics: Use distinct leaf, stem, fruit instanced components; exact produce uncertain. Approximate dimensions at an adopted human height of 1.75m: plant .25-.9 tall (estimate, adjust by composition). Material palette and PBR: Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78; Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97. Create a foliage mesh with irregular plant growth, asymmetric branch/crown structure and foliage clusters suitable for instancing. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "K01",
+      "name": "Huge rounded stacked mountain cluster",
+      "group": "Geology",
+      "screen_roi_px": [
+        35,
+        0,
+        420,
+        175
+      ],
+      "shape": "Tall mountain assembled from vertical broad rounded rock monoliths; a soft rocky silhouette with notched summits.",
+      "surface": "Warm gray sunlit planar lobes, deep cool crevices, vegetation on ledges.",
+      "suggested_size_m": "height 35-120+ (scene scale variable)",
+      "detailing": "Create three layers: base mass, big lobes and scree stones, then trees; avoid razor-sharp triangles.",
+      "material_ids": [
+        "M15"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Huge rounded stacked mountain cluster' (K01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tall mountain assembled from vertical broad rounded rock monoliths; a soft rocky silhouette with notched summits. Surface description: Warm gray sunlit planar lobes, deep cool crevices, vegetation on ledges. Modeling specifics: Create three layers: base mass, big lobes and scree stones, then trees; avoid razor-sharp triangles. Approximate dimensions at an adopted human height of 1.75m: height 35-120+ (scene scale variable) (estimate, adjust by composition). Material palette and PBR: Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create an irregular rock/cliff module with large-scale sculpted form, erosion seams and enough surface geometry to catch sunlight; do not make uniformly faceted pyramids. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "K02",
+      "name": "Far blue-gray mountain chain",
+      "group": "Geology",
+      "screen_roi_px": [
+        400,
+        10,
+        890,
+        165
+      ],
+      "shape": "Multiple lower and higher peaks layered behind central town.",
+      "surface": "Cool low-saturation rock blue-gray and fading haze.",
+      "suggested_size_m": "height 25-130+ scene-dependent",
+      "detailing": "Several background depth bands, each with distinct silhouette; lower detail LOD.",
+      "material_ids": [
+        "M16"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Far blue-gray mountain chain' (K02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Multiple lower and higher peaks layered behind central town. Surface description: Cool low-saturation rock blue-gray and fading haze. Modeling specifics: Several background depth bands, each with distinct silhouette; lower detail LOD. Approximate dimensions at an adopted human height of 1.75m: height 25-130+ scene-dependent (estimate, adjust by composition). Material palette and PBR: Distant cool blue rock: base #68717A, highlight #9CA7AC, shadow #444D5A, roughness 0.92. Create an irregular rock/cliff module with large-scale sculpted form, erosion seams and enough surface geometry to catch sunlight; do not make uniformly faceted pyramids. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "K03",
+      "name": "Right cliff temple hill",
+      "group": "Geology",
+      "screen_roi_px": [
+        900,
+        10,
+        1200,
+        188
+      ],
+      "shape": "Tall boulder pile under remote pagoda with many sheer rounded vertical splits.",
+      "surface": "Rock in gray-beige sunlight, deep crevices and patchy small trees.",
+      "suggested_size_m": "height 30-85 relative village",
+      "detailing": "Reserve flat summit pad and paths/ledges for pagoda; scatter plants only on pockets.",
+      "material_ids": [
+        "M15"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Right cliff temple hill' (K03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Tall boulder pile under remote pagoda with many sheer rounded vertical splits. Surface description: Rock in gray-beige sunlight, deep crevices and patchy small trees. Modeling specifics: Reserve flat summit pad and paths/ledges for pagoda; scatter plants only on pockets. Approximate dimensions at an adopted human height of 1.75m: height 30-85 relative village (estimate, adjust by composition). Material palette and PBR: Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create an irregular rock/cliff module with large-scale sculpted form, erosion seams and enough surface geometry to catch sunlight; do not make uniformly faceted pyramids. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "K04",
+      "name": "Village boulder / rock outcrop",
+      "group": "Geology",
+      "screen_roi_px": [
+        0,
+        148,
+        600,
+        380
+      ],
+      "shape": "Small to medium smoothly broken boulders placed by water, walls and houses.",
+      "surface": "Mottled gray/brown faces with dark inner fissures, rare moss.",
+      "suggested_size_m": "diameter .6-5",
+      "detailing": "15-plus reusable silhouettes, 30-100% buried in soil.",
+      "material_ids": [
+        "M15",
+        "M02"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 15,
+      "modeling_prompt_en": "Create 'Village boulder / rock outcrop' (K04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small to medium smoothly broken boulders placed by water, walls and houses. Surface description: Mottled gray/brown faces with dark inner fissures, rare moss. Modeling specifics: 15-plus reusable silhouettes, 30-100% buried in soil. Approximate dimensions at an adopted human height of 1.75m: diameter .6-5 (estimate, adjust by composition). Material palette and PBR: Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93; Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create an irregular rock/cliff module with large-scale sculpted form, erosion seams and enough surface geometry to catch sunlight; do not make uniformly faceted pyramids. Make 15 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "K05",
+      "name": "Stream stone and pebble scatter",
+      "group": "Geology",
+      "screen_roi_px": [
+        520,
+        335,
+        610,
+        560
+      ],
+      "shape": "Mixed small round/flat stones border stream and sit at bends.",
+      "surface": "Wet darker gray where submerged, dusty gray-beige upland.",
+      "suggested_size_m": "diameter .08-.7",
+      "detailing": "Stones oriented with stream; use pebbles at water turbulence points.",
+      "material_ids": [
+        "M02",
+        "M15"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 12,
+      "modeling_prompt_en": "Create 'Stream stone and pebble scatter' (K05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Mixed small round/flat stones border stream and sit at bends. Surface description: Wet darker gray where submerged, dusty gray-beige upland. Modeling specifics: Stones oriented with stream; use pebbles at water turbulence points. Approximate dimensions at an adopted human height of 1.75m: diameter .08-.7 (estimate, adjust by composition). Material palette and PBR: Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92; Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create an irregular rock/cliff module with large-scale sculpted form, erosion seams and enough surface geometry to catch sunlight; do not make uniformly faceted pyramids. Make 12 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "H01",
+      "name": "Narrow winding stream",
+      "group": "Water",
+      "screen_roi_px": [
+        522,
+        331,
+        610,
+        560
+      ],
+      "shape": "Narrow continuous blue-gray channel flowing down from wall culvert toward lower screen.",
+      "surface": "Water surface moderately reflective with bright white turbulent streaks.",
+      "suggested_size_m": "width 1.4-3.5; depth .25-.8",
+      "detailing": "Carve meandering bank into terrain; use water ribbon spline and depth opacity.",
+      "material_ids": [
+        "M17"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Narrow winding stream' (H01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Narrow continuous blue-gray channel flowing down from wall culvert toward lower screen. Surface description: Water surface moderately reflective with bright white turbulent streaks. Modeling specifics: Carve meandering bank into terrain; use water ribbon spline and depth opacity. Approximate dimensions at an adopted human height of 1.75m: width 1.4-3.5; depth .25-.8 (estimate, adjust by composition). Material palette and PBR: Stream water: base #4D6276, highlight #8EA2AE, shadow #2C4152, roughness 0.11. Create a spline-compatible water feature mesh/material with coherent flow direction, varied shoreline intersection and small local turbulence. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "H02",
+      "name": "White turbulence at stream bends",
+      "group": "Water",
+      "screen_roi_px": [
+        536,
+        373,
+        605,
+        544
+      ],
+      "shape": "Thin foam filaments and broken pale streaks tracing rocks, bends and constrictions.",
+      "surface": "Near-white specular flecks, pale cool-gray foam.",
+      "suggested_size_m": "bands .05-.5 wide",
+      "detailing": "Flow map follows stream tangent; low foam density in calm portions.",
+      "material_ids": [
+        "M18"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'White turbulence at stream bends' (H02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Thin foam filaments and broken pale streaks tracing rocks, bends and constrictions. Surface description: Near-white specular flecks, pale cool-gray foam. Modeling specifics: Flow map follows stream tangent; low foam density in calm portions. Approximate dimensions at an adopted human height of 1.75m: bands .05-.5 wide (estimate, adjust by composition). Material palette and PBR: White water foam: base #DAE3E0, highlight #F7F7EE, shadow #A3B7B4, roughness 0.45. Create a spline-compatible water feature mesh/material with coherent flow direction, varied shoreline intersection and small local turbulence. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "H03",
+      "name": "Stream bank wet-soil transition",
+      "group": "Water",
+      "screen_roi_px": [
+        505,
+        338,
+        620,
+        560
+      ],
+      "shape": "Uneven muddy slopes with rock and rough grass from dry soil into water.",
+      "surface": "Dark wet brown at waterline, greener on higher bank.",
+      "suggested_size_m": "bank width .3-1.5",
+      "detailing": "Gradient vertex colors; embedded pebbles; creek depth must read at top-down camera.",
+      "material_ids": [
+        "M09",
+        "M10",
+        "M15"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Stream bank wet-soil transition' (H03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Uneven muddy slopes with rock and rough grass from dry soil into water. Surface description: Dark wet brown at waterline, greener on higher bank. Modeling specifics: Gradient vertex colors; embedded pebbles; creek depth must read at top-down camera. Approximate dimensions at an adopted human height of 1.75m: bank width .3-1.5 (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Warm-gray mountain rock: base #918A7A, highlight #C3B8A1, shadow #525454, roughness 0.93. Create a spline-compatible water feature mesh/material with coherent flow direction, varied shoreline intersection and small local turbulence. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "H04",
+      "name": "Culvert shadowed water patch",
+      "group": "Water",
+      "screen_roi_px": [
+        523,
+        335,
+        569,
+        383
+      ],
+      "shape": "Dark water emerges from a shaded shallow wall tunnel.",
+      "surface": "Bluish-black water with strong lip shadow and lightening downstream.",
+      "suggested_size_m": "2-3 wide",
+      "detailing": "Use light occlusion and darker underwater bed, not absolute black.",
+      "material_ids": [
+        "M17",
+        "M02"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Culvert shadowed water patch' (H04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Dark water emerges from a shaded shallow wall tunnel. Surface description: Bluish-black water with strong lip shadow and lightening downstream. Modeling specifics: Use light occlusion and darker underwater bed, not absolute black. Approximate dimensions at an adopted human height of 1.75m: 2-3 wide (estimate, adjust by composition). Material palette and PBR: Stream water: base #4D6276, highlight #8EA2AE, shadow #2C4152, roughness 0.11; Large irregular wall foundation stone: base #807E75, highlight #B8AB95, shadow #4A4B4A, roughness 0.92. Create a spline-compatible water feature mesh/material with coherent flow direction, varied shoreline intersection and small local turbulence. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P01",
+      "name": "Tall red vertical town pennant",
+      "group": "Props",
+      "screen_roi_px": [
+        0,
+        240,
+        535,
+        338
+      ],
+      "shape": "Narrow rectangular red banners hang off upright sticks; dark circular / stamped marks.",
+      "surface": "Weathered brick-red cloth with almost black emblem and slight wrinkles.",
+      "suggested_size_m": "height 2.5-5, banner .4-1 wide",
+      "detailing": "2-3 pattern variants, bend cloth asymmetrically.",
+      "material_ids": [
+        "M19",
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Tall red vertical town pennant' (P01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Narrow rectangular red banners hang off upright sticks; dark circular / stamped marks. Surface description: Weathered brick-red cloth with almost black emblem and slight wrinkles. Modeling specifics: 2-3 pattern variants, bend cloth asymmetrically. Approximate dimensions at an adopted human height of 1.75m: height 2.5-5, banner .4-1 wide (estimate, adjust by composition). Material palette and PBR: Red pennant/banner cloth: base #A32E2B, highlight #CC4A36, shadow #642321, roughness 0.87; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P02",
+      "name": "Simple horizontal split-rail fence",
+      "group": "Props",
+      "screen_roi_px": [
+        230,
+        350,
+        950,
+        560
+      ],
+      "shape": "Short wooden stakes with two low horizontal beams; encloses garden and roadside houses.",
+      "surface": "Golden brown worn wood with dark joining pegs.",
+      "suggested_size_m": "height .7-1.2, section 1.5-3",
+      "detailing": "Straight, corner, end, gate, broken variant; uneven posts.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 7,
+      "modeling_prompt_en": "Create 'Simple horizontal split-rail fence' (P02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Short wooden stakes with two low horizontal beams; encloses garden and roadside houses. Surface description: Golden brown worn wood with dark joining pegs. Modeling specifics: Straight, corner, end, gate, broken variant; uneven posts. Approximate dimensions at an adopted human height of 1.75m: height .7-1.2, section 1.5-3 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 7 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P03",
+      "name": "Woven low reed fence",
+      "group": "Props",
+      "screen_roi_px": [
+        290,
+        385,
+        800,
+        558
+      ],
+      "shape": "Thin woven reed/repeated stick fencing around thatched houses and garden.",
+      "surface": "Pale ochre bamboo-like strips, dark lashings.",
+      "suggested_size_m": "height .8-1.3",
+      "detailing": "Use mesh with geometry+alpha only for far LOD, avoid alpha overdraw near camera.",
+      "material_ids": [
+        "M05",
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Woven low reed fence' (P03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Thin woven reed/repeated stick fencing around thatched houses and garden. Surface description: Pale ochre bamboo-like strips, dark lashings. Modeling specifics: Use mesh with geometry+alpha only for far LOD, avoid alpha overdraw near camera. Approximate dimensions at an adopted human height of 1.75m: height .8-1.3 (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95; Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P04",
+      "name": "Clay jars and water pots",
+      "group": "Props",
+      "screen_roi_px": [
+        488,
+        340,
+        950,
+        480
+      ],
+      "shape": "Rounded reddish clay jars, some with wide open mouths and dark interior.",
+      "surface": "Terracotta red-brown, spots of glazed shine and grime.",
+      "suggested_size_m": "height .4-1.3",
+      "detailing": "4 silhouette variants: fat amphora-like, squat bowl, wide jar, tall jar.",
+      "material_ids": [
+        "M21"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Clay jars and water pots' (P04) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Rounded reddish clay jars, some with wide open mouths and dark interior. Surface description: Terracotta red-brown, spots of glazed shine and grime. Modeling specifics: 4 silhouette variants: fat amphora-like, squat bowl, wide jar, tall jar. Approximate dimensions at an adopted human height of 1.75m: height .4-1.3 (estimate, adjust by composition). Material palette and PBR: Fired earthenware / clay pot: base #8F4E39, highlight #C07B50, shadow #4A2C27, roughness 0.56. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P05",
+      "name": "Crates and lumber boxes",
+      "group": "Props",
+      "screen_roi_px": [
+        440,
+        320,
+        1115,
+        430
+      ],
+      "shape": "Small rectangular weathered wooden crates or storage boxes next to fences and workshops.",
+      "surface": "Mid brown boards, black joints and pale chipped edges.",
+      "suggested_size_m": "0.3-1.2 each side",
+      "detailing": "Reusable box mesh with rotated plank textures and open-top option.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Crates and lumber boxes' (P05) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small rectangular weathered wooden crates or storage boxes next to fences and workshops. Surface description: Mid brown boards, black joints and pale chipped edges. Modeling specifics: Reusable box mesh with rotated plank textures and open-top option. Approximate dimensions at an adopted human height of 1.75m: 0.3-1.2 each side (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P06",
+      "name": "Grain / straw bundle bales",
+      "group": "Props",
+      "screen_roi_px": [
+        350,
+        320,
+        1130,
+        419
+      ],
+      "shape": "Pale straw bunches scattered near huts and workshops.",
+      "surface": "Dry golden straw with warm-brown gaps and tied cord.",
+      "suggested_size_m": "length .6-1.6",
+      "detailing": "Bales with messy silhouette and ropes, several rotations.",
+      "material_ids": [
+        "M05"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 7,
+      "modeling_prompt_en": "Create 'Grain / straw bundle bales' (P06) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Pale straw bunches scattered near huts and workshops. Surface description: Dry golden straw with warm-brown gaps and tied cord. Modeling specifics: Bales with messy silhouette and ropes, several rotations. Approximate dimensions at an adopted human height of 1.75m: length .6-1.6 (estimate, adjust by composition). Material palette and PBR: Golden dried thatch: base #BC935F, highlight #E1C18A, shadow #73532D, roughness 0.95. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 7 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P07",
+      "name": "Wooden benches and tables",
+      "group": "Props",
+      "screen_roi_px": [
+        310,
+        389,
+        1070,
+        411
+      ],
+      "shape": "Simple rough slat benches and narrow rectangular tables along roads and within workshops.",
+      "surface": "Aged brown wood with sunlit scraped surfaces.",
+      "suggested_size_m": "bench 1-2 long",
+      "detailing": "Low cross braces and uneven seat plank thickness.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Wooden benches and tables' (P07) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Simple rough slat benches and narrow rectangular tables along roads and within workshops. Surface description: Aged brown wood with sunlit scraped surfaces. Modeling specifics: Low cross braces and uneven seat plank thickness. Approximate dimensions at an adopted human height of 1.75m: bench 1-2 long (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P08",
+      "name": "Logs and stacked planks",
+      "group": "Props",
+      "screen_roi_px": [
+        850,
+        320,
+        1100,
+        418
+      ],
+      "shape": "Sawed timbers, timber piles and long plank stacks near far-right workshop.",
+      "surface": "Warm raw brown wood, visible end grain.",
+      "suggested_size_m": "length .8-4",
+      "detailing": "3 log diameters, 5 plank lengths, surface roughness and endcaps.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 9,
+      "modeling_prompt_en": "Create 'Logs and stacked planks' (P08) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Sawed timbers, timber piles and long plank stacks near far-right workshop. Surface description: Warm raw brown wood, visible end grain. Modeling specifics: 3 log diameters, 5 plank lengths, surface roughness and endcaps. Approximate dimensions at an adopted human height of 1.75m: length .8-4 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 9 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P09",
+      "name": "Small two-wheeled wooden handcart",
+      "group": "Props",
+      "screen_roi_px": [
+        760,
+        270,
+        1020,
+        370
+      ],
+      "shape": "Simple handcarts and transport objects around village labor areas.",
+      "surface": "Medium wood wheels/handles, dusty iron-gray hubs.",
+      "suggested_size_m": "length 1.5-2.8",
+      "detailing": "Only interpret generic cart geometry; exact vehicle partly obscured.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P2",
+      "visual_confidence": "partly-inferred",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Small two-wheeled wooden handcart' (P09) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Simple handcarts and transport objects around village labor areas. Surface description: Medium wood wheels/handles, dusty iron-gray hubs. Modeling specifics: Only interpret generic cart geometry; exact vehicle partly obscured. Approximate dimensions at an adopted human height of 1.75m: length 1.5-2.8 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P10",
+      "name": "Wooden wayside sign",
+      "group": "Props",
+      "screen_roi_px": [
+        905,
+        373,
+        1110,
+        447
+      ],
+      "shape": "Small dark roadside board and thin vertical support visible outside workshop zone.",
+      "surface": "Dark wooden board with cool blue-black face.",
+      "suggested_size_m": "height 1.4-2.1",
+      "detailing": "1-2 board widths and blackened calligraphy decals if legible reference available.",
+      "material_ids": [
+        "M06",
+        "M04"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 4,
+      "modeling_prompt_en": "Create 'Wooden wayside sign' (P10) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small dark roadside board and thin vertical support visible outside workshop zone. Surface description: Dark wooden board with cool blue-black face. Modeling specifics: 1-2 board widths and blackened calligraphy decals if legible reference available. Approximate dimensions at an adopted human height of 1.75m: height 1.4-2.1 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 4 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P11",
+      "name": "Standing lamp / hanging lantern pole",
+      "group": "Props",
+      "screen_roi_px": [
+        420,
+        185,
+        1170,
+        440
+      ],
+      "shape": "Thin lantern posts with small warm orange-red hanging lights near streets and buildings.",
+      "surface": "Dark timber/iron shaft and warm orange cloth lantern accent.",
+      "suggested_size_m": "height 2.5-4",
+      "detailing": "At noon no emissive bloom is necessary; lantern mostly reads as physical object.",
+      "material_ids": [
+        "M06",
+        "M19"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Standing lamp / hanging lantern pole' (P11) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Thin lantern posts with small warm orange-red hanging lights near streets and buildings. Surface description: Dark timber/iron shaft and warm orange cloth lantern accent. Modeling specifics: At noon no emissive bloom is necessary; lantern mostly reads as physical object. Approximate dimensions at an adopted human height of 1.75m: height 2.5-4 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Red pennant/banner cloth: base #A32E2B, highlight #CC4A36, shadow #642321, roughness 0.87. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P12",
+      "name": "Marketplace fabric and ribbon",
+      "group": "Props",
+      "screen_roi_px": [
+        603,
+        136,
+        709,
+        192
+      ],
+      "shape": "White stall shade plus compact strips of colored cloth around village plaza.",
+      "surface": "White cream, vermilion and multiple faint festive accents.",
+      "suggested_size_m": "cloth flags .3-2 tall",
+      "detailing": "Two-sided cloth mesh and simple wrinkle normal.",
+      "material_ids": [
+        "M08",
+        "M19"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 6,
+      "modeling_prompt_en": "Create 'Marketplace fabric and ribbon' (P12) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: White stall shade plus compact strips of colored cloth around village plaza. Surface description: White cream, vermilion and multiple faint festive accents. Modeling specifics: Two-sided cloth mesh and simple wrinkle normal. Approximate dimensions at an adopted human height of 1.75m: cloth flags .3-2 tall (estimate, adjust by composition). Material palette and PBR: White-beige lime plaster: base #D4C5A9, highlight #F0E1C8, shadow #988A75, roughness 0.92; Red pennant/banner cloth: base #A32E2B, highlight #CC4A36, shadow #642321, roughness 0.87. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 6 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P13",
+      "name": "Decorative garden planter",
+      "group": "Props",
+      "screen_roi_px": [
+        485,
+        441,
+        579,
+        556
+      ],
+      "shape": "Small wooden or stone-bordered planted boxes with flowers and vegetable leaves.",
+      "surface": "Muted beige wood or stone edge with green growth.",
+      "suggested_size_m": "size .5-2.5",
+      "detailing": "Use modular border tiles and instanced plant clusters.",
+      "material_ids": [
+        "M06",
+        "M09",
+        "M11"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 5,
+      "modeling_prompt_en": "Create 'Decorative garden planter' (P13) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small wooden or stone-bordered planted boxes with flowers and vegetable leaves. Surface description: Muted beige wood or stone edge with green growth. Modeling specifics: Use modular border tiles and instanced plant clusters. Approximate dimensions at an adopted human height of 1.75m: size .5-2.5 (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82; Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Sunlit deciduous leaves: base #628347, highlight #A2B76D, shadow #355535, roughness 0.78. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 5 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P14",
+      "name": "Wooden support brace and ladder",
+      "group": "Props",
+      "screen_roi_px": [
+        650,
+        230,
+        1110,
+        388
+      ],
+      "shape": "Visible diagonal braces under open pavilions and workshop railings; short climbing supports.",
+      "surface": "Dark timber with highlighted angular edges.",
+      "suggested_size_m": "brace .7-2.5 long",
+      "detailing": "Build corner diagonals separately; no need every joint unique.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 8,
+      "modeling_prompt_en": "Create 'Wooden support brace and ladder' (P14) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Visible diagonal braces under open pavilions and workshop railings; short climbing supports. Surface description: Dark timber with highlighted angular edges. Modeling specifics: Build corner diagonals separately; no need every joint unique. Approximate dimensions at an adopted human height of 1.75m: brace .7-2.5 long (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 8 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P15",
+      "name": "Guard / traveler scale figures",
+      "group": "Props",
+      "screen_roi_px": [
+        695,
+        316,
+        1020,
+        558
+      ],
+      "shape": "Small stylized humans on road at gate and right foreground, helpful for evaluating building sizes.",
+      "surface": "Tiny contrasting dark/colored outfits.",
+      "suggested_size_m": "character height 1.6-1.85 (prototype)",
+      "detailing": "For environment reference only: stand-in capsules acceptable for blockout.",
+      "material_ids": [
+        "M06"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 3,
+      "modeling_prompt_en": "Create 'Guard / traveler scale figures' (P15) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Small stylized humans on road at gate and right foreground, helpful for evaluating building sizes. Surface description: Tiny contrasting dark/colored outfits. Modeling specifics: For environment reference only: stand-in capsules acceptable for blockout. Approximate dimensions at an adopted human height of 1.75m: character height 1.6-1.85 (prototype) (estimate, adjust by composition). Material palette and PBR: Old dark timber: base #67432F, highlight #9B6B49, shadow #38231D, roughness 0.82. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 3 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "P16",
+      "name": "Loose flowers, fallen leaves and stones",
+      "group": "Props",
+      "screen_roi_px": [
+        0,
+        290,
+        1200,
+        560
+      ],
+      "shape": "Sparse small debris localized to roads, tree roots, fences and gardens.",
+      "surface": "Tan dirt, dark greens, pale blossoms, grays.",
+      "suggested_size_m": "object .03-.3",
+      "detailing": "Use distance culling and scattering masks rather than manual placing every grain.",
+      "material_ids": [
+        "M09",
+        "M10",
+        "M14"
+      ],
+      "priority": "P2",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 12,
+      "modeling_prompt_en": "Create 'Loose flowers, fallen leaves and stones' (P16) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Sparse small debris localized to roads, tree roots, fences and gardens. Surface description: Tan dirt, dark greens, pale blossoms, grays. Modeling specifics: Use distance culling and scattering masks rather than manual placing every grain. Approximate dimensions at an adopted human height of 1.75m: object .03-.3 (estimate, adjust by composition). Material palette and PBR: Compacted warm ochre dirt: base #BC9161, highlight #D8AF7C, shadow #8C6849, roughness 0.97; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95; Pink blossom foliage: base #C78D95, highlight #EDBFC3, shadow #875666, roughness 0.77. Create a compact standalone ground prop with strong readable silhouette from elevated oblique camera, correctly scaled texture and clean pivot. Make 12 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "D01",
+      "name": "Layered cloud sky",
+      "group": "Background",
+      "screen_roi_px": [
+        0,
+        0,
+        1199,
+        150
+      ],
+      "shape": "Soft blue daytime sky with broken diffuse white cloud clusters.",
+      "surface": "Blue cyan sky top, near-white broken clouds, little saturation in distant haze.",
+      "suggested_size_m": "sky atmosphere or dome",
+      "detailing": "Use procedural sky, soft cloud layers and low contrast near horizon.",
+      "material_ids": [
+        "M22"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Layered cloud sky' (D01) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Soft blue daytime sky with broken diffuse white cloud clusters. Surface description: Blue cyan sky top, near-white broken clouds, little saturation in distant haze. Modeling specifics: Use procedural sky, soft cloud layers and low contrast near horizon. Approximate dimensions at an adopted human height of 1.75m: sky atmosphere or dome (estimate, adjust by composition). Material palette and PBR: Blue sky and broken soft cloud: base #9FC9E3, highlight #D4DFE5, shadow #82ADC3, roughness 1.00. Create a low-detail layered environment/backdrop prefab with coherent silhouette and atmospheric perspective support. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "D02",
+      "name": "Far rooftops and miniature hamlet cluster",
+      "group": "Background",
+      "screen_roi_px": [
+        0,
+        80,
+        1200,
+        235
+      ],
+      "shape": "Dense tiny blue roof silhouettes interspersed with trees across mid/far valley.",
+      "surface": "Desaturated blue-gray tile roofs and warm hazy walls.",
+      "suggested_size_m": "roof clusters 3-15 wide",
+      "detailing": "Use low LOD prefabs instanced along valley; keep varying heights.",
+      "material_ids": [
+        "M04",
+        "M16",
+        "M10"
+      ],
+      "priority": "P1",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 10,
+      "modeling_prompt_en": "Create 'Far rooftops and miniature hamlet cluster' (D02) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Dense tiny blue roof silhouettes interspersed with trees across mid/far valley. Surface description: Desaturated blue-gray tile roofs and warm hazy walls. Modeling specifics: Use low LOD prefabs instanced along valley; keep varying heights. Approximate dimensions at an adopted human height of 1.75m: roof clusters 3-15 wide (estimate, adjust by composition). Material palette and PBR: Dark navy blue fired roof tiles: base #425066, highlight #788394, shadow #182338, roughness 0.48; Distant cool blue rock: base #68717A, highlight #9CA7AC, shadow #444D5A, roughness 0.92; Grassland / short grass: base #697A46, highlight #A4B66A, shadow #395536, roughness 0.95. Create a low-detail layered environment/backdrop prefab with coherent silhouette and atmospheric perspective support. Make 10 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    },
+    {
+      "id": "D03",
+      "name": "Layered atmospheric depth treatment",
+      "group": "Background",
+      "screen_roi_px": [
+        0,
+        35,
+        1199,
+        220
+      ],
+      "shape": "Near houses sharply defined, far valley softer, far mountains cooler and less contrasty.",
+      "surface": "Blue-grey airy haze; sky-colored shadow lift.",
+      "suggested_size_m": "near 0-40, middle 40-180, far 180+ distance bands",
+      "detailing": "Distance values are prototype-specific; adjust to preserve silhouette readability.",
+      "material_ids": [
+        "M16",
+        "M22"
+      ],
+      "priority": "P0",
+      "visual_confidence": "direct-visible",
+      "suggested_variants": 1,
+      "modeling_prompt_en": "Create 'Layered atmospheric depth treatment' (D03) for a stylized high-detail Korean / East-Asian fantasy rural village environment viewed from an elevated oblique camera. Observed appearance: Near houses sharply defined, far valley softer, far mountains cooler and less contrasty. Surface description: Blue-grey airy haze; sky-colored shadow lift. Modeling specifics: Distance values are prototype-specific; adjust to preserve silhouette readability. Approximate dimensions at an adopted human height of 1.75m: near 0-40, middle 40-180, far 180+ distance bands (estimate, adjust by composition). Material palette and PBR: Distant cool blue rock: base #68717A, highlight #9CA7AC, shadow #444D5A, roughness 0.92; Blue sky and broken soft cloud: base #9FC9E3, highlight #D4DFE5, shadow #82ADC3, roughness 1.00. Create a low-detail layered environment/backdrop prefab with coherent silhouette and atmospheric perspective support. Make 1 shape/style variations where appropriate, preserving the same asset family. Deliver complete geometry that works when rotated around 360 degrees, clean UVs and normals, and mesh/material separation suitable for real-time GLB export. Do not turn the screenshot itself into a textured plane, and do not introduce unrelated architecture."
+    }
+  ]
+}

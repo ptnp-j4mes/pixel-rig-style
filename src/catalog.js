@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const prototypes = new Map(); // "pack/name" -> normalized prototype
 const inflight = new Map();   // "pack/name" -> Promise<boolean: ok>
 const thumbs = new Map();     // "pack/name" -> dataURL
-const glbCache = new Map();   // pack id -> Promise<scene> (for 'glb' packs)
+const glbCache = new Map();   // pack/file -> Promise<scene> (for 'glb' packs)
 let manifest = null;
 
 let thumbRenderer, thumbScene, thumbCamera;
@@ -61,12 +61,15 @@ async function getPrototype(pack, name) {
   if (prototypes.has(k)) return prototypes.get(k);
   const entry = manifest.find((p) => p.id === pack);
   if (!entry) throw new Error(`unknown pack: ${pack}`);
+  const modelEntry = entry.entries.find((item) => item.name === name);
   let raw;
   if (entry.type === 'glb') {
-    if (!glbCache.has(pack)) {
-      glbCache.set(pack, loadGLTF('/packs/' + pack + '/' + entry.file).then((gltf) => gltf.scene));
+    const file = modelEntry?.file ?? entry.file;
+    const cacheKey = `${pack}/${file}`;
+    if (!glbCache.has(cacheKey)) {
+      glbCache.set(cacheKey, loadGLTF('/packs/' + pack + '/' + file).then((gltf) => gltf.scene));
     }
-    const scene = await glbCache.get(pack);
+    const scene = await glbCache.get(cacheKey);
     let node = null;
     scene.traverse((c) => { if (!node && c.name === name) node = c; });
     if (!node) throw new Error(`node not found in ${pack}: ${name}`);
@@ -83,7 +86,7 @@ async function getPrototype(pack, name) {
 
 export function loadModel(pack, name) {
   const k = key(pack, name);
-  if (prototypes.has(k)) return Promise.resolve(instantiate(prototypes.get(k)));
+  if (prototypes.has(k)) return Promise.resolve(instantiate(prototypes.get(k), pack, name));
   if (!inflight.has(k)) {
     inflight.set(
       k,
@@ -92,16 +95,16 @@ export function loadModel(pack, name) {
         .catch((err) => { console.warn(`model missing: ${pack}/${name}`, err); inflight.delete(k); return false; })
     );
   }
-  return inflight.get(k).then((ok) => (ok ? instantiate(prototypes.get(k)) : placeholder(pack, name)));
+  return inflight.get(k).then((ok) => (ok ? instantiate(prototypes.get(k), pack, name) : placeholder(pack, name)));
 }
 
-function instantiate(proto) {
+function instantiate(proto, pack, name) {
   const obj = proto.clone(true);
   obj.userData.size = proto.userData.size;
   obj.traverse((child) => {
     if (child.isMesh) {
       child.material = child.material.clone(); // per-instance: highlight must not leak
-      child.castShadow = true;
+      child.castShadow = !(pack === 'village-pack' && name.startsWith('Road_'));
       child.receiveShadow = true;
     }
   });

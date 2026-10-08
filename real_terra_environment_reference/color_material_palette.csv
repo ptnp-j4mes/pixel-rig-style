@@ -1,0 +1,23 @@
+id,name,base,light,shadow,roughness,metallic,reference_pixels,notes
+M01,Fine gray masonry / cut brick,#918A7E,#C2B8A8,#4E514F,0.88,0,#8F836F;#97876E;#69655C,"Small rectangular stone pieces, dark mortar, stains at joints."
+M02,Large irregular wall foundation stone,#807E75,#B8AB95,#4A4B4A,0.92,0,#665950;#917D64,"Rounded polygon stones, highly varied shapes, dark recessed joints."
+M03,Gate arch stone,#A49A87,#CBC0AF,#6C6863,0.84,0,,Bigger radial voussoir blocks with central keystone.
+M04,Dark navy blue fired roof tiles,#425066,#788394,#182338,0.48,0,#20283A;#4E5568;#616A79,"Raised concave rows, ridge caps, localized sky sheen; not mirror-like."
+M05,Golden dried thatch,#BC935F,#E1C18A,#73532D,0.95,0,#C7A469;#DABC80;#72522C,"Layered straw bundles, fraying eaves, dark gaps between bundles."
+M06,Old dark timber,#67432F,#9B6B49,#38231D,0.82,0,#663B28;#3A2818,"Heavy posts and beams, chipped beveled edges and exposed grain."
+M07,Brown shingle / worn plank roofing,#8E5B35,#C0884F,#4A3027,0.84,0,,Overlapping aged brown plates with irregular edges.
+M08,White-beige lime plaster,#D4C5A9,#F0E1C8,#988A75,0.92,0,,Earthen infill patches in timber frames; subtle dirt at bottom.
+M09,Compacted warm ochre dirt,#BC9161,#D8AF7C,#8C6849,0.97,0,#BD9261;#D0A76F,"Fine dusty granular micro-normal, footsteps, path ruts."
+M10,Grassland / short grass,#697A46,#A4B66A,#395536,0.95,0,,"Mixed color blades, drier brown patches at edges."
+M11,Sunlit deciduous leaves,#628347,#A2B76D,#355535,0.78,0,,"Leaf clusters with translucent edges, multi-hue scatter."
+M12,Conifer needles,#35513C,#697955,#20392E,0.82,0,,Compact darker layered cloud/needle clumps.
+M13,Autumn foliage,#B3892A,#D8B943,#7A551E,0.8,0,#9F791C;#A1791D,Single bright yellow-orange accent tree on west hill.
+M14,Pink blossom foliage,#C78D95,#EDBFC3,#875666,0.77,0,,"Small pink bloom clusters, no uniform cotton-ball sphere."
+M15,Warm-gray mountain rock,#918A7A,#C3B8A1,#525454,0.93,0,#B2A68C;#A2937D;#585959,"Huge smooth-weathered masses, fissures and shelf-like ledges."
+M16,Distant cool blue rock,#68717A,#9CA7AC,#444D5A,0.92,0,#5B6C7E;#717783,Atmospheric cool/desaturated version of mountain material.
+M17,Stream water,#4D6276,#8EA2AE,#2C4152,0.11,0,#48576A;#5A6577,"Flowing slightly opaque blue-gray water, white foam in narrow bends."
+M18,White water foam,#DAE3E0,#F7F7EE,#A3B7B4,0.45,0,,"Thin streaks, bubbles only near obstructions and drops."
+M19,Red pennant/banner cloth,#A32E2B,#CC4A36,#642321,0.87,0,,Long narrow vertical banners with dark printed emblems.
+M20,Decorative eave paint,#276D6E,#A8C8BA,#24485A,0.56,0,,"Teal, cream, muted gold, red ornamental banding on brackets and poles."
+M21,Fired earthenware / clay pot,#8F4E39,#C07B50,#4A2C27,0.56,0,,"Rust brown terra-cotta, occasionally glazed highlights."
+M22,Blue sky and broken soft cloud,#9FC9E3,#D4DFE5,#82ADC3,1,0,#A5C4D8;#B4CBD9,Daytime atmospheric backdrop; source is display-referred.

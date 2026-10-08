@@ -9,23 +9,29 @@
     body {
       margin: 0; height: 100vh; overflow: hidden; font: 13px system-ui, sans-serif;
       display: grid;
-      grid-template: "toolbar toolbar toolbar" auto "sidebar viewport props" minmax(0, 1fr) / 250px minmax(0, 1fr) 230px;
+      grid-template: "toolbar toolbar toolbar" auto "sidebar viewport props" minmax(0, 1fr) / 240px minmax(0, 1fr) 330px;
       background: #1e1f22; color: #ddd;
     }
     #sidebar, #viewport, #properties { min-height: 0; min-width: 0; }
     #toolbar {
-      grid-area: toolbar; display: flex; gap: 6px; align-items: center;
-      padding: 6px 10px; background: #2a2b2f; border-bottom: 1px solid #000;
+      grid-area: toolbar; display: flex; gap: 5px; align-items: center; min-width: 0;
+      padding: 5px 8px; background: #2a2b2f; border-bottom: 1px solid #000; overflow-x: auto;
     }
-    #toolbar .spacer { flex: 1; }
-    #map-name { width: 140px; background: #1a1b1e; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; }
+    #toolbar .spacer { flex: 1; min-width: 8px; }
+    #map-name { width: 128px; min-width: 112px; height: 44px; background: #1a1b1e; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; }
     button {
       background: #3a3b40; color: #ddd; border: 1px solid #555; border-radius: 4px;
       padding: 4px 10px; cursor: pointer; font: inherit;
     }
+    button:disabled { opacity: .42; cursor: default; }
     button:hover { background: #4a4b50; }
     button.active { background: #3d5a2e; border-color: #5a8a3e; }
     button.danger { background: #5a2e2e; border-color: #8a3e3e; }
+    .toolbar-action { min-height: 44px; flex: none; }
+    .tool-group { display: flex; align-items: center; gap: 4px; flex: none; padding-right: 6px; border-right: 1px solid #45464a; }
+    .icon-btn { width: 44px; height: 44px; min-width: 44px; padding: 8px; display: grid; place-items: center; flex: none; }
+    .icon-btn svg, .icon-btn img { width: 22px; height: 22px; display: block; }
+    .icon-btn img { object-fit: contain; filter: brightness(0) invert(.9); }
     #sidebar { grid-area: sidebar; display: flex; flex-direction: column; background: #26272b; border-right: 1px solid #000; }
     #palette-search { margin: 8px; padding: 5px 8px; background: #1a1b1e; color: #ddd; border: 1px solid #444; border-radius: 4px; }
     #palette { flex: 1; overflow-y: auto; padding-bottom: 10px; }
@@ -39,16 +45,63 @@
     .palette-item img { width: 72px; height: 72px; object-fit: contain; background: #1a1b1e; border-radius: 3px; }
     .palette-item span { font-size: 10px; text-align: center; word-break: break-all; max-height: 26px; overflow: hidden; }
     #viewport { grid-area: viewport; position: relative; min-width: 0; }
-    #viewport canvas { display: block; }
+    #viewport canvas { display: block; touch-action: none; }
+    #play-hud { position: absolute; inset: 12px 12px auto; z-index: 4; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; pointer-events: none; }
+    #play-hud[hidden] { display: none; }
+    #play-hud .play-hint { max-width: 330px; padding: 9px 12px; border-radius: 6px; background: #17191ddd; color: #f1f1f1; box-shadow: 0 2px 12px #0006; }
+    #play-hud .play-hint p { margin: 3px 0 0; color: #d0d0d0; }
+    #play-hud button { pointer-events: auto; min-height: 38px; padding: 6px 12px; border: 1px solid #555; border-radius: 5px; background: #2a2b2f; color: #eee; font: inherit; cursor: pointer; }
     #properties {
       grid-area: props; background: #26272b; border-left: 1px solid #000;
-      padding: 10px; overflow-y: auto;
+      display: flex; flex-direction: column; min-height: 0; overflow: hidden;
     }
-    #properties h3 { margin: 0 0 10px; font-size: 13px; color: #aab; word-break: break-all; }
-    #properties label { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 6px; }
-    #properties input { width: 80px; background: #1a1b1e; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 3px 5px; }
-    #properties .row { display: flex; gap: 6px; margin-top: 8px; }
-    #properties .row button { flex: 1; }
+    #layer-panel { display: flex; flex: 1 1 55%; flex-direction: column; min-height: 120px; padding: 8px 8px 0; }
+    #layer-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 6px; }
+    #layer-heading h2, #inspector h2 { margin: 0; color: #c5c7d0; font-size: 13px; }
+    #layer-tree { flex: 1; min-height: 0; overflow: auto; padding-bottom: 8px; }
+    .tree-layer { margin-bottom: 3px; }
+    .tree-row { min-height: 44px; display: flex; align-items: center; gap: 1px; padding: 0 1px; border-radius: 4px; }
+    .tree-row.drop-target { outline: 1px solid #9acb70; background: #394637; }
+    .tree-row.selected { background: #35465a; }
+    .tree-row.active-layer { background: #353d31; }
+    .tree-children { margin-left: 13px; border-left: 1px solid #48494e; padding-left: 3px; }
+    .tree-caret, .tree-action { min-width: 44px; width: 44px; height: 44px; padding: 2px; flex: none; }
+    .tree-select { height: 44px; }
+    .tree-caret { border-color: transparent; background: transparent; color: #aeb2bc; font-size: 17px; }
+    .tree-select { flex: 1; min-width: 30px; overflow: hidden; border-color: transparent; background: transparent; padding: 3px 5px; text-align: left; white-space: nowrap; text-overflow: ellipsis; }
+    .tree-select:hover { background: #41434a; }
+    .tree-action { font-size: 16px; line-height: 1; }
+    .tree-check { min-width: 44px; width: 44px; height: 44px; display: grid; place-items: center; cursor: pointer; flex: none; }
+    .tree-check input { width: 18px; height: 18px; margin: 0; accent-color: #81a9d2; }
+    .tree-active { color: #b4d891; }
+    #inspector { flex: 0 1 310px; min-height: 145px; max-height: 42vh; overflow: auto; padding: 9px; border-top: 1px solid #111; }
+    #prop-name { margin: 5px 0 10px; color: #aab; font-size: 12px; overflow-wrap: anywhere; }
+    #inspector label { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 6px; }
+    #inspector input { width: 92px; height: 32px; background: #1a1b1e; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 3px 5px; }
+    #inspector .row { display: flex; gap: 6px; margin-top: 8px; }
+    #inspector .row button { min-height: 44px; flex: 1; }
+    #icon-credit { padding: 6px 9px 8px; border-top: 1px solid #111; color: #9b9da5; font-size: 10px; }
+    #icon-credit a { color: #b8c6df; }
+    #action-dialog { width: min(360px, calc(100vw - 32px)); border: 1px solid #55575e; border-radius: 8px; padding: 16px; background: #292a2f; color: #ddd; box-shadow: 0 16px 48px #0009; }
+    #action-dialog::backdrop { background: #0009; }
+    #action-dialog h2 { margin: 0 0 10px; font-size: 15px; }
+    #action-dialog p { margin: 0 0 12px; color: #c4c6cc; }
+    #action-dialog label { display: grid; gap: 6px; margin: 10px 0; }
+    #action-dialog [hidden] { display: none !important; }
+    #action-dialog input { height: 42px; padding: 6px 8px; border: 1px solid #555; border-radius: 4px; background: #1a1b1e; color: #ddd; font: inherit; }
+    #action-dialog menu { display: flex; justify-content: flex-end; gap: 8px; margin: 14px 0 0; padding: 0; }
+    #action-dialog menu button { min-height: 44px; }
+    button:focus-visible, input:focus-visible { outline: 2px solid #9acb70; outline-offset: 1px; }
+    #btn-set-spawn.active { background: #48613d; border-color: #8ab36f; }
+    body.playing { grid-template: "viewport" minmax(0, 1fr) / minmax(0, 1fr); }
+    body.playing #toolbar, body.playing #sidebar, body.playing #properties { display: none; }
+    @media (max-width: 760px) {
+      body { height: 100dvh; grid-template: "toolbar" auto "viewport" minmax(200px, 1fr) "props" minmax(240px, .8fr) "sidebar" minmax(130px, .5fr) / minmax(0, 1fr); }
+      #properties { border-left: 0; border-top: 1px solid #000; }
+      #inspector { max-height: 32vh; }
+      #sidebar { border-right: 0; border-top: 1px solid #000; }
+      #toolbar .spacer { display: none; }
+    }
     #banner {
       position: fixed; top: 40px; left: 50%; transform: translateX(-50%);
       background: #6a1f1f; color: #faa; padding: 8px 16px; border-radius: 6px; z-index: 10;
@@ -61,37 +114,67 @@
 </head>
 <body>
   <header id="toolbar">
-    <input id="map-name" value="my-village" />
-    <button id="btn-new">ใหม่</button>
-    <button id="btn-save">บันทึก</button>
-    <button id="btn-load">เปิดไฟล์</button>
+    <input id="map-name" value="my-village" aria-label="ชื่อ map" />
+    <button id="btn-new" class="toolbar-action">ใหม่</button>
+    <button id="btn-save" class="toolbar-action" title="ส่งออกไฟล์ JSON สำหรับเปิดเล่นใน web app">ส่งออก JSON</button>
+    <button id="btn-load" class="toolbar-action">เปิดไฟล์</button>
+    <button id="btn-play" class="toolbar-action">เล่น</button>
+    <button id="btn-set-spawn" class="toolbar-action" aria-pressed="false" title="คลิกบนพื้นเพื่อกำหนดจุดเกิด">ตั้งจุดเกิด</button>
     <span class="spacer"></span>
-    <button id="btn-reset-cam">รีเซ็ตกล้อง</button>
-    <button id="btn-snap">Snap 1m</button>
-    <button id="btn-grid" class="active">กริด</button>
+    <div class="tool-group" aria-label="เครื่องมือแผนที่">
+      <button id="tool-select" class="icon-btn active" data-icon="select" title="เลือก" aria-label="เครื่องมือเลือก" aria-pressed="true"></button>
+      <button id="tool-pan" class="icon-btn" data-icon="pan" title="เลื่อนมุมมอง" aria-label="เครื่องมือเลื่อนมุมมอง" aria-pressed="false"></button>
+      <button id="tool-move" class="icon-btn" data-icon="move" title="ขยับ object" aria-label="เครื่องมือขยับ object" aria-pressed="false"></button>
+      <button id="rot-90" class="icon-btn" data-icon="rotate" title="หมุน 90° (R)" aria-label="หมุน object 90 องศา"></button>
+      <button id="btn-reset-cam" class="icon-btn" data-icon="view" title="รีเซ็ตมุมมอง" aria-label="รีเซ็ตมุมมอง"></button>
+      <button id="btn-grid" class="icon-btn active" data-icon="grid" title="แสดง/ซ่อนกริด" aria-label="แสดงหรือซ่อนกริด" aria-pressed="true"></button>
+      <button id="btn-snap" class="icon-btn" data-icon="snap" title="Snap 1m" aria-label="สลับ Snap 1 เมตร" aria-pressed="false"></button>
+    </div>
+    <div class="tool-group" aria-label="จัดการแผนที่">
+      <button id="btn-layer" class="icon-btn" data-icon="layer" title="สร้าง Layer" aria-label="สร้าง Layer"></button>
+      <button id="btn-group" class="icon-btn" data-icon="group" title="Group object ที่เลือก" aria-label="จัด object ที่เลือกเป็น Group" disabled></button>
+      <button id="btn-delete" class="icon-btn danger" data-icon="delete" title="ลบสิ่งที่เลือก (Del)" aria-label="ลบสิ่งที่เลือก"></button>
+      <button id="btn-undo" class="icon-btn" data-icon="undo" title="ย้อนกลับ (Ctrl/Cmd+Z)" aria-label="ย้อนกลับ" disabled></button>
+      <button id="btn-redo" class="icon-btn" data-icon="redo" title="ทำซ้ำ (Ctrl/Cmd+Shift+Z)" aria-label="ทำซ้ำ" disabled></button>
+    </div>
   </header>
   <aside id="sidebar">
     <input id="palette-search" placeholder="ค้นหาชิ้นส่วน…" />
     <div id="palette"></div>
   </aside>
-  <main id="viewport"></main>
-  <aside id="properties" hidden>
-    <h3 id="prop-name"></h3>
-    <label>ตำแหน่ง X <input id="pos-x" type="number" step="1" /></label>
-    <label>ตำแหน่ง Y <input id="pos-y" type="number" step="0.25" /></label>
-    <label>ตำแหน่ง Z <input id="pos-z" type="number" step="1" /></label>
-    <label>หมุน (°) <input id="rot-y" type="number" step="90" /></label>
-    <div class="row">
-      <button id="rot-90">+90°</button>
-      <button id="scale-reset">สเกล 1:1:1</button>
+  <main id="viewport">
+    <div id="play-hud" hidden>
+      <div class="play-hint"><strong>Play mode</strong><p>WASD / ลูกศร เพื่อเดิน · คลิกฉากแล้วเลื่อนเมาส์เพื่อหมุน (หรือคลิกค้างแล้วลาก) · Esc เพื่อปล่อยเมาส์</p></div>
+      <button id="btn-exit-play">กลับไปแก้ไข</button>
     </div>
-    <label>สเกล X <input id="scale-x" type="number" step="0.1" /></label>
-    <label>สเกล Y <input id="scale-y" type="number" step="0.1" /></label>
-    <label>สเกล Z <input id="scale-z" type="number" step="0.1" /></label>
-    <div class="row">
-      <button id="btn-delete" class="danger">ลบ (Del)</button>
-    </div>
+  </main>
+  <aside id="properties">
+    <section id="layer-panel" aria-label="Layers">
+      <div id="layer-heading"><h2>Layers</h2></div>
+      <div id="layer-tree" role="list" aria-label="Layer Group Object list"></div>
+    </section>
+    <section id="inspector" aria-label="Inspector">
+      <h2>Inspector</h2>
+      <h3 id="prop-name">เลือก object หรือ group เพื่อแก้ไข</h3>
+      <label>ตำแหน่ง X <input id="pos-x" type="number" step="1" /></label>
+      <label>ตำแหน่ง Y <input id="pos-y" type="number" step="0.25" /></label>
+      <label>ตำแหน่ง Z <input id="pos-z" type="number" step="1" /></label>
+      <label>หมุน (°) <input id="rot-y" type="number" step="90" /></label>
+      <div class="row"><button id="scale-reset">สเกล 1:1:1</button></div>
+      <label>สเกล X <input id="scale-x" type="number" step="0.1" /></label>
+      <label>สเกล Y <input id="scale-y" type="number" step="0.1" /></label>
+      <label>สเกล Z <input id="scale-z" type="number" step="0.1" /></label>
+    </section>
+    <footer id="icon-credit">Move icon: <a href="https://www.flaticon.com/free-icon/four-arrows_11310854" target="_blank" rel="noreferrer">Designed by Grand Iconic from Flaticon</a></footer>
   </aside>
+  <dialog id="action-dialog">
+    <form id="action-form">
+      <h2 id="action-title"></h2>
+      <p id="action-message" hidden></p>
+      <label id="action-input-row" hidden><span id="action-label"></span><input id="action-value" autocomplete="off" /></label>
+      <menu><button id="action-cancel" type="button">ยกเลิก</button><button id="action-ok" type="submit">ตกลง</button></menu>
+    </form>
+  </dialog>
   <div id="banner" hidden></div>
   <div id="toast" hidden></div>
   <script type="module" src="/src/main.js"></script>
