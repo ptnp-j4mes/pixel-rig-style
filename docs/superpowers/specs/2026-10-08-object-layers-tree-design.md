@@ -1,33 +1,35 @@
-# Object Layers Tree Design
+# Object Layers and Groups Tree Design
 
 ## Goal
 
-Show every placed object in a right-side tree view, let the user select or delete an object there, and organize objects into layers that survive save and reload.
+Provide a right-side Layers panel that lists and manages every placed object, similar to the layer layouts in Illustrator, Photoshop, and Figma.
 
-## Design
+## Tree and operations
 
-- Replace the selection-only right panel with an always-visible outliner: `Layer > Obj`.
-- Keep a non-deletable `Default Layer`. Add a layer action creates a named layer; selecting a layer makes it the destination for newly placed objects.
-- Show objects as children of their assigned layer. Dragging an object row onto a layer moves it there. Expand/collapse layer rows.
-- Selecting an object row selects the same scene object and shows its existing transform properties. Deleting from the row removes it from the scene and saved map.
-- Deleting a non-default layer moves its objects to `Default Layer`; renaming a layer changes only its label. Do not add object groups or group transforms.
-- Keep the scene transforms of objects independent. Layer membership is organizational metadata, not a Three.js parent relationship.
+- Show the hierarchy `Layer > Group > Obj`; objects may also sit directly in a layer. Groups are one level deep.
+- Create, rename, reorder, and delete layers. `Default Layer` cannot be deleted; deleting another layer moves its contents to Default.
+- Create a group from selected objects, rename it, move it within or between layers, and ungroup it without deleting its members. Grouping may include objects from different layers; the new group is placed in the active layer.
+- Select multiple objects with tree checkboxes for Group/Ungroup actions. Groups transform as a unit. Dragging a group or editing its position, rotation, or scale updates the group transform while preserving each child's relative transform. Grouping, ungrouping, and moving an object to a new parent preserve its world transform.
+- Rename, select, delete, hide/show, lock/unlock, and reorder objects from the tree. Selecting an object also updates the existing transform inspector; viewport selection updates the tree. Object transform fields and viewport dragging use world coordinates, including for grouped objects.
+- Hide/show and lock/unlock are available on layers, groups, and objects. Parent visibility hides all descendants; parent locking prevents viewport movement and disables transform editing for descendants. Tree selection remains available for hidden or locked items.
+- Drag objects between layers and groups and reorder rows. Tree order is organizational only; 3D placement and depth continue to determine viewport rendering.
+- New placements go into the active layer. All persistent edits autosave.
 
 ## Saved map compatibility
 
-- Advance the map document version and serialize layer IDs/names plus each object's `layerId`.
-- Load version 1 and 2 documents into `Default Layer` with their existing transforms unchanged.
-- If a loaded object references a missing layer, place it in `Default Layer` rather than dropping the object.
-- Autosave after layer creation, rename, delete, object reassignment, placement, or object deletion.
+- Advance the map document to version 3. Persist stable layer, group, and object IDs; names; layer/group membership; tree order; group transforms; object transforms; visibility; and lock state.
+- Load version 1 and 2 documents with all objects in `Default Layer`, no groups, visible and unlocked, and object names defaulted to their asset names. Preserve their transforms.
+- If a loaded object references a missing layer or group, retain the object in `Default Layer` without the invalid group parent.
+- Save group child transforms relative to their group; ungrouping or moving an object to another parent must preserve its world transform.
 
 ## Acceptance criteria
 
-1. The right panel lists all placed objects even when none is selected.
-2. Selecting an object in the tree selects it in the viewport and updates transform properties; selecting in the viewport updates the tree selection.
-3. An object can be deleted from its tree row, and it disappears from both the viewport and tree.
-4. Layers can be created, renamed, expanded/collapsed, and deleted under the stated Default Layer rule. Objects can be reassigned by dragging their rows to another layer.
-5. New map files preserve layer membership. Existing version 1 and 2 files load all objects in Default Layer.
+1. The right panel shows every placed object in the Layer > Group > Obj tree, even when none is selected.
+2. Tree and viewport selection stay synchronized; object and group transform controls edit the selected item.
+3. Objects can be renamed, deleted, hidden, locked, reordered, moved between layers/groups, and grouped/ungrouped without losing map content or changing world transforms unexpectedly.
+4. Layer/group visibility and locking apply to descendants; hidden/locked state survives save and reload.
+5. New version 3 maps preserve tree structure and state. Version 1/2 maps load in Default Layer with their original transforms.
 
 ## Scope limits
 
-No groups, multi-object transform, layer visibility/locking, or multi-select. Layers organize object rows only.
+No nested groups, layer-based 3D draw ordering, or changes to asset geometry. Tree order does not override 3D depth.
