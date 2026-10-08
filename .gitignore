@@ -1,12 +1,6 @@
 # Source asset packs — install locally according to their licenses.
 assets/
-public/packs/*
-!public/packs/village-pack/
-public/packs/village-pack/*
-!public/packs/village-pack/Tree_Bush_*.glb
-!public/packs/village-pack/Tree_EZ_OakMedium.glb
-!public/packs/village-pack/VillageEnvironment.glb
-!public/packs/village-pack/VillageReferenceSet.glb
+public/packs/
 
 # Node
 node_modules/

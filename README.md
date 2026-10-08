@@ -13,9 +13,10 @@ npm run dev                       # http://localhost:5173
 
 ## เตรียม asset (ครั้งเดียว)
 
-ไฟล์ต้นฉบับของ base pack ไม่อยู่ใน Git ตามเงื่อนไขสิทธิ์/ขนาด; clone จะได้ procedural environment และ tree models ของโปรเจกต์ ส่วน Japan Village และ Village Pack ต้องติดตั้งจากไฟล์ต้นฉบับที่คุณมีสิทธิ์ใช้:
+ไฟล์ต้นฉบับของ base pack ไม่อยู่ใน Git ตามเงื่อนไขสิทธิ์/ขนาด; clone จะมี ZIP ของ procedural environment และ tree models ของโปรเจกต์ ให้แตกไฟล์ก่อน ส่วน Japan Village และ Village Pack ต้องติดตั้งจากไฟล์ต้นฉบับที่คุณมีสิทธิ์ใช้:
 
 ```bash
+unzip -o village-pack-assets.zip -d .
 mkdir -p public/packs/japan-village public/packs/village-pack
 # Japan Village (zip): ใช้โฟลเดอร์ GLTF ข้างใน
 ditto -x -k "/path/to/Free_JapanVillage.zip" /tmp/pack && ditto /tmp/pack/FreePack/GLTF public/packs/japan-village
