@@ -33,6 +33,10 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
   dom.addEventListener('pointerdown', onPointerDown);
   window.addEventListener('pointermove', onPointerMove);
   window.addEventListener('pointerup', onPointerUp);
+  // a cancelled pointer (touch taken over, device switch) never delivers
+  // pointerup — without cleanup, dragging/controls stay armed and the next
+  // mouse move teleports the dragged object
+  window.addEventListener('pointercancel', onPointerCancel);
   window.addEventListener('keydown', onKeyDown);
 
   function setPointer(e) {
@@ -180,6 +184,14 @@ export function createEditor({ scene, camera, controls, dom, catalog, onChange, 
     setPointer(e);
     raycaster.setFromCamera(pointer, camera);
     if (!raycaster.intersectObjects(group.children, true).length) deselect();
+  }
+
+  function onPointerCancel() {
+    // cleanup only — a cancelled gesture must not place or select anything
+    controls.enabled = true;
+    dom.style.cursor = '';
+    downPos = null;
+    dragging = null;
   }
 
   // ---- keyboard ----
