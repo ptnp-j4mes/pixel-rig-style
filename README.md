@@ -13,7 +13,7 @@ npm run dev                       # http://localhost:5173
 
 ## เตรียม asset (ครั้งเดียว)
 
-asset pack ไม่ได้อยู่ใน git (สิทธิ์/ขนาด) — copy เอง:
+ไฟล์ต้นฉบับของ base pack ไม่อยู่ใน Git ตามเงื่อนไขสิทธิ์/ขนาด; clone จะได้ procedural environment และ tree models ของโปรเจกต์ ส่วน Japan Village และ Village Pack ต้องติดตั้งจากไฟล์ต้นฉบับที่คุณมีสิทธิ์ใช้:
 
 ```bash
 mkdir -p public/packs/japan-village public/packs/village-pack
