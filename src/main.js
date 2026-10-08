@@ -278,8 +278,8 @@ document.getElementById('btn-new').onclick = async () => {
 };
 
 document.getElementById('btn-save').onclick = () => {
-  storage.saveMapFile(currentDoc());
-  toast('ส่งออก map JSON สำหรับเปิดเล่นใน web app แล้ว');
+  storage.saveProjectFile(currentDoc());
+  toast('บันทึก Project แล้ว — Asset อ้างอิงจาก pack ในแอป');
 };
 
 spawnButton.onclick = () => {
@@ -331,7 +331,7 @@ exitPlayButton.onclick = exitPlayMode;
 mapNameInput.addEventListener('input', () => storage.scheduleAutosave(currentDoc()));
 
 document.getElementById('btn-load').onclick = async () => {
-  const doc = await storage.openMapFile();
+  const doc = await storage.openProjectFile();
   if (!doc) return;
   if (doc.error) return toast(`เปิดไฟล์ไม่สำเร็จ: ${doc.error}`);
   const { missing } = await editor.loadObjects(doc.objects, doc.layers, doc.groups);

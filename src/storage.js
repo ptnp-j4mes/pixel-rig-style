@@ -3,16 +3,16 @@ import { deserializeMap } from './lib.js';
 const AUTOSAVE_KEY = 'mve.autosave';
 let timer = null;
 
-export function saveMapFile(doc) {
+export function saveProjectFile(doc) {
   const blob = new Blob([JSON.stringify(doc, null, 1)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `${doc.mapName || 'map'}.json`;
+  a.download = `${doc.mapName || 'map'}.project.json`;
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href));
 }
 
-export function openMapFile() {
+export function openProjectFile() {
   return new Promise((resolve) => {
     const input = document.createElement('input');
     input.type = 'file';
