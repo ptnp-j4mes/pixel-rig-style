@@ -13,7 +13,7 @@ npm run dev                       # http://localhost:5173
 
 ## เตรียม asset (ครั้งเดียว)
 
-ไฟล์ต้นฉบับของ base pack ไม่อยู่ใน Git ตามเงื่อนไขสิทธิ์/ขนาด; clone จะมี ZIP ของ procedural environment และ tree models ของโปรเจกต์ ให้แตกไฟล์ก่อน ส่วน Japan Village และ Village Pack ต้องติดตั้งจากไฟล์ต้นฉบับที่คุณมีสิทธิ์ใช้:
+ไฟล์ asset ใน `assets/` และ `public/packs/` รวมไว้ใน `village-pack-assets.zip` ซึ่งเป็นไฟล์ local-only และไม่อยู่ใน Git หากมี ZIP นี้ให้แตกจาก root ของ repo; หากไม่มี ให้ติดตั้ง base pack จากไฟล์ต้นฉบับที่คุณมีสิทธิ์ใช้:
 
 ```bash
 unzip -o village-pack-assets.zip -d .

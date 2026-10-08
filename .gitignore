@@ -1,6 +1,7 @@
 # Source asset packs — install locally according to their licenses.
 assets/
 public/packs/
+village-pack-assets.zip
 
 # Node
 node_modules/
